@@ -46,8 +46,8 @@ const translations = {
     // Final CTA Banner
     'finalCta.title': 'Aumenta la produttività oggi stesso',
     'finalCta.subtitle': 'Unisciti a migliaia di professionisti che hanno già scelto Cantieri per gestire i loro cantieri in modo più efficiente.',
-    'finalCta.button_primary': 'Inizia ora',
-    'finalCta.button_secondary': 'Prenota una demo',
+    'finalCta.button_primary': 'Inizia Ora',
+    'finalCta.button_secondary': 'Contattaci',
 
     // Features / Technology
     'features.label': 'Tecnologia avanzata',
@@ -167,8 +167,8 @@ const translations = {
     // Final CTA Banner
     'finalCta.title': 'Boost your productivity today',
     'finalCta.subtitle': 'Join thousands of professionals who have already chosen Cantieri to manage their construction sites more efficiently.',
-    'finalCta.button_primary': 'Get started',
-    'finalCta.button_secondary': 'Book a demo',
+    'finalCta.button_primary': 'Start Now',
+    'finalCta.button_secondary': 'Contact Us',
 
     // Features / Technology
     'features.label': 'Advanced Technology',
@@ -289,7 +289,7 @@ const translations = {
     'finalCta.title': 'عزّز إنتاجيتك اليوم',
     'finalCta.subtitle': 'انضم إلى آلاف المحترفين الذين اختاروا Cantieri لإدارة مواقع البناء بكفاءة أكبر.',
     'finalCta.button_primary': 'ابدأ الآن',
-    'finalCta.button_secondary': 'احجز عرضاً توضيحياً',
+    'finalCta.button_secondary': 'تواصل معنا',
 
     // Features / Technology
     'features.label': 'تكنولوجيا متقدمة',
