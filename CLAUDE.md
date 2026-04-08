@@ -33,6 +33,21 @@ Each locale has its own page file (`src/pages/index.astro`, `src/pages/en/index.
 - Design system reference: gradient CTAs use `linear-gradient(135deg, #994100, #ff7a23)`
 - No CSS modules or CSS-in-JS — all styling via Tailwind utility classes
 
+### Typography
+
+Single font family for the entire site: **Inter** (Google Fonts), loaded in `Layout.astro`.
+
+| Use case | Class | Example |
+|---|---|---|
+| Page headings (h1) | `text-5xl font-semibold tracking-tight` (sm: `text-7xl`) | Hero title |
+| Section headings (h2) | `text-3xl font-bold tracking-tight` (sm: `text-4xl`) | Features, Pricing, CTA titles |
+| Card headings (h3) | `text-lg font-semibold` | Solution cards, footer sections |
+| Body text | `text-lg font-medium` (sm: `text-xl/8`) | Paragraphs, descriptions |
+| Small / UI text | `text-sm font-semibold` | Buttons, nav links, labels |
+| Stats numbers | `text-4xl font-bold tracking-tight` (sm: `text-5xl`) | Stat counters |
+
+Weights loaded: 400 (regular), 500 (medium), 600 (semibold), 700 (bold). Do not use other weights.
+
 ### Design System Principles
 
 - **No borders for separation** — use background color shifts between surfaces instead
