@@ -1,0 +1,64 @@
+---
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="bg-slate-900 py-24 sm:py-32 overflow-hidden">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 items-center gap-x-16 gap-y-12 lg:grid-cols-2">
+      <!-- Left: Image -->
+      <div class="relative">
+        <!-- Orange glow behind image -->
+        <div aria-hidden="true" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-primary-500/35 blur-3xl pointer-events-none"></div>
+        <img
+          src="/homepage/mobile.png"
+          alt="Cantieri Mobile App"
+          class="relative w-full max-w-md mx-auto lg:mx-0 rounded-xl"
+        />
+      </div>
+
+      <!-- Right: Text content -->
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+          <span class="text-white">{t(lang, 'appPreview.title_light')}</span>
+          <br />
+          <span class="text-primary-500">{t(lang, 'appPreview.title_accent')}</span>
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-slate-300">
+          {t(lang, 'appPreview.description')}
+        </p>
+        <ul class="mt-8 space-y-4">
+          <li class="flex items-center gap-x-3">
+            <span class="flex h-6 w-6 flex-none items-center justify-center rounded-full bg-primary-500">
+              <svg class="h-3.5 w-3.5 text-slate-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <span class="text-base text-slate-300">{t(lang, 'appPreview.bullet1')}</span>
+          </li>
+          <li class="flex items-center gap-x-3">
+            <span class="flex h-6 w-6 flex-none items-center justify-center rounded-full bg-primary-500">
+              <svg class="h-3.5 w-3.5 text-slate-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <span class="text-base text-slate-300">{t(lang, 'appPreview.bullet2')}</span>
+          </li>
+          <li class="flex items-center gap-x-3">
+            <span class="flex h-6 w-6 flex-none items-center justify-center rounded-full bg-primary-500">
+              <svg class="h-3.5 w-3.5 text-slate-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <span class="text-base text-slate-300">{t(lang, 'appPreview.bullet3')}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

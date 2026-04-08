@@ -1,0 +1,78 @@
+---
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="relative isolate pt-16 overflow-hidden">
+  <!-- Gradient blob top -->
+  <div
+    aria-hidden="true"
+    class="absolute inset-x-0 transform-gpu overflow-hidden blur-3xl pointer-events-none"
+  >
+    <div
+      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#F28F16] to-[#fbbf24] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+    ></div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+    <div class="grid grid-cols-1 items-center gap-x-16 gap-y-12 lg:grid-cols-2">
+      <!-- Left: Text content -->
+      <div>
+        <!-- Badge -->
+        <div class="mb-8">
+          <div class="inline-flex rounded-full px-3 py-1 text-sm/6 text-slate-600 ring-1 ring-slate-900/10 hover:ring-slate-900/20 transition-all">
+            {t(lang, 'hero.badge')}{' '}
+            <a href="https://app.cantieri.ai" class="font-semibold text-primary-600">
+              <span aria-hidden="true" class="absolute inset-0"></span>
+              {t(lang, 'hero.badge_link')} <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <h1 class="text-5xl font-semibold tracking-tight text-balance text-slate-900 sm:text-7xl">
+          {t(lang, 'hero.title')}
+        </h1>
+        <p class="mt-8 text-lg font-medium text-pretty text-slate-600 sm:text-xl/8">
+          {t(lang, 'hero.subtitle')}
+        </p>
+        <div class="mt-10 flex items-center gap-x-6">
+          <a
+            href="https://app.cantieri.ai/login"
+            class="rounded-md bg-primary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 transition-colors"
+          >
+            {t(lang, 'hero.cta_login')}
+          </a>
+          <a href="#features" class="text-sm/6 font-semibold text-slate-900 hover:text-primary-600 transition-colors">
+            {t(lang, 'hero.cta_features')} <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Dashboard screenshot -->
+      <div class="relative">
+        <img
+          src="/homepage/dashboard.png"
+          alt="Cantieri Dashboard"
+          class="w-full rounded-xl shadow-2xl ring-1 ring-slate-900/10"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Gradient blob bottom -->
+  <div
+    aria-hidden="true"
+    class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)] pointer-events-none"
+  >
+    <div
+      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#F28F16] to-[#fbbf24] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+    ></div>
+  </div>
+</section>
