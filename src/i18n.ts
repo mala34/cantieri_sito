@@ -49,6 +49,19 @@ const translations = {
     'finalCta.button_primary': 'Inizia Ora',
     'finalCta.button_secondary': 'Contattaci',
 
+    // Technology
+    'technology.title_light': 'Tecnologia avanzata per',
+    'technology.title_accent': 'l\'edilizia moderna.',
+    'technology.subtitle': 'Supporto multi-lingua (Italiano, Inglese, Arabo) e infrastruttura AWS S3 Cloud per la massima sicurezza dei tuoi dati.',
+    'technology.compliance_title': 'Compliance Italiana Integrata',
+    'technology.compliance_desc': 'Gestione semplificata di CIG/CUP, fatturazione SDI e comunicazioni via PEC integrate direttamente nel workflow.',
+    'technology.templates_title': '19+ Template Professionali',
+    'technology.templates_desc': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
+    'technology.cloud_title': 'Archiviazione Cloud AWS',
+    'technology.cloud_desc': 'Tutti i tuoi documenti sono al sicuro con ridondanza geografica e crittografia di livello bancario.',
+    'technology.card_label': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
+    'technology.card_quote': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
+
     // Features / Technology
     'features.label': 'Tecnologia avanzata',
     'features.title': 'Tutto ciò che serve per gestire i tuoi cantieri',
@@ -170,6 +183,19 @@ const translations = {
     'finalCta.button_primary': 'Start Now',
     'finalCta.button_secondary': 'Contact Us',
 
+    // Technology
+    'technology.title_light': 'Advanced technology for',
+    'technology.title_accent': 'modern construction.',
+    'technology.subtitle': 'Multi-language support (Italian, English, Arabic) and AWS S3 Cloud infrastructure for maximum data security.',
+    'technology.compliance_title': 'Integrated Italian Compliance',
+    'technology.compliance_desc': 'Simplified management of CIG/CUP, SDI invoicing and PEC communications integrated directly into the workflow.',
+    'technology.templates_title': '19+ Professional Templates',
+    'technology.templates_desc': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
+    'technology.cloud_title': 'AWS Cloud Storage',
+    'technology.cloud_desc': 'All your documents are safe with geographic redundancy and bank-grade encryption.',
+    'technology.card_label': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
+    'technology.card_quote': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
+
     // Features / Technology
     'features.label': 'Advanced Technology',
     'features.title': 'Everything you need to manage your construction sites',
@@ -290,6 +316,19 @@ const translations = {
     'finalCta.subtitle': 'انضم إلى آلاف المحترفين الذين اختاروا Cantieri لإدارة مواقع البناء بكفاءة أكبر.',
     'finalCta.button_primary': 'ابدأ الآن',
     'finalCta.button_secondary': 'تواصل معنا',
+
+    // Technology
+    'technology.title_light': 'تكنولوجيا متقدمة',
+    'technology.title_accent': 'للبناء الحديث.',
+    'technology.subtitle': 'دعم متعدد اللغات (الإيطالية والإنجليزية والعربية) وبنية تحتية AWS S3 Cloud لأقصى درجات الأمان لبياناتك.',
+    'technology.compliance_title': 'امتثال إيطالي متكامل',
+    'technology.compliance_desc': 'إدارة مبسطة لـ CIG/CUP والفوترة الإلكترونية SDI واتصالات PEC مدمجة مباشرة في سير العمل.',
+    'technology.templates_title': '+19 قالب احترافي',
+    'technology.templates_desc': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
+    'technology.cloud_title': 'تخزين سحابي AWS',
+    'technology.cloud_desc': 'جميع مستنداتك آمنة مع التكرار الجغرافي والتشفير على مستوى البنوك.',
+    'technology.card_label': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
+    'technology.card_quote': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
 
     // Features / Technology
     'features.label': 'تكنولوجيا متقدمة',
