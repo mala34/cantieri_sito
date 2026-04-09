@@ -1,0 +1,83 @@
+---
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const features = [
+  {
+    name: t(lang, 'featureManagement.doc_title'),
+    description: t(lang, 'featureManagement.doc_desc'),
+    icon: 'compass',
+  },
+  {
+    name: t(lang, 'featureManagement.company_title'),
+    description: t(lang, 'featureManagement.company_desc'),
+    icon: 'message',
+  },
+  {
+    name: t(lang, 'featureManagement.dashboard_title'),
+    description: t(lang, 'featureManagement.dashboard_desc'),
+    icon: 'template',
+  },
+];
+---
+
+<section class="py-24 sm:py-32 bg-slate-50">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:text-center">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-slate-800">
+        {t(lang, 'featureManagement.title')}
+      </h2>
+      <p class="mt-6 text-lg font-medium text-slate-600 sm:text-xl/8">
+        {t(lang, 'featureManagement.subtitle')}
+      </p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-6 lg:max-w-none lg:grid-cols-3">
+        {features.map((feature) => (
+          <article class="flex flex-col rounded-2xl p-8 transition-all hover:shadow-[0_4px_24px_rgba(32,48,68,0.06)] bg-white">
+            <dt class="flex items-center gap-x-3 text-lg font-semibold text-slate-800">
+              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50">
+                {feature.icon === 'compass' && (
+                  <span
+                    class="h-5 w-5 bg-primary-500"
+                    style="mask:url(/homepage/icon_compass.svg) center/contain no-repeat;-webkit-mask:url(/homepage/icon_compass.svg) center/contain no-repeat;"
+                    aria-hidden="true"
+                  ></span>
+                )}
+                {feature.icon === 'message' && (
+                  <span
+                    class="h-5 w-5 bg-primary-500"
+                    style="mask:url(/homepage/icon_message.svg) center/contain no-repeat;-webkit-mask:url(/homepage/icon_message.svg) center/contain no-repeat;"
+                    aria-hidden="true"
+                  ></span>
+                )}
+                {feature.icon === 'template' && (
+                  <span
+                    class="h-5 w-5 bg-primary-500"
+                    style="mask:url(/homepage/icon_template.svg) center/contain no-repeat;-webkit-mask:url(/homepage/icon_template.svg) center/contain no-repeat;"
+                    aria-hidden="true"
+                  ></span>
+                )}
+              </div>
+              {feature.name}
+            </dt>
+            <dd class="mt-4 flex flex-auto flex-col text-sm font-medium text-slate-700">
+              <p class="flex-auto">{feature.description}</p>
+              <a href="#" class="mt-6 inline-flex items-center gap-x-1 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors">
+                {t(lang, 'featureManagement.cta')}
+                <svg class="h-4 w-4 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </a>
+            </dd>
+          </article>
+        ))}
+      </dl>
+    </div>
+  </div>
+</section>

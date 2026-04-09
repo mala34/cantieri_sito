@@ -62,6 +62,17 @@ const translations = {
     'technology.card_label': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
     'technology.card_quote': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
 
+    // Feature Management
+    'featureManagement.title': 'Soluzioni su misura per ogni cantiere',
+    'featureManagement.subtitle': 'Tutto ciò di cui hai bisogno per scalare la tua impresa edile, centralizzato in un\'unica piattaforma intuitiva.',
+    'featureManagement.doc_title': 'Documentazione Strutturata',
+    'featureManagement.doc_desc': 'Accedi a oltre 19 modelli predefiniti per ogni esigenza di cantiere, conformi alle ultime normative vigenti.',
+    'featureManagement.company_title': 'Gestione Azienda Completa',
+    'featureManagement.company_desc': 'Gestisci P.IVA, codici ATECO e integrazione SDI per una fatturazione elettronica senza errori direttamente dalla piattaforma.',
+    'featureManagement.dashboard_title': 'Dashboard KPI Real-time',
+    'featureManagement.dashboard_desc': 'Monitora i tuoi margini di profitto e l\'andamento dei lavori con indicatori di performance aggiornati in tempo reale.',
+    'featureManagement.cta': 'Scopri di più',
+
     // Features / Technology
     'features.label': 'Tecnologia avanzata',
     'features.title': 'Tutto ciò che serve per gestire i tuoi cantieri',
@@ -139,6 +150,11 @@ const translations = {
     'cta.subtitle': 'Inizia oggi stesso a ottimizzare i tuoi processi. Prova Cantieri gratuitamente per 14 giorni.',
     'cta.button': 'Inizia la prova gratuita',
     'cta.button_secondary': 'Parla con un esperto',
+    'cta.newsletter_lead': 'Iscriviti alla nostra newsletter per ricevere consigli settimanali sulla gestione e sconti esclusivi.',
+    'cta.newsletter_privacy': 'Rispettiamo la tua privacy. Puoi disiscriverti in qualsiasi momento.',
+    'cta.newsletter_title': 'Resta aggiornato sul futuro dell\'edilizia',
+    'cta.newsletter_button': 'Iscriviti Ora',
+    'cta.newsletter_placeholder': 'La tua email',
 
     // Footer
     'footer.rights': 'Tutti i diritti riservati.',
@@ -195,6 +211,17 @@ const translations = {
     'technology.cloud_desc': 'All your documents are safe with geographic redundancy and bank-grade encryption.',
     'technology.card_label': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
     'technology.card_quote': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
+
+    // Feature Management
+    'featureManagement.title': 'Tailored solutions for every site',
+    'featureManagement.subtitle': 'Everything you need to scale your construction business, centralized in one intuitive platform.',
+    'featureManagement.doc_title': 'Structured Documentation',
+    'featureManagement.doc_desc': 'Access over 19 predefined templates for every site need, compliant with the latest regulations.',
+    'featureManagement.company_title': 'Complete Company Management',
+    'featureManagement.company_desc': 'Manage VAT, ATECO codes and SDI integration for error-free electronic invoicing directly from the platform.',
+    'featureManagement.dashboard_title': 'Real-time KPI Dashboard',
+    'featureManagement.dashboard_desc': 'Monitor your profit margins and work progress with real-time performance indicators.',
+    'featureManagement.cta': 'Learn more',
 
     // Features / Technology
     'features.label': 'Advanced Technology',
@@ -273,6 +300,11 @@ const translations = {
     'cta.subtitle': 'Start optimizing your processes today. Try Cantieri free for 14 days.',
     'cta.button': 'Start free trial',
     'cta.button_secondary': 'Talk to an expert',
+    'cta.newsletter_lead': 'Subscribe to our newsletter to receive weekly management tips and exclusive discounts.',
+    'cta.newsletter_privacy': 'We respect your privacy. You can unsubscribe at any time.',
+    'cta.newsletter_title': 'Stay updated on the future of construction',
+    'cta.newsletter_button': 'Subscribe Now',
+    'cta.newsletter_placeholder': 'Your email',
 
     // Footer
     'footer.rights': 'All rights reserved.',
@@ -329,6 +361,17 @@ const translations = {
     'technology.cloud_desc': 'جميع مستنداتك آمنة مع التكرار الجغرافي والتشفير على مستوى البنوك.',
     'technology.card_label': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
     'technology.card_quote': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
+
+    // Feature Management
+    'featureManagement.title': 'حلول مصممة لكل موقع بناء',
+    'featureManagement.subtitle': 'كل ما تحتاجه لتوسيع أعمال البناء الخاصة بك، مجمعة في منصة واحدة بديهية.',
+    'featureManagement.doc_title': 'توثيق منظم',
+    'featureManagement.doc_desc': 'الوصول إلى أكثر من 19 نموذجاً محدداً مسبقاً لكل احتياجات موقع العمل، متوافقة مع أحدث اللوائح.',
+    'featureManagement.company_title': 'إدارة شركة متكاملة',
+    'featureManagement.company_desc': 'إدارة الرقم الضريبي ورموز ATECO وتكامل SDI للفوترة الإلكترونية بدون أخطاء مباشرة من المنصة.',
+    'featureManagement.dashboard_title': 'لوحة مؤشرات KPI في الوقت الفعلي',
+    'featureManagement.dashboard_desc': 'راقب هوامش أرباحك وتقدم أعمالك مع مؤشرات أداء محدثة في الوقت الفعلي.',
+    'featureManagement.cta': 'اعرف المزيد',
 
     // Features / Technology
     'features.label': 'تكنولوجيا متقدمة',
@@ -407,6 +450,11 @@ const translations = {
     'cta.subtitle': 'ابدأ بتحسين عملياتك اليوم. جرّب Cantieri مجاناً لمدة 14 يوماً.',
     'cta.button': 'ابدأ التجربة المجانية',
     'cta.button_secondary': 'تحدث مع خبير',
+    'cta.newsletter_lead': 'اشترك في نشرتنا الإخبارية لتلقي نصائح إدارية أسبوعية وخصومات حصرية.',
+    'cta.newsletter_privacy': 'نحن نحترم خصوصيتك. يمكنك إلغاء الاشتراك في أي وقت.',
+    'cta.newsletter_title': 'ابق على اطلاع بمستقبل البناء',
+    'cta.newsletter_button': 'اشترك الآن',
+    'cta.newsletter_placeholder': 'بريدك الإلكتروني',
 
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة.',

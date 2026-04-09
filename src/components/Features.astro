@@ -41,59 +41,59 @@ const features = [
 ];
 ---
 
-<section id="features" class="py-24 sm:py-32" style="background-color: #f4f6ff;">
+<section id="features" class="py-24 sm:py-32 bg-slate-50">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
-      <p class="text-sm font-semibold leading-7 text-primary-600 uppercase tracking-wider">
+      <p class="text-sm font-semibold text-primary-600 uppercase tracking-wider">
         {t(lang, 'features.label')}
       </p>
-      <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl" style="color: #203044;">
+      <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-slate-800">
         {t(lang, 'features.title')}
       </h2>
-      <p class="mt-6 text-lg leading-8" style="color: #5a6b7f;">
+      <p class="mt-6 text-lg font-medium text-slate-600 sm:text-xl/8">
         {t(lang, 'features.subtitle')}
       </p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-6 lg:max-w-none lg:grid-cols-3">
         {features.map((feature) => (
-          <article class="flex flex-col rounded-2xl p-8 transition-all hover:shadow-[0_4px_24px_rgba(32,48,68,0.06)]" style="background-color: #eaf1ff;">
-            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7" style="color: #203044;">
-              <div class="flex h-10 w-10 items-center justify-center rounded-lg" style="background: linear-gradient(135deg, #994100, #ff7a23);">
+          <article class="flex flex-col rounded-2xl p-8 transition-all hover:shadow-[0_4px_24px_rgba(32,48,68,0.06)] bg-white">
+            <dt class="flex items-center gap-x-3 text-lg font-semibold text-slate-800">
+              <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50">
                 {feature.icon === 'calendar' && (
-                  <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                   </svg>
                 )}
                 {feature.icon === 'cube' && (
-                  <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
                   </svg>
                 )}
                 {feature.icon === 'chart' && (
-                  <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
                   </svg>
                 )}
                 {feature.icon === 'cloud' && (
-                  <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
                   </svg>
                 )}
                 {feature.icon === 'shield' && (
-                  <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                   </svg>
                 )}
                 {feature.icon === 'link' && (
-                  <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <svg class="h-5 w-5 text-primary-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
                   </svg>
                 )}
               </div>
               {feature.name}
             </dt>
-            <dd class="mt-4 flex flex-auto flex-col text-sm leading-7" style="color: #5a6b7f;">
+            <dd class="mt-4 flex flex-auto flex-col text-sm font-medium text-slate-700">
               <p class="flex-auto">{feature.description}</p>
             </dd>
           </article>

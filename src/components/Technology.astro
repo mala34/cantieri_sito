@@ -13,14 +13,14 @@ const { lang } = Astro.props;
     <div class="grid grid-cols-1 items-center gap-x-16 gap-y-16 lg:grid-cols-2">
       <!-- Left: Text content -->
       <div>
-        <h2 class="text-3xl font-bold tracking-tight text-[#203044] sm:text-4xl">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">
           {t(lang, 'technology.title_light')}
           <br />
           <span class="bg-primary-500 bg-clip-text text-transparent">
             {t(lang, 'technology.title_accent')}
           </span>
         </h2>
-        <p class="mt-6 text-lg font-medium leading-8 text-[#203044]/70">
+        <p class="mt-6 text-lg font-medium text-slate-800/70 sm:text-xl/8">
           {t(lang, 'technology.subtitle')}
         </p>
 
@@ -28,15 +28,15 @@ const { lang } = Astro.props;
           <!-- Compliance -->
           <div class="flex gap-x-5">
             <div class="flex-none">
-              <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#E6E8EA]">
+              <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-200">
                 <img src="/homepage/icon_compliance.svg" alt="" class="h-6 w-6 " aria-hidden="true" />
               </span>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-[#203044]">
+              <h3 class="text-lg font-semibold text-slate-800">
                 {t(lang, 'technology.compliance_title')}
               </h3>
-              <p class="mt-2 text-base font-medium text-[#203044]/70">
+              <p class="mt-2 text-base font-normal text-slate-800/70">
                 {t(lang, 'technology.compliance_desc')}
               </p>
             </div>
@@ -45,15 +45,15 @@ const { lang } = Astro.props;
           <!-- Templates -->
           <div class="flex gap-x-5">
             <div class="flex-none">
-              <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#E6E8EA]">
+              <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-200">
                 <img src="/homepage/icon_template.svg" alt="" class="h-6 w-6" aria-hidden="true" />
               </span>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-[#203044]">
+              <h3 class="text-lg font-semibold text-slate-800">
                 {t(lang, 'technology.templates_title')}
               </h3>
-              <p class="mt-2 text-base font-medium text-[#203044]/70">
+              <p class="mt-2 text-base font-normal text-slate-800/70">
                 {t(lang, 'technology.templates_desc')}
               </p>
             </div>
@@ -62,15 +62,15 @@ const { lang } = Astro.props;
           <!-- Cloud AWS -->
           <div class="flex gap-x-5">
             <div class="flex-none">
-              <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#E6E8EA]">
+              <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-200">
                 <img src="/homepage/icon_archiviazione.svg" alt="" class="h-6 w-6" aria-hidden="true" />
               </span>
             </div>
             <div>
-              <h3 class="text-lg font-semibold text-[#203044]">
+              <h3 class="text-lg font-semibold text-slate-800">
                 {t(lang, 'technology.cloud_title')}
               </h3>
-              <p class="mt-2 text-base font-medium text-[#203044]/70">
+              <p class="mt-2 text-base font-normal text-slate-800/70">
                 {t(lang, 'technology.cloud_desc')}
               </p>
             </div>
@@ -92,14 +92,14 @@ const { lang } = Astro.props;
           <!-- Floating card -->
           <div class="absolute bottom-[4.62%] left-[4.62%] right-[4.62%] rounded-2xl bg-white shadow-[0_20px_50px_-10px_rgba(32,48,68,0.25)] p-4 sm:p-5">
             <div class="flex items-center gap-3 sm:gap-4">
-              <span class="flex h-10 w-10 sm:h-12 sm:w-12 flex-none items-center justify-center rounded-full bg-[#DCFCE7]">
+              <span class="flex h-10 w-10 sm:h-12 sm:w-12 flex-none items-center justify-center rounded-full bg-green-100">
                 <img src="/homepage/icon_message.svg" alt="" class="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true" />
               </span>
               <div class="min-w-0 flex-1">
-                <p class="text-xs font-medium uppercase tracking-wide text-[#64748B]">
+                <p class="text-sm font-semibold uppercase tracking-wide text-slate-500">
                   {t(lang, 'technology.card_label')}
                 </p>
-                <p class="mt-1 text-sm font-semibold text-[#191C1E]">
+                <p class="mt-1 text-sm font-semibold text-zinc-900">
                   {t(lang, 'technology.card_quote')}
                 </p>
               </div>
