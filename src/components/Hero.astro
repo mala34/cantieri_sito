@@ -26,10 +26,9 @@ const { lang } = Astro.props;
       <div>
         <!-- Badge -->
         <div class="mb-8">
-          <div class="inline-flex rounded-full px-3 py-1 text-sm/6 text-slate-600 ring-1 ring-slate-900/10 hover:ring-slate-900/20 transition-all">
+          <div class="inline-flex gap-x-1 rounded-full px-3 py-1 text-sm/6 text-slate-600 ring-1 ring-slate-900/10 hover:ring-slate-900/20 transition-all">
             {t(lang, 'hero.badge')}{' '}
-            <a href="https://app.cantieri.ai" class="font-semibold text-primary-600">
-              <span aria-hidden="true" class="absolute inset-0"></span>
+            <a href="https://app.cantieri.ai/login" class="font-semibold text-primary-600 hover:text-primary-700 transition-colors">
               {t(lang, 'hero.badge_link')} <span aria-hidden="true">&rarr;</span>
             </a>
           </div>

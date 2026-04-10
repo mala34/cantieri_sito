@@ -28,8 +28,8 @@ const translations = {
     'nav.login': 'Accedi',
 
     // Hero
-    'hero.badge': 'Nuova versione disponibile.',
-    'hero.badge_link': 'Scopri di più',
+    'hero.badge': 'Sei già registrato?',
+    'hero.badge_link': 'Vai al login',
     'hero.title': 'La soluzione completa per ottimizzare i tuoi cantieri',
     'hero.subtitle': 'Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda per i tuoi cantieri edili.',
     'hero.cta_login': 'Inizia ora',
@@ -38,10 +38,10 @@ const translations = {
     // App Preview
     'appPreview.title_light': 'Dall\'anarchia dell\'Excel al',
     'appPreview.title_accent': 'controllo totale',
-    'appPreview.description': 'Smetti di rincorrere le informazioni su carta. La nostra dashboard centralizzata trasforma la gestione manuale in un flusso di dati certi, accessibili e pronti per la fatturazione SDI.',
-    'appPreview.bullet1': 'Monitoraggio flussi di cassa integrato',
+    'appPreview.description': 'Smetti di rincorrere informazioni su carta e di saltare da un software all\'altro per cercare documenti. La nostra dashboard centralizzata trasforma la gestione manuale in un flusso di dati certi, accessibili e pronti per essere condivisi: tutto in un unico posto, subito.',
+    'appPreview.bullet1': 'Monitoraggio live e storico automatico dei tempi di lavoro',
     'appPreview.bullet2': 'Assegnazione task con un click',
-    'appPreview.bullet3': 'Reportistica automatizzata PDF/Excel',
+    'appPreview.bullet3': 'Report automatici, scaricabili e condivisibili',
 
     // Final CTA Banner
     'finalCta.title': 'Aumenta la produttività oggi stesso',
@@ -52,25 +52,25 @@ const translations = {
     // Technology
     'technology.title_light': 'Tecnologia avanzata per',
     'technology.title_accent': 'l\'edilizia moderna.',
-    'technology.subtitle': 'Supporto multi-lingua (Italiano, Inglese, Arabo) e infrastruttura AWS S3 Cloud per la massima sicurezza dei tuoi dati.',
+    'technology.subtitle': 'Rapportini vocali trasformati in report dall\'IA, supporto multi-lingua e infrastruttura cloud AWS S3 per la massima sicurezza dei tuoi dati.',
     'technology.compliance_title': 'Compliance Italiana Integrata',
     'technology.compliance_desc': 'Gestione semplificata di CIG/CUP, fatturazione SDI e comunicazioni via PEC integrate direttamente nel workflow.',
-    'technology.templates_title': '19+ Template Professionali',
+    'technology.templates_title': 'Template Professionali',
     'technology.templates_desc': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
     'technology.cloud_title': 'Archiviazione Cloud AWS',
     'technology.cloud_desc': 'Tutti i tuoi documenti sono al sicuro con ridondanza geografica e crittografia di livello bancario.',
-    'technology.card_label': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
-    'technology.card_quote': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
+    'technology.card_label': 'Firma, compila e condividi documenti in tempo reale dall\'ufficio o dal cantiere, dal PC o dal tablet.',
+    'technology.card_quote': 'Tutto si aggiorna mentre lavoriamo, ovunque. Niente più carta da recuperare.',
 
     // Feature Management
     'featureManagement.title': 'Soluzioni su misura per ogni cantiere',
     'featureManagement.subtitle': 'Tutto ciò di cui hai bisogno per scalare la tua impresa edile, centralizzato in un\'unica piattaforma intuitiva.',
     'featureManagement.doc_title': 'Documentazione Strutturata',
-    'featureManagement.doc_desc': 'Accedi a oltre 19 modelli predefiniti per ogni esigenza di cantiere, conformi alle ultime normative vigenti.',
+    'featureManagement.doc_desc': 'Molteplici modelli predefiniti che si compilano automaticamente con i dati dei soggetti coinvolti, sempre conformi alle ultime normative.',
     'featureManagement.company_title': 'Gestione Azienda Completa',
-    'featureManagement.company_desc': 'Gestisci P.IVA, codici ATECO e integrazione SDI per una fatturazione elettronica senza errori direttamente dalla piattaforma.',
-    'featureManagement.dashboard_title': 'Dashboard KPI Real-time',
-    'featureManagement.dashboard_desc': 'Monitora i tuoi margini di profitto e l\'andamento dei lavori con indicatori di performance aggiornati in tempo reale.',
+    'featureManagement.company_desc': 'Raccogli in un\'unica anagrafica i dati di impresa e partner e collabora in multi-azienda invitando clienti, fornitori e collaboratori sui tuoi cantieri.',
+    'featureManagement.dashboard_title': 'Dashboard in Tempo Reale',
+    'featureManagement.dashboard_desc': 'Stato di avanzamento di progetti e attività in un colpo d\'occhio, con indicatori che evidenziano subito scadenze e ritardi.',
     'featureManagement.cta': 'Scopri di più',
 
     // Features / Technology
@@ -178,8 +178,8 @@ const translations = {
     'nav.login': 'Login',
 
     // Hero
-    'hero.badge': 'New version available.',
-    'hero.badge_link': 'Learn more',
+    'hero.badge': 'Already registered?',
+    'hero.badge_link': 'Go to login',
     'hero.title': 'The complete solution to optimize your construction sites',
     'hero.subtitle': 'Advanced planning, material tracking, real-time reporting and multi-company collaboration for your construction sites.',
     'hero.cta_login': 'Get started',
@@ -188,10 +188,10 @@ const translations = {
     // App Preview
     'appPreview.title_light': 'From Excel chaos to',
     'appPreview.title_accent': 'total control',
-    'appPreview.description': 'Stop chasing information on paper. Our centralized dashboard transforms manual management into a flow of reliable, accessible data ready for SDI invoicing.',
-    'appPreview.bullet1': 'Integrated cash flow monitoring',
+    'appPreview.description': 'Stop chasing paper documents and jumping between software to find what you need. Our centralized dashboard turns manual work into a flow of reliable, accessible data ready to share: all in one place, instantly.',
+    'appPreview.bullet1': 'Live tracking and automatic history of work time',
     'appPreview.bullet2': 'One-click task assignment',
-    'appPreview.bullet3': 'Automated PDF/Excel reporting',
+    'appPreview.bullet3': 'Automated reports, ready to download and share',
 
     // Final CTA Banner
     'finalCta.title': 'Boost your productivity today',
@@ -202,25 +202,25 @@ const translations = {
     // Technology
     'technology.title_light': 'Advanced technology for',
     'technology.title_accent': 'modern construction.',
-    'technology.subtitle': 'Multi-language support (Italian, English, Arabic) and AWS S3 Cloud infrastructure for maximum data security.',
+    'technology.subtitle': 'Voice reports turned into structured data by AI, multi-language support and AWS S3 cloud infrastructure for maximum data security.',
     'technology.compliance_title': 'Integrated Italian Compliance',
     'technology.compliance_desc': 'Simplified management of CIG/CUP, SDI invoicing and PEC communications integrated directly into the workflow.',
-    'technology.templates_title': '19+ Professional Templates',
+    'technology.templates_title': 'Professional Templates',
     'technology.templates_desc': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
     'technology.cloud_title': 'AWS Cloud Storage',
     'technology.cloud_desc': 'All your documents are safe with geographic redundancy and bank-grade encryption.',
-    'technology.card_label': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
-    'technology.card_quote': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
+    'technology.card_label': 'Sign, fill in and share documents in real time, from the office or from the site, on PC or tablet.',
+    'technology.card_quote': 'Everything updates as we work, anywhere. No more paper to chase.',
 
     // Feature Management
     'featureManagement.title': 'Tailored solutions for every site',
     'featureManagement.subtitle': 'Everything you need to scale your construction business, centralized in one intuitive platform.',
     'featureManagement.doc_title': 'Structured Documentation',
-    'featureManagement.doc_desc': 'Access over 19 predefined templates for every site need, compliant with the latest regulations.',
+    'featureManagement.doc_desc': 'Multiple predefined templates that auto-fill with the data of the people involved, always compliant with the latest regulations.',
     'featureManagement.company_title': 'Complete Company Management',
-    'featureManagement.company_desc': 'Manage VAT, ATECO codes and SDI integration for error-free electronic invoicing directly from the platform.',
-    'featureManagement.dashboard_title': 'Real-time KPI Dashboard',
-    'featureManagement.dashboard_desc': 'Monitor your profit margins and work progress with real-time performance indicators.',
+    'featureManagement.company_desc': 'Gather your company and partner data in a single registry and collaborate across multiple companies by inviting clients, suppliers and collaborators to your sites.',
+    'featureManagement.dashboard_title': 'Real-time Dashboard',
+    'featureManagement.dashboard_desc': 'Project and task progress at a glance, with indicators that immediately highlight deadlines and delays.',
     'featureManagement.cta': 'Learn more',
 
     // Features / Technology
@@ -328,8 +328,8 @@ const translations = {
     'nav.login': 'تسجيل الدخول',
 
     // Hero
-    'hero.badge': 'إصدار جديد متاح.',
-    'hero.badge_link': 'اعرف المزيد',
+    'hero.badge': 'هل أنت مسجّل بالفعل؟',
+    'hero.badge_link': 'الذهاب إلى تسجيل الدخول',
     'hero.title': 'الحل الشامل لتحسين مواقع البناء الخاصة بك',
     'hero.subtitle': 'تخطيط متقدم، تتبع المواد، تقارير في الوقت الفعلي والتعاون بين الشركات لمواقع البناء الخاصة بك.',
     'hero.cta_login': 'ابدأ الآن',
@@ -338,10 +338,10 @@ const translations = {
     // App Preview
     'appPreview.title_light': 'من فوضى Excel إلى',
     'appPreview.title_accent': 'السيطرة الكاملة',
-    'appPreview.description': 'توقف عن ملاحقة المعلومات على الورق. لوحة التحكم المركزية لدينا تحول الإدارة اليدوية إلى تدفق بيانات موثوقة وسهلة الوصول وجاهزة للفوترة الإلكترونية.',
-    'appPreview.bullet1': 'مراقبة التدفقات النقدية المتكاملة',
+    'appPreview.description': 'توقف عن ملاحقة المستندات الورقية والتنقل بين البرامج للبحث عن المعلومات. لوحة التحكم المركزية لدينا تحوّل الإدارة اليدوية إلى تدفق بيانات موثوقة وسهلة الوصول وجاهزة للمشاركة: كل شيء في مكان واحد، فورًا.',
+    'appPreview.bullet1': 'مراقبة مباشرة وسجل تلقائي لأوقات العمل',
     'appPreview.bullet2': 'تعيين المهام بنقرة واحدة',
-    'appPreview.bullet3': 'تقارير آلية PDF/Excel',
+    'appPreview.bullet3': 'تقارير آلية قابلة للتنزيل والمشاركة',
 
     // Final CTA Banner
     'finalCta.title': 'عزّز إنتاجيتك اليوم',
@@ -352,25 +352,25 @@ const translations = {
     // Technology
     'technology.title_light': 'تكنولوجيا متقدمة',
     'technology.title_accent': 'للبناء الحديث.',
-    'technology.subtitle': 'دعم متعدد اللغات (الإيطالية والإنجليزية والعربية) وبنية تحتية AWS S3 Cloud لأقصى درجات الأمان لبياناتك.',
+    'technology.subtitle': 'تقارير صوتية يحوّلها الذكاء الاصطناعي إلى بيانات منظمة، ودعم متعدد اللغات، وبنية تحتية سحابية AWS S3 لأقصى درجات الأمان لبياناتك.',
     'technology.compliance_title': 'امتثال إيطالي متكامل',
     'technology.compliance_desc': 'إدارة مبسطة لـ CIG/CUP والفوترة الإلكترونية SDI واتصالات PEC مدمجة مباشرة في سير العمل.',
-    'technology.templates_title': '+19 قالب احترافي',
+    'technology.templates_title': 'قوالب احترافية',
     'technology.templates_desc': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
     'technology.cloud_title': 'تخزين سحابي AWS',
     'technology.cloud_desc': 'جميع مستنداتك آمنة مع التكرار الجغرافي والتشفير على مستوى البنوك.',
-    'technology.card_label': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
-    'technology.card_quote': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
+    'technology.card_label': 'وقّع المستندات واملأها وشاركها في الوقت الفعلي من المكتب أو من الموقع، عبر الحاسوب أو الجهاز اللوحي.',
+    'technology.card_quote': 'كل شيء يتحدث أثناء عملنا، أينما كنا. لا مزيد من الأوراق التي يجب تعقبها.',
 
     // Feature Management
     'featureManagement.title': 'حلول مصممة لكل موقع بناء',
     'featureManagement.subtitle': 'كل ما تحتاجه لتوسيع أعمال البناء الخاصة بك، مجمعة في منصة واحدة بديهية.',
     'featureManagement.doc_title': 'توثيق منظم',
-    'featureManagement.doc_desc': 'الوصول إلى أكثر من 19 نموذجاً محدداً مسبقاً لكل احتياجات موقع العمل، متوافقة مع أحدث اللوائح.',
+    'featureManagement.doc_desc': 'نماذج متعددة محددة مسبقاً تُعبَّأ تلقائياً ببيانات الأشخاص المعنيين، ومتوافقة دائماً مع أحدث اللوائح.',
     'featureManagement.company_title': 'إدارة شركة متكاملة',
-    'featureManagement.company_desc': 'إدارة الرقم الضريبي ورموز ATECO وتكامل SDI للفوترة الإلكترونية بدون أخطاء مباشرة من المنصة.',
-    'featureManagement.dashboard_title': 'لوحة مؤشرات KPI في الوقت الفعلي',
-    'featureManagement.dashboard_desc': 'راقب هوامش أرباحك وتقدم أعمالك مع مؤشرات أداء محدثة في الوقت الفعلي.',
+    'featureManagement.company_desc': 'اجمع بيانات شركتك وشركائك في سجل واحد، وتعاون بين شركات متعددة بدعوة العملاء والموردين والمتعاونين إلى مواقع عملك.',
+    'featureManagement.dashboard_title': 'لوحة في الوقت الفعلي',
+    'featureManagement.dashboard_desc': 'تقدّم المشاريع والمهام في لمحة واحدة، مع مؤشرات تُبرز فوراً المواعيد النهائية والتأخيرات.',
     'featureManagement.cta': 'اعرف المزيد',
 
     // Features / Technology

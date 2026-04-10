@@ -20,9 +20,6 @@ const { lang } = Astro.props;
         <a href={`${localePath(lang)}#features`} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
           {t(lang, 'nav.features')}
         </a>
-        <a href={`${localePath(lang)}#pricing`} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
-          {t(lang, 'nav.pricing')}
-        </a>
         <a href={`${localePath(lang)}#solutions`} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
           {t(lang, 'nav.solutions')}
         </a>
@@ -61,9 +58,6 @@ const { lang } = Astro.props;
     <div class="px-6 py-4 space-y-3">
       <a href={`${localePath(lang)}#features`} class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.features')}
-      </a>
-      <a href={`${localePath(lang)}#pricing`} class="block text-sm font-medium text-slate-600">
-        {t(lang, 'nav.pricing')}
       </a>
       <a href={`${localePath(lang)}#solutions`} class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.solutions')}

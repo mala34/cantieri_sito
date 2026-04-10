@@ -9,9 +9,9 @@ const { lang } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
-<footer class="bg-slate-950 text-slate-400">
+<footer class="bg-slate-800 text-slate-400">
   <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <!-- Brand -->
       <div class="sm:col-span-2 lg:col-span-1">
         <a href={localePath(lang)} class="flex items-center gap-2">
@@ -30,11 +30,6 @@ const year = new Date().getFullYear();
           <li>
             <a href={`${localePath(lang)}#features`} class="text-sm hover:text-white transition-colors">
               {t(lang, 'nav.features')}
-            </a>
-          </li>
-          <li>
-            <a href={`${localePath(lang)}#pricing`} class="text-sm hover:text-white transition-colors">
-              {t(lang, 'nav.pricing')}
             </a>
           </li>
           <li>
@@ -67,27 +62,6 @@ const year = new Date().getFullYear();
         </ul>
       </div>
 
-      <!-- Legal -->
-      <div>
-        <h3 class="text-sm font-semibold text-white">{t(lang, 'footer.legal')}</h3>
-        <ul class="mt-4 space-y-3">
-          <li>
-            <a href="#" class="text-sm hover:text-white transition-colors">
-              {t(lang, 'footer.privacy')}
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-sm hover:text-white transition-colors">
-              {t(lang, 'footer.terms')}
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-sm hover:text-white transition-colors">
-              {t(lang, 'footer.cookies')}
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
 
     <!-- Bottom -->

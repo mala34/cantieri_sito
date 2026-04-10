@@ -40,7 +40,7 @@ const features = [
       <dl class="grid max-w-xl grid-cols-1 gap-6 lg:max-w-none lg:grid-cols-3">
         {features.map((feature) => (
           <article class="flex flex-col rounded-2xl p-8 transition-all hover:shadow-[0_4px_24px_rgba(32,48,68,0.06)] bg-white">
-            <dt class="flex items-center gap-x-3 text-lg font-semibold text-slate-800">
+            <dt class="flex flex-col gap-y-3 text-lg font-semibold text-slate-800">
               <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-50">
                 {feature.icon === 'compass' && (
                   <span
@@ -68,12 +68,6 @@ const features = [
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-sm font-medium text-slate-700">
               <p class="flex-auto">{feature.description}</p>
-              <a href="#" class="mt-6 inline-flex items-center gap-x-1 text-sm font-semibold text-primary-600 hover:text-primary-700 transition-colors">
-                {t(lang, 'featureManagement.cta')}
-                <svg class="h-4 w-4 rtl:rotate-180" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
             </dd>
           </article>
         ))}
