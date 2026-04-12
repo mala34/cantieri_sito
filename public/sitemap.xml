@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Homepage -->
   <url>
-    <loc>https://app.cantieri.ai/</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://www.cantieri.ai/</loc>
+    <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://app.cantieri.ai/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://app.cantieri.ai/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://app.cantieri.ai/?lang=ar"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.cantieri.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cantieri.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.cantieri.ai/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/"/>
   </url>
 
-  <!-- Login -->
   <url>
-    <loc>https://app.cantieri.ai/login</loc>
-    <lastmod>2026-03-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.cantieri.ai/en/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.cantieri.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cantieri.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.cantieri.ai/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/"/>
+  </url>
+
+  <url>
+    <loc>https://www.cantieri.ai/ar/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.cantieri.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cantieri.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.cantieri.ai/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/"/>
   </url>
 
 </urlset>

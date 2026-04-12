@@ -4,16 +4,28 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
-  lang?: string;
-  dir?: string;
+  lang?: 'it' | 'en' | 'ar';
+  dir?: 'ltr' | 'rtl';
+  canonical?: string;
+  ogLocale?: string;
 }
 
+const SITE_URL = 'https://www.cantieri.ai';
+
 const {
-  title = 'Cantieri - Gestione Cantieri, Progetti e Attività Edili | Pianificazione e Tracciamento',
+  title = 'Cantieri — Software per la Gestione dei Cantieri Edili',
   description = 'Cantieri: la piattaforma per la gestione dei cantieri edili. Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda.',
   lang = 'it',
   dir = 'ltr',
+  canonical = `${SITE_URL}/`,
+  ogLocale = 'it_IT',
 } = Astro.props;
+
+const alternateLocales: Record<string, string> = {
+  it_IT: 'en_US',
+  en_US: 'it_IT',
+  ar_SA: 'it_IT',
+};
 ---
 
 <!doctype html>
@@ -22,45 +34,56 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="bIkMgBJi4mtIKnMK96RFFTvlih7nn9mMAsQ9odqJvqs" />
+
     <!-- SEO Base -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="gestione cantieri, progetti edili, pianificazione cantieri, tracciamento materiali, software edilizia, gestione progetti costruzione" />
     <meta name="author" content="Cantieri" />
-    <link rel="canonical" href="https://cantieri.ai/" />
+    <link rel="canonical" href={canonical} />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Cantieri" />
-    <meta property="og:title" content="Cantieri - Gestione Cantieri, Progetti e Attività Edili" />
-    <meta property="og:description" content="Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda per i tuoi cantieri." />
-    <meta property="og:url" content="https://cantieri.ai/" />
-    <meta property="og:image" content="https://cantieri.ai/images/og_image.jpg" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${SITE_URL}/images/og_image.jpg`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Cantieri - Piattaforma di gestione cantieri edili" />
-    <meta property="og:locale" content="it_IT" />
+    <meta property="og:image:alt" content="Cantieri — Piattaforma di gestione cantieri edili" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content="it_IT" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="ar_SA" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Cantieri - Gestione Cantieri, Progetti e Attività Edili" />
-    <meta name="twitter:description" content="Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda per i tuoi cantieri." />
-    <meta name="twitter:image" content="https://cantieri.ai/images/og_image.jpg" />
-    <meta name="twitter:image:alt" content="Cantieri - Piattaforma di gestione cantieri edili" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${SITE_URL}/images/og_image.jpg`} />
+    <meta name="twitter:image:alt" content="Cantieri — Piattaforma di gestione cantieri edili" />
 
     <!-- hreflang -->
-    <link rel="alternate" hreflang="it" href="https://cantieri.ai/" />
-    <link rel="alternate" hreflang="en" href="https://cantieri.ai/en/" />
-    <link rel="alternate" hreflang="ar" href="https://cantieri.ai/ar/" />
-    <link rel="alternate" hreflang="x-default" href="https://cantieri.ai/" />
+    <link rel="alternate" hreflang="it" href={`${SITE_URL}/`} />
+    <link rel="alternate" hreflang="en" href={`${SITE_URL}/en/`} />
+    <link rel="alternate" hreflang="ar" href={`${SITE_URL}/ar/`} />
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
 
     <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
@@ -80,16 +103,16 @@ const {
       "description": "Piattaforma per la gestione dei cantieri edili con pianificazione avanzata, tracciamento materiali e reportistica in tempo reale.",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "url": "https://cantieri.ai",
-      "image": "https://cantieri.ai/images/logo.png",
-      "author": {
+      "url": SITE_URL,
+      "image": `${SITE_URL}/images/logo.png`,
+      "publisher": {
         "@type": "Organization",
-        "name": "Cantieri"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR"
+        "name": "Cantieri",
+        "url": SITE_URL,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${SITE_URL}/images/logo.png`
+        }
       }
     })} />
   </head>

@@ -1,0 +1,89 @@
+# ============================================================
+# Cantieri — Apache config for Aruba Hosting Linux
+# ============================================================
+
+RewriteEngine On
+
+# ------------------------------------------------------------
+# 1. Force HTTPS (redirect http:// → https://)
+# ------------------------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# ------------------------------------------------------------
+# 2. Force www (redirect cantieri.ai → www.cantieri.ai)
+#    Canonical domain: https://www.cantieri.ai/
+# ------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^cantieri\.ai$ [NC]
+RewriteRule ^(.*)$ https://www.cantieri.ai/$1 [R=301,L]
+
+# ------------------------------------------------------------
+# 3. Remove trailing index.html from URLs (optional, nicer URLs)
+# ------------------------------------------------------------
+RewriteCond %{THE_REQUEST} \s/+(.*?)index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# ------------------------------------------------------------
+# 4. Custom 404 page (Astro default)
+# ------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ------------------------------------------------------------
+# 5. Cache headers for static assets
+# ------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # HTML — short cache so updates propagate fast
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # CSS / JS
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+# ------------------------------------------------------------
+# 6. Gzip / Deflate compression
+# ------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+  AddOutputFilterByType DEFLATE application/xml application/rss+xml application/atom+xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff font/woff2
+</IfModule>
+
+# ------------------------------------------------------------
+# 7. Security headers
+# ------------------------------------------------------------
+<IfModule mod_headers.c>
+  # Basic hardening
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+  # HSTS — force HTTPS for 1 year, include subdomains, preload eligible
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # Cross-Origin isolation
+  Header set Cross-Origin-Opener-Policy "same-origin"
+  Header set Cross-Origin-Resource-Policy "same-site"
+
+  # Content Security Policy — allows Google Fonts + inline styles (Tailwind)
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://app.cantieri.ai"
+</IfModule>

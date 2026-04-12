@@ -16,7 +16,13 @@ import Footer from '../components/Footer.astro';
 const lang = 'it';
 ---
 
-<Layout lang={lang}>
+<Layout
+  lang={lang}
+  title="Cantieri — Software per la Gestione dei Cantieri Edili"
+  description="Cantieri: la piattaforma per la gestione dei cantieri edili. Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda."
+  canonical="https://www.cantieri.ai/"
+  ogLocale="it_IT"
+>
   <Navbar lang={lang} />
   <main>
     <Hero lang={lang} />

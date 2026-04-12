@@ -31,46 +31,46 @@ const translations = {
     'hero.badge': 'Sei già registrato?',
     'hero.badge_link': 'Vai al login',
     'hero.title': 'La soluzione completa per ottimizzare i tuoi cantieri',
-    'hero.subtitle': 'Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda per i tuoi cantieri edili.',
+    'hero.subtitle': 'Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda. Riduci i tempi morti, elimina gli errori manuali e tieni sotto controllo costi e scadenze di ogni cantiere edile.',
     'hero.cta_login': 'Inizia ora',
     'hero.cta_features': 'Scopri le funzionalità',
 
     // App Preview
     'appPreview.title_light': 'Dall\'anarchia dell\'Excel al',
     'appPreview.title_accent': 'controllo totale',
-    'appPreview.description': 'Smetti di rincorrere informazioni su carta e di saltare da un software all\'altro per cercare documenti. La nostra dashboard centralizzata trasforma la gestione manuale in un flusso di dati certi, accessibili e pronti per essere condivisi: tutto in un unico posto, subito.',
-    'appPreview.bullet1': 'Monitoraggio live e storico automatico dei tempi di lavoro',
-    'appPreview.bullet2': 'Assegnazione task con un click',
-    'appPreview.bullet3': 'Report automatici, scaricabili e condivisibili',
+    'appPreview.description': 'Smetti di rincorrere informazioni su carta e di saltare da un software all\'altro per cercare documenti. La nostra dashboard centralizzata trasforma la gestione manuale in un flusso di dati certi, accessibili e pronti per essere condivisi: tutto in un unico posto, subito. Con Cantieri hai il quadro completo di ogni cantiere — avanzamento lavori, ore lavorate, materiali utilizzati e costi sostenuti — aggiornato in tempo reale e consultabile da qualsiasi dispositivo.',
+    'appPreview.bullet1': 'Monitoraggio live e storico automatico dei tempi di lavoro per ogni operaio e squadra',
+    'appPreview.bullet2': 'Assegnazione task con un click e notifiche istantanee al personale di cantiere',
+    'appPreview.bullet3': 'Report automatici giornalieri e settimanali, scaricabili in PDF e condivisibili via email',
 
     // Final CTA Banner
     'finalCta.title': 'Aumenta la produttività oggi stesso',
-    'finalCta.subtitle': 'Unisciti a migliaia di professionisti che hanno già scelto Cantieri per gestire i loro cantieri in modo più efficiente.',
+    'finalCta.subtitle': 'Unisciti a migliaia di professionisti dell\'edilizia che hanno già scelto Cantieri per gestire i loro cantieri in modo più efficiente. Attiva la prova gratuita di 14 giorni e scopri quanto tempo puoi risparmiare ogni settimana.',
     'finalCta.button_primary': 'Inizia Ora',
     'finalCta.button_secondary': 'Contattaci',
 
     // Technology
     'technology.title_light': 'Tecnologia avanzata per',
     'technology.title_accent': 'l\'edilizia moderna.',
-    'technology.subtitle': 'Rapportini vocali trasformati in report dall\'IA, supporto multi-lingua e infrastruttura cloud AWS S3 per la massima sicurezza dei tuoi dati.',
+    'technology.subtitle': 'Rapportini vocali trasformati in report strutturati dall\'intelligenza artificiale, supporto multi-lingua per cantieri internazionali e infrastruttura cloud AWS S3 per la massima sicurezza e disponibilità dei tuoi dati.',
     'technology.compliance_title': 'Compliance Italiana Integrata',
-    'technology.compliance_desc': 'Gestione semplificata di CIG/CUP, fatturazione SDI e comunicazioni via PEC integrate direttamente nel workflow.',
+    'technology.compliance_desc': 'Gestione semplificata di CIG/CUP, fatturazione elettronica SDI e comunicazioni via PEC integrate direttamente nel workflow. Sempre aggiornato con le ultime normative italiane per l\'edilizia.',
     'technology.templates_title': 'Template Professionali',
-    'technology.templates_desc': 'Modelli pronti all\'uso per rapportini, ordini di servizio e verbali di cantiere, conformi alle normative vigenti.',
+    'technology.templates_desc': 'Modelli pronti all\'uso per rapportini giornalieri, ordini di servizio, verbali di cantiere e SAL. Ogni documento è precompilato e conforme alle normative vigenti, riducendo dell\'80% i tempi di compilazione.',
     'technology.cloud_title': 'Archiviazione Cloud AWS',
-    'technology.cloud_desc': 'Tutti i tuoi documenti sono al sicuro con ridondanza geografica e crittografia di livello bancario.',
-    'technology.card_label': 'Firma, compila e condividi documenti in tempo reale dall\'ufficio o dal cantiere, dal PC o dal tablet.',
-    'technology.card_quote': 'Tutto si aggiorna mentre lavoriamo, ovunque. Niente più carta da recuperare.',
+    'technology.cloud_desc': 'Tutti i tuoi documenti sono al sicuro con ridondanza geografica, backup automatici e crittografia di livello bancario. Accesso garantito 24/7 da qualsiasi dispositivo.',
+    'technology.card_label': 'Firma, compila e condividi documenti in tempo reale dall\'ufficio o direttamente dal cantiere, dal PC o dal tablet. Zero carta, zero ritardi.',
+    'technology.card_quote': 'Tutto si aggiorna in tempo reale mentre lavoriamo, ovunque ci troviamo. Niente più carta da recuperare, niente più dati persi tra ufficio e cantiere.',
 
     // Feature Management
     'featureManagement.title': 'Soluzioni su misura per ogni cantiere',
-    'featureManagement.subtitle': 'Tutto ciò di cui hai bisogno per scalare la tua impresa edile, centralizzato in un\'unica piattaforma intuitiva.',
+    'featureManagement.subtitle': 'Tutto ciò di cui hai bisogno per far crescere la tua impresa edile, centralizzato in un\'unica piattaforma intuitiva pensata per chi lavora ogni giorno in cantiere.',
     'featureManagement.doc_title': 'Documentazione Strutturata',
-    'featureManagement.doc_desc': 'Molteplici modelli predefiniti che si compilano automaticamente con i dati dei soggetti coinvolti, sempre conformi alle ultime normative.',
+    'featureManagement.doc_desc': 'Molteplici modelli predefiniti per rapportini, SAL, ordini di servizio e verbali che si compilano automaticamente con i dati dei soggetti coinvolti. Ogni documento è sempre conforme alle ultime normative italiane per l\'edilizia.',
     'featureManagement.company_title': 'Gestione Azienda Completa',
-    'featureManagement.company_desc': 'Raccogli in un\'unica anagrafica i dati di impresa e partner e collabora in multi-azienda invitando clienti, fornitori e collaboratori sui tuoi cantieri.',
+    'featureManagement.company_desc': 'Raccogli in un\'unica anagrafica centralizzata i dati di impresa, partner e subappaltatori. Collabora in multi-azienda invitando clienti, fornitori e collaboratori sui tuoi cantieri con permessi personalizzati per ogni ruolo.',
     'featureManagement.dashboard_title': 'Dashboard in Tempo Reale',
-    'featureManagement.dashboard_desc': 'Stato di avanzamento di progetti e attività in un colpo d\'occhio, con indicatori che evidenziano subito scadenze e ritardi.',
+    'featureManagement.dashboard_desc': 'Stato di avanzamento di progetti e attività in un colpo d\'occhio, con indicatori visivi che evidenziano subito scadenze, ritardi e budget. Prendi decisioni basate su dati aggiornati, non su sensazioni.',
     'featureManagement.cta': 'Scopri di più',
 
     // Features / Technology
@@ -135,15 +135,15 @@ const translations = {
 
     // Solutions
     'solutions.title': 'Soluzioni su misura per ogni settore',
-    'solutions.subtitle': 'Cantieri si adatta alle specifiche esigenze di ogni tipo di progetto edilizio.',
+    'solutions.subtitle': 'Cantieri si adatta alle specifiche esigenze di ogni tipo di progetto edilizio, dalla piccola ristrutturazione alla grande opera infrastrutturale.',
     'solutions.residential_title': 'Edilizia Residenziale',
-    'solutions.residential_desc': 'Gestione completa di cantieri residenziali, dalla fondazione alla consegna delle chiavi.',
+    'solutions.residential_desc': 'Gestione completa di cantieri residenziali, dalla fondazione alla consegna delle chiavi. Coordina impiantisti, muratori e finiture con un\'unica timeline condivisa.',
     'solutions.commercial_title': 'Edilizia Commerciale',
-    'solutions.commercial_desc': 'Coordinamento di progetti commerciali complessi con team multipli e scadenze stringenti.',
+    'solutions.commercial_desc': 'Coordinamento di progetti commerciali complessi con team multipli e scadenze stringenti. Gestisci appalti, subappalti e forniture con tracciabilità totale.',
     'solutions.infrastructure_title': 'Infrastrutture',
-    'solutions.infrastructure_desc': 'Monitoraggio di opere infrastrutturali su larga scala con tracciamento avanzato.',
+    'solutions.infrastructure_desc': 'Monitoraggio di opere infrastrutturali su larga scala con tracciamento avanzato di avanzamento lavori, materiali e conformità normativa.',
     'solutions.renovation_title': 'Ristrutturazioni',
-    'solutions.renovation_desc': 'Pianificazione e gestione di interventi di ristrutturazione e restauro edilizio.',
+    'solutions.renovation_desc': 'Pianificazione e gestione di interventi di ristrutturazione e restauro edilizio. Documenta ogni fase con foto, rapportini e SAL digitali.',
 
     // Bottom CTA
     'cta.title': 'Vuoi aggiornare la gestione dei tuoi cantieri?',
@@ -158,7 +158,7 @@ const translations = {
 
     // Footer
     'footer.rights': 'Tutti i diritti riservati.',
-    'footer.description': 'La piattaforma per la gestione dei cantieri edili.',
+    'footer.description': 'La piattaforma digitale per la gestione completa dei cantieri edili. Pianificazione, documentazione, reportistica e collaborazione in un\'unica soluzione cloud.',
     'footer.product': 'Prodotto',
     'footer.company': 'Azienda',
     'footer.legal': 'Legale',
@@ -181,46 +181,46 @@ const translations = {
     'hero.badge': 'Already registered?',
     'hero.badge_link': 'Go to login',
     'hero.title': 'The complete solution to optimize your construction sites',
-    'hero.subtitle': 'Advanced planning, material tracking, real-time reporting and multi-company collaboration for your construction sites.',
+    'hero.subtitle': 'Advanced planning, material tracking, real-time reporting and multi-company collaboration. Reduce downtime, eliminate manual errors and keep costs and deadlines under control for every construction site.',
     'hero.cta_login': 'Get started',
     'hero.cta_features': 'Discover the features',
 
     // App Preview
     'appPreview.title_light': 'From Excel chaos to',
     'appPreview.title_accent': 'total control',
-    'appPreview.description': 'Stop chasing paper documents and jumping between software to find what you need. Our centralized dashboard turns manual work into a flow of reliable, accessible data ready to share: all in one place, instantly.',
-    'appPreview.bullet1': 'Live tracking and automatic history of work time',
-    'appPreview.bullet2': 'One-click task assignment',
-    'appPreview.bullet3': 'Automated reports, ready to download and share',
+    'appPreview.description': 'Stop chasing paper documents and jumping between software to find what you need. Our centralized dashboard turns manual work into a flow of reliable, accessible data ready to share: all in one place, instantly. With Cantieri you get the full picture of every site — work progress, hours logged, materials used and costs incurred — updated in real time and accessible from any device.',
+    'appPreview.bullet1': 'Live tracking and automatic history of work time for every worker and team',
+    'appPreview.bullet2': 'One-click task assignment with instant notifications to site personnel',
+    'appPreview.bullet3': 'Automated daily and weekly reports, downloadable as PDF and shareable via email',
 
     // Final CTA Banner
     'finalCta.title': 'Boost your productivity today',
-    'finalCta.subtitle': 'Join thousands of professionals who have already chosen Cantieri to manage their construction sites more efficiently.',
+    'finalCta.subtitle': 'Join thousands of construction professionals who have already chosen Cantieri to manage their sites more efficiently. Start your free 14-day trial and discover how much time you can save every week.',
     'finalCta.button_primary': 'Start Now',
     'finalCta.button_secondary': 'Contact Us',
 
     // Technology
     'technology.title_light': 'Advanced technology for',
     'technology.title_accent': 'modern construction.',
-    'technology.subtitle': 'Voice reports turned into structured data by AI, multi-language support and AWS S3 cloud infrastructure for maximum data security.',
+    'technology.subtitle': 'Voice reports turned into structured data by AI, multi-language support for international sites and AWS S3 cloud infrastructure for maximum security and availability of your data.',
     'technology.compliance_title': 'Integrated Italian Compliance',
-    'technology.compliance_desc': 'Simplified management of CIG/CUP, SDI invoicing and PEC communications integrated directly into the workflow.',
+    'technology.compliance_desc': 'Simplified management of CIG/CUP, electronic SDI invoicing and PEC communications integrated directly into the workflow. Always up to date with the latest Italian construction regulations.',
     'technology.templates_title': 'Professional Templates',
-    'technology.templates_desc': 'Ready-to-use templates for reports, service orders and site minutes, compliant with current regulations.',
+    'technology.templates_desc': 'Ready-to-use templates for daily reports, service orders, site minutes and progress certificates. Every document is pre-filled and compliant with current regulations, reducing compilation time by 80%.',
     'technology.cloud_title': 'AWS Cloud Storage',
-    'technology.cloud_desc': 'All your documents are safe with geographic redundancy and bank-grade encryption.',
-    'technology.card_label': 'Sign, fill in and share documents in real time, from the office or from the site, on PC or tablet.',
-    'technology.card_quote': 'Everything updates as we work, anywhere. No more paper to chase.',
+    'technology.cloud_desc': 'All your documents are safe with geographic redundancy, automatic backups and bank-grade encryption. Guaranteed 24/7 access from any device.',
+    'technology.card_label': 'Sign, fill in and share documents in real time from the office or directly from the site, on PC or tablet. Zero paper, zero delays.',
+    'technology.card_quote': 'Everything updates in real time as we work, wherever we are. No more paper to chase, no more data lost between office and site.',
 
     // Feature Management
     'featureManagement.title': 'Tailored solutions for every site',
-    'featureManagement.subtitle': 'Everything you need to scale your construction business, centralized in one intuitive platform.',
+    'featureManagement.subtitle': 'Everything you need to grow your construction business, centralized in one intuitive platform designed for people who work on site every day.',
     'featureManagement.doc_title': 'Structured Documentation',
-    'featureManagement.doc_desc': 'Multiple predefined templates that auto-fill with the data of the people involved, always compliant with the latest regulations.',
+    'featureManagement.doc_desc': 'Multiple predefined templates for daily reports, service orders, site minutes and progress certificates that auto-fill with the data of the people involved. Every document is always compliant with the latest construction regulations.',
     'featureManagement.company_title': 'Complete Company Management',
-    'featureManagement.company_desc': 'Gather your company and partner data in a single registry and collaborate across multiple companies by inviting clients, suppliers and collaborators to your sites.',
+    'featureManagement.company_desc': 'Gather your company, partner and subcontractor data in a single centralized registry. Collaborate across multiple companies by inviting clients, suppliers and collaborators to your sites with custom permissions for each role.',
     'featureManagement.dashboard_title': 'Real-time Dashboard',
-    'featureManagement.dashboard_desc': 'Project and task progress at a glance, with indicators that immediately highlight deadlines and delays.',
+    'featureManagement.dashboard_desc': 'Project and task progress at a glance, with visual indicators that immediately highlight deadlines, delays and budget. Make decisions based on up-to-date data, not gut feelings.',
     'featureManagement.cta': 'Learn more',
 
     // Features / Technology
@@ -285,15 +285,15 @@ const translations = {
 
     // Solutions
     'solutions.title': 'Tailored solutions for every sector',
-    'solutions.subtitle': 'Cantieri adapts to the specific needs of every type of construction project.',
+    'solutions.subtitle': 'Cantieri adapts to the specific needs of every type of construction project, from small renovations to large-scale infrastructure.',
     'solutions.residential_title': 'Residential Construction',
-    'solutions.residential_desc': 'Complete management of residential sites, from foundation to key handover.',
+    'solutions.residential_desc': 'Complete management of residential sites, from foundation to key handover. Coordinate electricians, builders and finishing teams with a single shared timeline.',
     'solutions.commercial_title': 'Commercial Construction',
-    'solutions.commercial_desc': 'Coordination of complex commercial projects with multiple teams and tight deadlines.',
+    'solutions.commercial_desc': 'Coordination of complex commercial projects with multiple teams and tight deadlines. Manage contracts, subcontracts and supplies with full traceability.',
     'solutions.infrastructure_title': 'Infrastructure',
-    'solutions.infrastructure_desc': 'Monitoring of large-scale infrastructure works with advanced tracking.',
+    'solutions.infrastructure_desc': 'Monitoring of large-scale infrastructure works with advanced tracking of progress, materials and regulatory compliance.',
     'solutions.renovation_title': 'Renovations',
-    'solutions.renovation_desc': 'Planning and management of renovation and building restoration projects.',
+    'solutions.renovation_desc': 'Planning and management of renovation and building restoration projects. Document every phase with photos, daily reports and digital progress certificates.',
 
     // Bottom CTA
     'cta.title': 'Ready to upgrade your construction management?',
@@ -308,7 +308,7 @@ const translations = {
 
     // Footer
     'footer.rights': 'All rights reserved.',
-    'footer.description': 'The platform for construction site management.',
+    'footer.description': 'The digital platform for complete construction site management. Planning, documentation, reporting and collaboration in one cloud solution.',
     'footer.product': 'Product',
     'footer.company': 'Company',
     'footer.legal': 'Legal',
@@ -331,46 +331,46 @@ const translations = {
     'hero.badge': 'هل أنت مسجّل بالفعل؟',
     'hero.badge_link': 'الذهاب إلى تسجيل الدخول',
     'hero.title': 'الحل الشامل لتحسين مواقع البناء الخاصة بك',
-    'hero.subtitle': 'تخطيط متقدم، تتبع المواد، تقارير في الوقت الفعلي والتعاون بين الشركات لمواقع البناء الخاصة بك.',
+    'hero.subtitle': 'تخطيط متقدم، تتبع المواد، تقارير في الوقت الفعلي والتعاون بين الشركات. قلّل أوقات التوقف، تخلّص من الأخطاء اليدوية وتحكّم بالتكاليف والمواعيد النهائية لكل موقع بناء.',
     'hero.cta_login': 'ابدأ الآن',
     'hero.cta_features': 'اكتشف الميزات',
 
     // App Preview
     'appPreview.title_light': 'من فوضى Excel إلى',
     'appPreview.title_accent': 'السيطرة الكاملة',
-    'appPreview.description': 'توقف عن ملاحقة المستندات الورقية والتنقل بين البرامج للبحث عن المعلومات. لوحة التحكم المركزية لدينا تحوّل الإدارة اليدوية إلى تدفق بيانات موثوقة وسهلة الوصول وجاهزة للمشاركة: كل شيء في مكان واحد، فورًا.',
-    'appPreview.bullet1': 'مراقبة مباشرة وسجل تلقائي لأوقات العمل',
-    'appPreview.bullet2': 'تعيين المهام بنقرة واحدة',
-    'appPreview.bullet3': 'تقارير آلية قابلة للتنزيل والمشاركة',
+    'appPreview.description': 'توقف عن ملاحقة المستندات الورقية والتنقل بين البرامج للبحث عن المعلومات. لوحة التحكم المركزية لدينا تحوّل الإدارة اليدوية إلى تدفق بيانات موثوقة وسهلة الوصول وجاهزة للمشاركة: كل شيء في مكان واحد، فورًا. مع Cantieri تحصل على الصورة الكاملة لكل موقع — تقدم العمل، الساعات المسجلة، المواد المستخدمة والتكاليف — محدّثة في الوقت الفعلي ومتاحة من أي جهاز.',
+    'appPreview.bullet1': 'مراقبة مباشرة وسجل تلقائي لأوقات العمل لكل عامل وفريق',
+    'appPreview.bullet2': 'تعيين المهام بنقرة واحدة مع إشعارات فورية لفريق الموقع',
+    'appPreview.bullet3': 'تقارير آلية يومية وأسبوعية قابلة للتنزيل بصيغة PDF والمشاركة عبر البريد',
 
     // Final CTA Banner
     'finalCta.title': 'عزّز إنتاجيتك اليوم',
-    'finalCta.subtitle': 'انضم إلى آلاف المحترفين الذين اختاروا Cantieri لإدارة مواقع البناء بكفاءة أكبر.',
+    'finalCta.subtitle': 'انضم إلى آلاف المحترفين في قطاع البناء الذين اختاروا Cantieri لإدارة مواقعهم بكفاءة أكبر. ابدأ تجربتك المجانية لمدة 14 يومًا واكتشف كم من الوقت يمكنك توفيره كل أسبوع.',
     'finalCta.button_primary': 'ابدأ الآن',
     'finalCta.button_secondary': 'تواصل معنا',
 
     // Technology
     'technology.title_light': 'تكنولوجيا متقدمة',
     'technology.title_accent': 'للبناء الحديث.',
-    'technology.subtitle': 'تقارير صوتية يحوّلها الذكاء الاصطناعي إلى بيانات منظمة، ودعم متعدد اللغات، وبنية تحتية سحابية AWS S3 لأقصى درجات الأمان لبياناتك.',
+    'technology.subtitle': 'تقارير صوتية يحوّلها الذكاء الاصطناعي إلى بيانات منظمة، ودعم متعدد اللغات للمواقع الدولية، وبنية تحتية سحابية AWS S3 لأقصى درجات الأمان والتوفر لبياناتك.',
     'technology.compliance_title': 'امتثال إيطالي متكامل',
-    'technology.compliance_desc': 'إدارة مبسطة لـ CIG/CUP والفوترة الإلكترونية SDI واتصالات PEC مدمجة مباشرة في سير العمل.',
+    'technology.compliance_desc': 'إدارة مبسطة لـ CIG/CUP والفوترة الإلكترونية SDI واتصالات PEC مدمجة مباشرة في سير العمل. محدّث دائمًا وفق أحدث اللوائح الإيطالية للبناء.',
     'technology.templates_title': 'قوالب احترافية',
-    'technology.templates_desc': 'نماذج جاهزة للاستخدام للتقارير وأوامر الخدمة ومحاضر موقع العمل، متوافقة مع اللوائح الحالية.',
+    'technology.templates_desc': 'نماذج جاهزة للاستخدام للتقارير اليومية وأوامر الخدمة ومحاضر الموقع وشهادات التقدم. كل مستند معبأ مسبقًا ومتوافق مع اللوائح الحالية، مما يقلل وقت التعبئة بنسبة 80%.',
     'technology.cloud_title': 'تخزين سحابي AWS',
-    'technology.cloud_desc': 'جميع مستنداتك آمنة مع التكرار الجغرافي والتشفير على مستوى البنوك.',
-    'technology.card_label': 'وقّع المستندات واملأها وشاركها في الوقت الفعلي من المكتب أو من الموقع، عبر الحاسوب أو الجهاز اللوحي.',
-    'technology.card_quote': 'كل شيء يتحدث أثناء عملنا، أينما كنا. لا مزيد من الأوراق التي يجب تعقبها.',
+    'technology.cloud_desc': 'جميع مستنداتك آمنة مع التكرار الجغرافي والنسخ الاحتياطي التلقائي والتشفير على مستوى البنوك. وصول مضمون على مدار الساعة من أي جهاز.',
+    'technology.card_label': 'وقّع المستندات واملأها وشاركها في الوقت الفعلي من المكتب أو مباشرة من الموقع، عبر الحاسوب أو الجهاز اللوحي. صفر ورق، صفر تأخير.',
+    'technology.card_quote': 'كل شيء يتحدث في الوقت الفعلي أثناء عملنا، أينما كنا. لا مزيد من الأوراق التي يجب تعقبها، ولا مزيد من البيانات المفقودة بين المكتب والموقع.',
 
     // Feature Management
     'featureManagement.title': 'حلول مصممة لكل موقع بناء',
-    'featureManagement.subtitle': 'كل ما تحتاجه لتوسيع أعمال البناء الخاصة بك، مجمعة في منصة واحدة بديهية.',
+    'featureManagement.subtitle': 'كل ما تحتاجه لتنمية أعمال البناء الخاصة بك، مجمعة في منصة واحدة بديهية مصممة لمن يعملون في الموقع يوميًا.',
     'featureManagement.doc_title': 'توثيق منظم',
-    'featureManagement.doc_desc': 'نماذج متعددة محددة مسبقاً تُعبَّأ تلقائياً ببيانات الأشخاص المعنيين، ومتوافقة دائماً مع أحدث اللوائح.',
+    'featureManagement.doc_desc': 'نماذج متعددة محددة مسبقاً للتقارير اليومية وأوامر الخدمة ومحاضر الموقع وشهادات التقدم تُعبَّأ تلقائياً ببيانات الأشخاص المعنيين. كل مستند متوافق دائمًا مع أحدث لوائح البناء.',
     'featureManagement.company_title': 'إدارة شركة متكاملة',
-    'featureManagement.company_desc': 'اجمع بيانات شركتك وشركائك في سجل واحد، وتعاون بين شركات متعددة بدعوة العملاء والموردين والمتعاونين إلى مواقع عملك.',
+    'featureManagement.company_desc': 'اجمع بيانات شركتك وشركائك ومقاوليك الفرعيين في سجل مركزي واحد. تعاون بين شركات متعددة بدعوة العملاء والموردين والمتعاونين إلى مواقعك بصلاحيات مخصصة لكل دور.',
     'featureManagement.dashboard_title': 'لوحة في الوقت الفعلي',
-    'featureManagement.dashboard_desc': 'تقدّم المشاريع والمهام في لمحة واحدة، مع مؤشرات تُبرز فوراً المواعيد النهائية والتأخيرات.',
+    'featureManagement.dashboard_desc': 'تقدّم المشاريع والمهام في لمحة واحدة، مع مؤشرات بصرية تُبرز فوراً المواعيد النهائية والتأخيرات والميزانية. اتخذ قرارات مبنية على بيانات محدّثة، لا على التخمين.',
     'featureManagement.cta': 'اعرف المزيد',
 
     // Features / Technology
@@ -435,15 +435,15 @@ const translations = {
 
     // Solutions
     'solutions.title': 'حلول مصممة لكل قطاع',
-    'solutions.subtitle': 'تتكيف Cantieri مع الاحتياجات الخاصة لكل نوع من مشاريع البناء.',
+    'solutions.subtitle': 'تتكيف Cantieri مع الاحتياجات الخاصة لكل نوع من مشاريع البناء، من التجديدات الصغيرة إلى المشاريع البنية التحتية الكبرى.',
     'solutions.residential_title': 'البناء السكني',
-    'solutions.residential_desc': 'إدارة كاملة للمواقع السكنية، من الأساس إلى تسليم المفاتيح.',
+    'solutions.residential_desc': 'إدارة كاملة للمواقع السكنية، من الأساس إلى تسليم المفاتيح. نسّق بين الكهربائيين والبنائين وفرق التشطيب بجدول زمني مشترك واحد.',
     'solutions.commercial_title': 'البناء التجاري',
-    'solutions.commercial_desc': 'تنسيق المشاريع التجارية المعقدة مع فرق متعددة ومواعيد نهائية صارمة.',
+    'solutions.commercial_desc': 'تنسيق المشاريع التجارية المعقدة مع فرق متعددة ومواعيد نهائية صارمة. أدِر العقود والمقاولات الفرعية والتوريدات بتتبع كامل.',
     'solutions.infrastructure_title': 'البنية التحتية',
-    'solutions.infrastructure_desc': 'مراقبة أعمال البنية التحتية واسعة النطاق مع تتبع متقدم.',
+    'solutions.infrastructure_desc': 'مراقبة أعمال البنية التحتية واسعة النطاق مع تتبع متقدم لتقدم العمل والمواد والامتثال التنظيمي.',
     'solutions.renovation_title': 'التجديدات',
-    'solutions.renovation_desc': 'تخطيط وإدارة مشاريع التجديد وترميم المباني.',
+    'solutions.renovation_desc': 'تخطيط وإدارة مشاريع التجديد وترميم المباني. وثّق كل مرحلة بالصور والتقارير اليومية وشهادات التقدم الرقمية.',
 
     // Bottom CTA
     'cta.title': 'هل تريد تحديث إدارة مواقع البناء الخاصة بك؟',
@@ -458,7 +458,7 @@ const translations = {
 
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة.',
-    'footer.description': 'منصة إدارة مواقع البناء.',
+    'footer.description': 'المنصة الرقمية لإدارة مواقع البناء بشكل كامل. التخطيط والتوثيق والتقارير والتعاون في حل سحابي واحد.',
     'footer.product': 'المنتج',
     'footer.company': 'الشركة',
     'footer.legal': 'قانوني',
