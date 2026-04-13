@@ -28,7 +28,7 @@ const translations = {
     'nav.login': 'Accedi',
 
     // Hero
-    'hero.badge': 'Sei già registrato?',
+    'hero.badge': 'Cantieri AI — Sei già registrato?',
     'hero.badge_link': 'Vai al login',
     'hero.title': 'La soluzione completa per',
     'hero.title_accent': 'ottimizzare',
@@ -40,7 +40,7 @@ const translations = {
     // App Preview
     'appPreview.title_light': 'Dall\'anarchia dell\'Excel al',
     'appPreview.title_accent': 'controllo totale',
-    'appPreview.description': 'Smetti di rincorrere informazioni su carta e di saltare da un software all\'altro per cercare documenti. La nostra dashboard centralizzata trasforma la gestione manuale in un flusso di dati certi, accessibili e pronti per essere condivisi: tutto in un unico posto, subito. Con Cantieri hai il quadro completo di ogni cantiere — avanzamento lavori, ore lavorate, materiali utilizzati e costi sostenuti — aggiornato in tempo reale e consultabile da qualsiasi dispositivo.',
+    'appPreview.description': 'Smetti di rincorrere informazioni su carta e di saltare da un software all\'altro per cercare documenti. La nostra dashboard centralizzata trasforma la gestione manuale in un flusso di dati certi, accessibili e pronti per essere condivisi: tutto in un unico posto, subito. Con Cantieri AI hai il quadro completo di ogni cantiere — avanzamento lavori, ore lavorate, materiali utilizzati e costi sostenuti — aggiornato in tempo reale e consultabile da qualsiasi dispositivo.',
     'appPreview.bullet1': 'Monitoraggio live e storico automatico dei tempi di lavoro per ogni operaio e squadra',
     'appPreview.bullet2': 'Assegnazione task con un click e notifiche istantanee al personale di cantiere',
     'appPreview.bullet3': 'Report automatici giornalieri e settimanali, scaricabili in PDF e condivisibili via email',
@@ -160,7 +160,7 @@ const translations = {
 
     // Footer
     'footer.rights': 'Tutti i diritti riservati.',
-    'footer.description': 'La piattaforma digitale per la gestione completa dei cantieri edili. Pianificazione, documentazione, reportistica e collaborazione in un\'unica soluzione cloud.',
+    'footer.description': 'Cantieri AI — La piattaforma digitale per la gestione completa dei cantieri edili. Pianificazione, documentazione, reportistica e collaborazione in un\'unica soluzione cloud.',
     'footer.product': 'Prodotto',
     'footer.company': 'Azienda',
     'footer.legal': 'Legale',
@@ -180,7 +180,7 @@ const translations = {
     'nav.login': 'Login',
 
     // Hero
-    'hero.badge': 'Already registered?',
+    'hero.badge': 'Cantieri AI — Already registered?',
     'hero.badge_link': 'Go to login',
     'hero.title': 'The complete solution to',
     'hero.title_accent': 'optimize',
@@ -192,7 +192,7 @@ const translations = {
     // App Preview
     'appPreview.title_light': 'From Excel chaos to',
     'appPreview.title_accent': 'total control',
-    'appPreview.description': 'Stop chasing paper documents and jumping between software to find what you need. Our centralized dashboard turns manual work into a flow of reliable, accessible data ready to share: all in one place, instantly. With Cantieri you get the full picture of every site — work progress, hours logged, materials used and costs incurred — updated in real time and accessible from any device.',
+    'appPreview.description': 'Stop chasing paper documents and jumping between software to find what you need. Our centralized dashboard turns manual work into a flow of reliable, accessible data ready to share: all in one place, instantly. With Cantieri AI you get the full picture of every site — work progress, hours logged, materials used and costs incurred — updated in real time and accessible from any device.',
     'appPreview.bullet1': 'Live tracking and automatic history of work time for every worker and team',
     'appPreview.bullet2': 'One-click task assignment with instant notifications to site personnel',
     'appPreview.bullet3': 'Automated daily and weekly reports, downloadable as PDF and shareable via email',
@@ -312,7 +312,7 @@ const translations = {
 
     // Footer
     'footer.rights': 'All rights reserved.',
-    'footer.description': 'The digital platform for complete construction site management. Planning, documentation, reporting and collaboration in one cloud solution.',
+    'footer.description': 'Cantieri AI — The digital platform for complete construction site management. Planning, documentation, reporting and collaboration in one cloud solution.',
     'footer.product': 'Product',
     'footer.company': 'Company',
     'footer.legal': 'Legal',
@@ -332,7 +332,7 @@ const translations = {
     'nav.login': 'تسجيل الدخول',
 
     // Hero
-    'hero.badge': 'هل أنت مسجّل بالفعل؟',
+    'hero.badge': 'Cantieri AI — هل أنت مسجّل بالفعل؟',
     'hero.badge_link': 'الذهاب إلى تسجيل الدخول',
     'hero.title': 'الحل الشامل',
     'hero.title_accent': 'لتحسين',
@@ -344,7 +344,7 @@ const translations = {
     // App Preview
     'appPreview.title_light': 'من فوضى Excel إلى',
     'appPreview.title_accent': 'السيطرة الكاملة',
-    'appPreview.description': 'توقف عن ملاحقة المستندات الورقية والتنقل بين البرامج للبحث عن المعلومات. لوحة التحكم المركزية لدينا تحوّل الإدارة اليدوية إلى تدفق بيانات موثوقة وسهلة الوصول وجاهزة للمشاركة: كل شيء في مكان واحد، فورًا. مع Cantieri تحصل على الصورة الكاملة لكل موقع — تقدم العمل، الساعات المسجلة، المواد المستخدمة والتكاليف — محدّثة في الوقت الفعلي ومتاحة من أي جهاز.',
+    'appPreview.description': 'توقف عن ملاحقة المستندات الورقية والتنقل بين البرامج للبحث عن المعلومات. لوحة التحكم المركزية لدينا تحوّل الإدارة اليدوية إلى تدفق بيانات موثوقة وسهلة الوصول وجاهزة للمشاركة: كل شيء في مكان واحد، فورًا. مع Cantieri AI تحصل على الصورة الكاملة لكل موقع — تقدم العمل، الساعات المسجلة، المواد المستخدمة والتكاليف — محدّثة في الوقت الفعلي ومتاحة من أي جهاز.',
     'appPreview.bullet1': 'مراقبة مباشرة وسجل تلقائي لأوقات العمل لكل عامل وفريق',
     'appPreview.bullet2': 'تعيين المهام بنقرة واحدة مع إشعارات فورية لفريق الموقع',
     'appPreview.bullet3': 'تقارير آلية يومية وأسبوعية قابلة للتنزيل بصيغة PDF والمشاركة عبر البريد',
@@ -464,7 +464,7 @@ const translations = {
 
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة.',
-    'footer.description': 'المنصة الرقمية لإدارة مواقع البناء بشكل كامل. التخطيط والتوثيق والتقارير والتعاون في حل سحابي واحد.',
+    'footer.description': 'Cantieri AI — المنصة الرقمية لإدارة مواقع البناء بشكل كامل. التخطيط والتوثيق والتقارير والتعاون في حل سحابي واحد.',
     'footer.product': 'المنتج',
     'footer.company': 'الشركة',
     'footer.legal': 'قانوني',
