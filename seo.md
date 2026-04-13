@@ -203,6 +203,7 @@ Installarli **prima** del lancio in modo da iniziare a raccogliere dati fin dal 
 ### Keyword research
 Prima di pagare Google Ads, fare ricerca keyword su strumenti tipo **Google Keyword Planner**, **Ahrefs** o **SEMrush**. Cluster di partenza:
 
+- *cantieri ai*
 - *gestionale cantieri*
 - *software cantieri edili*
 - *app rapportini cantiere*
@@ -252,7 +253,7 @@ Obiettivo: tutti i Core Web Vitals in verde (LCP < 2.5s, CLS < 0.1, INP < 200ms)
 - [x] Verificare presenza di `public/favicon/site.webmanifest` — file presente e valido; migliorate icone con `"purpose": "any maskable"` per maggior compatibilità
 - [x] Testare con Google Rich Results Test — JSON-LD `SoftwareApplication` valido. Warning non critici: `offers` e `aggregateRating` mancanti (campi opzionali, da aggiungere in futuro quando ci saranno prezzo e recensioni reali)
 - [x] Testare con Lighthouse / PageSpeed Insights — eseguito, piano di ottimizzazione in `pageSpeed.md` (Perf: 84 desktop / 65 mobile; SEO: 100/100)
-- [x] Registrare sito su Google Search Console + submit sitemap — aggiunto meta tag `google-site-verification` in `Layout.astro` + file `public/google270720e029c9d05b.html`. Dopo il deploy, cliccare Verifica in Search Console e fare submit della sitemap
+- [x] Registrare sito su Google Search Console + submit sitemap — meta tag verificato, proprietà confermata (2026-04-12). Submit sitemap e richiesta indicizzazione da fare in console.
 - [ ] Registrare sito su Bing Webmaster Tools
 
 ### Nice to have

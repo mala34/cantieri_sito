@@ -30,8 +30,10 @@ const translations = {
     // Hero
     'hero.badge': 'Sei già registrato?',
     'hero.badge_link': 'Vai al login',
-    'hero.title': 'La soluzione completa per ottimizzare i tuoi cantieri',
-    'hero.subtitle': 'Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda. Riduci i tempi morti, elimina gli errori manuali e tieni sotto controllo costi e scadenze di ogni cantiere edile.',
+    'hero.title': 'La soluzione completa per',
+    'hero.title_accent': 'ottimizzare',
+    'hero.title_end': 'i tuoi cantieri',
+    'hero.subtitle': 'Cantieri AI offre pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda. Riduci i tempi morti, elimina gli errori manuali e tieni sotto controllo costi e scadenze di ogni cantiere edile.',
     'hero.cta_login': 'Inizia ora',
     'hero.cta_features': 'Scopri le funzionalità',
 
@@ -180,8 +182,10 @@ const translations = {
     // Hero
     'hero.badge': 'Already registered?',
     'hero.badge_link': 'Go to login',
-    'hero.title': 'The complete solution to optimize your construction sites',
-    'hero.subtitle': 'Advanced planning, material tracking, real-time reporting and multi-company collaboration. Reduce downtime, eliminate manual errors and keep costs and deadlines under control for every construction site.',
+    'hero.title': 'The complete solution to',
+    'hero.title_accent': 'optimize',
+    'hero.title_end': 'your construction sites',
+    'hero.subtitle': 'Cantieri AI offers advanced planning, material tracking, real-time reporting and multi-company collaboration. Reduce downtime, eliminate manual errors and keep costs and deadlines under control for every construction site.',
     'hero.cta_login': 'Get started',
     'hero.cta_features': 'Discover the features',
 
@@ -330,8 +334,10 @@ const translations = {
     // Hero
     'hero.badge': 'هل أنت مسجّل بالفعل؟',
     'hero.badge_link': 'الذهاب إلى تسجيل الدخول',
-    'hero.title': 'الحل الشامل لتحسين مواقع البناء الخاصة بك',
-    'hero.subtitle': 'تخطيط متقدم، تتبع المواد، تقارير في الوقت الفعلي والتعاون بين الشركات. قلّل أوقات التوقف، تخلّص من الأخطاء اليدوية وتحكّم بالتكاليف والمواعيد النهائية لكل موقع بناء.',
+    'hero.title': 'الحل الشامل',
+    'hero.title_accent': 'لتحسين',
+    'hero.title_end': 'مواقع البناء الخاصة بك',
+    'hero.subtitle': 'Cantieri AI يوفر تخطيطًا متقدمًا، تتبع المواد، تقارير في الوقت الفعلي والتعاون بين الشركات. قلّل أوقات التوقف، تخلّص من الأخطاء اليدوية وتحكّم بالتكاليف والمواعيد النهائية لكل موقع بناء.',
     'hero.cta_login': 'ابدأ الآن',
     'hero.cta_features': 'اكتشف الميزات',
 
