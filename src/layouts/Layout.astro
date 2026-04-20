@@ -8,6 +8,8 @@ interface Props {
   dir?: 'ltr' | 'rtl';
   canonical?: string;
   ogLocale?: string;
+  alternates?: { it: string; en: string; ar: string };
+  extraStructuredData?: Record<string, unknown>;
 }
 
 const SITE_URL = 'https://www.cantieri.ai';
@@ -19,7 +21,22 @@ const {
   dir = 'ltr',
   canonical = `${SITE_URL}/`,
   ogLocale = 'it_IT',
+  alternates,
+  extraStructuredData,
 } = Astro.props;
+
+// Fallback: se non passati, puntano alla homepage (comportamento originale)
+const hreflangs = alternates ?? {
+  it: `${SITE_URL}/`,
+  en: `${SITE_URL}/en/`,
+  ar: `${SITE_URL}/ar/`,
+};
+
+const ogImageAlt: Record<string, string> = {
+  it: 'Cantieri AI — Piattaforma di gestione cantieri edili',
+  en: 'Cantieri AI — Construction Site Management Platform',
+  ar: 'Cantieri AI — منصة إدارة مواقع البناء',
+};
 
 const alternateLocales: Record<string, string> = {
   it_IT: 'en_US',
@@ -53,7 +70,7 @@ const alternateLocales: Record<string, string> = {
     <meta property="og:image" content={`${SITE_URL}/images/og_image.jpg`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Cantieri AI — Piattaforma di gestione cantieri edili" />
+    <meta property="og:image:alt" content={ogImageAlt[lang] ?? ogImageAlt.it} />
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:locale:alternate" content="it_IT" />
     <meta property="og:locale:alternate" content="en_US" />
@@ -64,13 +81,13 @@ const alternateLocales: Record<string, string> = {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${SITE_URL}/images/og_image.jpg`} />
-    <meta name="twitter:image:alt" content="Cantieri AI — Piattaforma di gestione cantieri edili" />
+    <meta name="twitter:image:alt" content={ogImageAlt[lang] ?? ogImageAlt.it} />
 
     <!-- hreflang -->
-    <link rel="alternate" hreflang="it" href={`${SITE_URL}/`} />
-    <link rel="alternate" hreflang="en" href={`${SITE_URL}/en/`} />
-    <link rel="alternate" hreflang="ar" href={`${SITE_URL}/ar/`} />
-    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
+    <link rel="alternate" hreflang="it" href={hreflangs.it} />
+    <link rel="alternate" hreflang="en" href={hreflangs.en} />
+    <link rel="alternate" hreflang="ar" href={hreflangs.ar} />
+    <link rel="alternate" hreflang="x-default" href={hreflangs.it} />
 
     <!-- Preconnect & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -115,6 +132,9 @@ const alternateLocales: Record<string, string> = {
         }
       }
     })} />
+    {extraStructuredData && (
+      <script type="application/ld+json" set:html={JSON.stringify(extraStructuredData)} />
+    )}
   </head>
   <body class="min-h-screen bg-slate-50 antialiased">
     <slot />

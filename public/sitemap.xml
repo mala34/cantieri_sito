@@ -35,4 +35,37 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/"/>
   </url>
 
+  <url>
+    <loc>https://www.cantieri.ai/contattaci</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.cantieri.ai/contattaci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cantieri.ai/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.cantieri.ai/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/contattaci"/>
+  </url>
+
+  <url>
+    <loc>https://www.cantieri.ai/en/contact</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.cantieri.ai/contattaci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cantieri.ai/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.cantieri.ai/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/contattaci"/>
+  </url>
+
+  <url>
+    <loc>https://www.cantieri.ai/ar/contact</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.cantieri.ai/contattaci"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.cantieri.ai/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.cantieri.ai/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/contattaci"/>
+  </url>
+
 </urlset>

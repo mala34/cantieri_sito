@@ -55,7 +55,7 @@ const year = new Date().getFullYear();
             </a>
           </li>
           <li>
-            <a href="#" class="text-sm hover:text-white transition-colors">
+            <a href={lang === 'it' ? '/contattaci' : lang === 'en' ? '/en/contact' : '/ar/contact'} class="text-sm hover:text-white transition-colors">
               {t(lang, 'footer.contact')}
             </a>
           </li>
@@ -64,9 +64,20 @@ const year = new Date().getFullYear();
 
     </div>
 
-    <!-- Bottom -->
-    <div class="mt-12 border-t border-slate-800 pt-8">
-      <p class="text-sm text-center">
+    <!-- Legal info -->
+    <div class="mt-12 border-t border-slate-700/50 pt-8">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+          <span>Piazza Sergio Finocchi, 3 — 41017 Spilamberto (MO)</span>
+          <span class="hidden sm:inline">·</span>
+          <a href="tel:+393480407500" class="hover:text-white transition-colors">Tel. 348.0407500</a>
+          <span class="hidden sm:inline">·</span>
+          <a href="mailto:info@cantieri.ai" class="hover:text-white transition-colors">info@cantieri.ai</a>
+          <span class="hidden sm:inline">·</span>
+          <span>P.IVA: 03447571203</span>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-slate-500 text-center">
         &copy; {year} Cantieri. {t(lang, 'footer.rights')}
       </p>
     </div>

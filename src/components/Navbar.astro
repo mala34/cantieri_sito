@@ -23,6 +23,9 @@ const { lang } = Astro.props;
         <a href={`${localePath(lang)}#solutions`} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
           {t(lang, 'nav.solutions')}
         </a>
+        <a href={lang === 'it' ? '/contattaci' : lang === 'en' ? '/en/contact' : '/ar/contact'} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">
+          {t(lang, 'nav.contact')}
+        </a>
         <div class="flex items-center gap-1">
           {Object.entries(languages).map(([code, label]) => (
             <a
@@ -61,6 +64,9 @@ const { lang } = Astro.props;
       </a>
       <a href={`${localePath(lang)}#solutions`} class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.solutions')}
+      </a>
+      <a href={lang === 'it' ? '/contattaci' : lang === 'en' ? '/en/contact' : '/ar/contact'} class="block text-sm font-medium text-slate-600">
+        {t(lang, 'nav.contact')}
       </a>
       <div class="flex items-center gap-2">
         {Object.entries(languages).map(([code, label]) => (
