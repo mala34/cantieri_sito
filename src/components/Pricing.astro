@@ -56,9 +56,9 @@ const plans = [
 ---
 
 <section id="pricing" class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
         {t(lang, 'pricing.title')}
       </h2>
       <p class="mt-4 text-lg leading-8 text-slate-600">
@@ -70,9 +70,9 @@ const plans = [
       {plans.map((plan) => (
         <div
           class:list={[
-            'flex flex-col rounded-2xl p-8 ring-1 shadow-sm',
+            'flex flex-col rounded-2xl p-5 sm:p-8 ring-1 shadow-sm',
             plan.popular
-              ? 'bg-slate-800 ring-slate-800 shadow-xl scale-105'
+              ? 'bg-slate-800 ring-slate-800 shadow-xl lg:scale-105'
               : 'bg-white ring-slate-200',
           ]}
         >

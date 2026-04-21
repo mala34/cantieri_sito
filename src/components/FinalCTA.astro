@@ -9,10 +9,10 @@ const { lang } = Astro.props;
 ---
 
 <section class="py-16 sm:py-20 bg-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="relative overflow-hidden rounded-[40px] bg-primary-500 px-6 py-16 sm:px-16 sm:py-20 shadow-[30px_30px_60px_rgba(0,0,0,0.15),-30px_-30px_60px_rgba(0,0,0,0.15)]">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="relative overflow-hidden rounded-2xl sm:rounded-[40px] bg-primary-500 px-4 py-12 sm:px-16 sm:py-20 shadow-[30px_30px_60px_rgba(0,0,0,0.15),-30px_-30px_60px_rgba(0,0,0,0.15)]">
       <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white md:text-4xl">
           {t(lang, 'finalCta.title')}
         </h2>
         <p class="mt-4 text-lg leading-8 text-white/80">
@@ -21,13 +21,13 @@ const { lang } = Astro.props;
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
           <a
             href="https://app.cantieri.ai/login"
-            class="min-w-[180px] rounded-md bg-white px-6 py-3 text-sm font-semibold text-[#994100] shadow-[0_2px_8px_rgba(32,48,68,0.08)] hover:bg-white/90 transition-colors text-center"
+            class="w-full sm:w-auto sm:min-w-[180px] rounded-md bg-white px-6 py-3 text-sm font-semibold text-[#994100] shadow-[0_2px_8px_rgba(32,48,68,0.08)] hover:bg-white/90 transition-colors text-center"
           >
             {t(lang, 'finalCta.button_primary')}
           </a>
           <a
             href="#"
-            class="min-w-[180px] rounded-md border-2 border-white/60 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors text-center"
+            class="w-full sm:w-auto sm:min-w-[180px] rounded-md border-2 border-white/60 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors text-center"
           >
             {t(lang, 'finalCta.button_secondary')}
           </a>

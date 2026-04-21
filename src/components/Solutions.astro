@@ -32,9 +32,9 @@ const solutions = [
 ---
 
 <section id="solutions" class="bg-slate-50 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
         {t(lang, 'solutions.title')}
       </h2>
       <p class="mt-4 text-lg leading-8 text-slate-600">
@@ -44,7 +44,7 @@ const solutions = [
 
     <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:max-w-none lg:grid-cols-4">
       {solutions.map((solution) => (
-        <div class="group relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 hover:shadow-lg hover:ring-primary-200 transition-all">
+        <div class="group relative rounded-2xl bg-white p-5 sm:p-8 shadow-sm ring-1 ring-slate-200 hover:shadow-lg hover:ring-primary-200 transition-all">
           <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-50 group-hover:bg-primary-100 transition-colors">
             {solution.icon === 'home' && (
               <svg class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
