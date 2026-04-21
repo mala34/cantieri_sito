@@ -44,16 +44,16 @@ const year = new Date().getFullYear();
       <div>
         <h3 class="text-sm font-semibold text-white">{t(lang, 'footer.company')}</h3>
         <ul class="mt-4 space-y-3">
-          <li>
-            <a href="#" class="text-sm hover:text-white transition-colors">
-              {t(lang, 'footer.about')}
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-sm hover:text-white transition-colors">
-              {t(lang, 'footer.blog')}
-            </a>
-          </li>
+          <!--<li>-->
+          <!--  <a href="#" class="text-sm hover:text-white transition-colors">-->
+          <!--    {t(lang, 'footer.about')}-->
+          <!--  </a>-->
+          <!--</li>-->
+          <!--<li>-->
+          <!--  <a href="#" class="text-sm hover:text-white transition-colors">-->
+          <!--    {t(lang, 'footer.blog')}-->
+          <!--  </a>-->
+          <!--</li>-->
           <li>
             <a href={lang === 'it' ? '/contattaci' : lang === 'en' ? '/en/contact' : '/ar/contact'} class="text-sm hover:text-white transition-colors">
               {t(lang, 'footer.contact')}
