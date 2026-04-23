@@ -34,7 +34,7 @@ const translations = {
     'hero.title': 'Il software per la',
     'hero.title_accent': 'gestione dei cantieri',
     'hero.title_end': 'edili',
-    'hero.subtitle': 'Cantieri AI è il gestionale per cantieri che unisce pianificazione avanzata, rapportini digitali, tracciamento materiali e reportistica in tempo reale. Collabora con più aziende, elimina la carta e tieni sotto controllo costi e scadenze di ogni cantiere da un\'unica app cloud.',
+    'hero.subtitle': 'Cantieri AI (cantieri.ai) è la piattaforma digitale per la gestione dei cantieri edili che unisce pianificazione avanzata, rapportini digitali, tracciamento materiali e reportistica in tempo reale. Collabora con più aziende, elimina la carta e tieni sotto controllo costi e scadenze di ogni cantiere da un\'unica app cloud.',
     'hero.cta_login': 'Inizia ora',
     'hero.cta_features': 'Scopri le funzionalità',
 
@@ -212,7 +212,7 @@ const translations = {
     'hero.title': 'Construction site',
     'hero.title_accent': 'management',
     'hero.title_end': 'software',
-    'hero.subtitle': 'Cantieri AI is the construction management platform that combines advanced planning, digital reports, material tracking and real-time dashboards. Collaborate across companies, go paperless and keep every project on time and on budget from one cloud app.',
+    'hero.subtitle': 'Cantieri AI (cantieri.ai) is the digital platform for construction site management that combines advanced planning, digital reports, material tracking and real-time dashboards. Collaborate across companies, go paperless and keep every project on time and on budget from one cloud app.',
     'hero.cta_login': 'Get started',
     'hero.cta_features': 'Discover the features',
 
@@ -390,7 +390,7 @@ const translations = {
     'hero.title': 'برنامج',
     'hero.title_accent': 'إدارة مواقع',
     'hero.title_end': 'البناء',
-    'hero.subtitle': 'Cantieri AI هو برنامج إدارة مواقع البناء الذي يجمع بين التخطيط المتقدم والتقارير الرقمية وتتبع المواد ولوحات المعلومات في الوقت الفعلي. تعاون بين الشركات، تخلّص من الورق وتحكّم بكل مشروع من تطبيق سحابي واحد.',
+    'hero.subtitle': 'Cantieri AI (cantieri.ai) هو المنصة الرقمية لإدارة مواقع البناء التي تجمع بين التخطيط المتقدم والتقارير الرقمية وتتبع المواد ولوحات المعلومات في الوقت الفعلي. تعاون بين الشركات، تخلّص من الورق وتحكّم بكل مشروع من تطبيق سحابي واحد.',
     'hero.cta_login': 'ابدأ الآن',
     'hero.cta_features': 'اكتشف الميزات',
 
