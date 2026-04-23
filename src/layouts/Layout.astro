@@ -15,8 +15,8 @@ interface Props {
 const SITE_URL = 'https://www.cantieri.ai';
 
 const {
-  title = 'Cantieri AI — Software per la Gestione dei Cantieri Edili',
-  description = 'Cantieri AI: la piattaforma per la gestione dei cantieri edili. Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda.',
+  title = 'Cantieri AI — Software Gestione Cantieri Edili',
+  description = 'Cantieri AI: software per gestione cantieri edili. Rapportini digitali, SAL, documenti, dashboard in tempo reale e collaborazione multi-azienda. Prova gratis.',
   lang = 'it',
   dir = 'ltr',
   canonical = `${SITE_URL}/`,
@@ -89,18 +89,21 @@ const alternateLocales: Record<string, string> = {
     <link rel="alternate" hreflang="ar" href={hreflangs.ar} />
     <link rel="alternate" hreflang="x-default" href={hreflangs.it} />
 
-    <!-- Preconnect & Fonts -->
+    <!-- Preconnect & Fonts (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="preload"
       as="style"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
@@ -117,14 +120,24 @@ const alternateLocales: Record<string, string> = {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Cantieri AI",
-      "description": "Cantieri AI — Piattaforma per la gestione dei cantieri edili con pianificazione avanzata, tracciamento materiali e reportistica in tempo reale.",
+      "alternateName": ["Cantieri", "Cantieri.ai", "Cantieri AI"],
+      "description": "Software gestionale per cantieri edili: rapportini digitali, SAL, documenti di cantiere, dashboard in tempo reale e collaborazione multi-azienda. App cloud per imprese edili.",
       "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Construction Management Software",
       "operatingSystem": "Web",
       "url": SITE_URL,
       "image": `${SITE_URL}/images/logo.png`,
+      "keywords": "software gestione cantieri, gestionale cantiere edile, rapportini digitali cantiere, app cantiere, SAL digitale, software edilizia cloud",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "description": "Prova gratuita 14 giorni"
+      },
       "publisher": {
         "@type": "Organization",
         "name": "Cantieri AI",
+        "alternateName": ["Cantieri", "Cantieri.ai", "Cantieri AI"],
         "url": SITE_URL,
         "logo": {
           "@type": "ImageObject",

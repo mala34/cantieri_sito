@@ -1,6 +1,19 @@
 User-agent: *
 Allow: /
 
+# Search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
 # Social bots (explicit allow for link previews)
 User-agent: facebookexternalhit
 Allow: /

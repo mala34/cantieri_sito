@@ -31,10 +31,10 @@ const translations = {
     // Hero
     'hero.badge': 'Cantieri AI — Sei già registrato?',
     'hero.badge_link': 'Vai al login',
-    'hero.title': 'La soluzione completa per',
-    'hero.title_accent': 'ottimizzare',
-    'hero.title_end': 'i tuoi cantieri',
-    'hero.subtitle': 'Cantieri AI offre pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda. Riduci i tempi morti, elimina gli errori manuali e tieni sotto controllo costi e scadenze di ogni cantiere edile.',
+    'hero.title': 'Il software per la',
+    'hero.title_accent': 'gestione dei cantieri',
+    'hero.title_end': 'edili',
+    'hero.subtitle': 'Cantieri AI è il gestionale per cantieri che unisce pianificazione avanzata, rapportini digitali, tracciamento materiali e reportistica in tempo reale. Collabora con più aziende, elimina la carta e tieni sotto controllo costi e scadenze di ogni cantiere da un\'unica app cloud.',
     'hero.cta_login': 'Inizia ora',
     'hero.cta_features': 'Scopri le funzionalità',
 
@@ -209,10 +209,10 @@ const translations = {
     // Hero
     'hero.badge': 'Cantieri AI — Already registered?',
     'hero.badge_link': 'Go to login',
-    'hero.title': 'The complete solution to',
-    'hero.title_accent': 'optimize',
-    'hero.title_end': 'your construction sites',
-    'hero.subtitle': 'Cantieri AI offers advanced planning, material tracking, real-time reporting and multi-company collaboration. Reduce downtime, eliminate manual errors and keep costs and deadlines under control for every construction site.',
+    'hero.title': 'Construction site',
+    'hero.title_accent': 'management',
+    'hero.title_end': 'software',
+    'hero.subtitle': 'Cantieri AI is the construction management platform that combines advanced planning, digital reports, material tracking and real-time dashboards. Collaborate across companies, go paperless and keep every project on time and on budget from one cloud app.',
     'hero.cta_login': 'Get started',
     'hero.cta_features': 'Discover the features',
 
@@ -387,10 +387,10 @@ const translations = {
     // Hero
     'hero.badge': 'Cantieri AI — هل أنت مسجّل بالفعل؟',
     'hero.badge_link': 'الذهاب إلى تسجيل الدخول',
-    'hero.title': 'الحل الشامل',
-    'hero.title_accent': 'لتحسين',
-    'hero.title_end': 'مواقع البناء الخاصة بك',
-    'hero.subtitle': 'Cantieri AI يوفر تخطيطًا متقدمًا، تتبع المواد، تقارير في الوقت الفعلي والتعاون بين الشركات. قلّل أوقات التوقف، تخلّص من الأخطاء اليدوية وتحكّم بالتكاليف والمواعيد النهائية لكل موقع بناء.',
+    'hero.title': 'برنامج',
+    'hero.title_accent': 'إدارة مواقع',
+    'hero.title_end': 'البناء',
+    'hero.subtitle': 'Cantieri AI هو برنامج إدارة مواقع البناء الذي يجمع بين التخطيط المتقدم والتقارير الرقمية وتتبع المواد ولوحات المعلومات في الوقت الفعلي. تعاون بين الشركات، تخلّص من الورق وتحكّم بكل مشروع من تطبيق سحابي واحد.',
     'hero.cta_login': 'ابدأ الآن',
     'hero.cta_features': 'اكتشف الميزات',
 

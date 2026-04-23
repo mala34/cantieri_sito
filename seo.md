@@ -1,320 +1,281 @@
-# Analisi SEO / SEM — cantieri.ai
+# SEO Checklist — Cantieri AI
 
-Analisi pre-deploy per la pubblicazione del sito marketing su `https://www.cantieri.ai/`.
-
----
-
-## 🔴 Problemi critici (da risolvere prima del deploy)
-
-### 1. Dominio inconsistente: `cantieri.ai` vs `www.cantieri.ai`
-Il file `src/layouts/Layout.astro` usa `https://cantieri.ai/` (senza `www`) in canonical, hreflang, Open Graph e JSON-LD. Il dominio di produzione sarà `https://www.cantieri.ai/`.
-
-**Problema:** se entrambe le versioni (con e senza `www`) rispondono, Google le tratta come due siti distinti → duplicazione contenuti + dispersione di PageRank.
-
-**Azione:**
-- Scegliere un dominio canonico (consigliato: **con `www`**).
-- Configurare redirect 301 permanente dall'altro.
-- Sostituire ovunque `cantieri.ai` → `www.cantieri.ai` in:
-  - `src/layouts/Layout.astro` (righe 30, 38, 39, 51, 55-58, 83, 84)
-  - `public/robots.txt`
-  - `public/sitemap.xml`
+Ultimo aggiornamento: 2026-04-21
 
 ---
 
-### 2. `robots.txt` punta al dominio sbagliato
-```
-Sitemap: https://app.cantieri.ai/sitemap.xml
-```
-`app.cantieri.ai` è l'applicazione, non il sito marketing. Deve essere `https://www.cantieri.ai/sitemap.xml`.
+## 1. SEO On-Page
 
-Inoltre i `Disallow` per `/dashboard`, `/projects`, `/activities`, ecc. sono rotte dell'app: **non esistono sul sito marketing** e non vanno messe qui.
+### Title Tag
+- Massimo **60 caratteri**
+- Deve contenere: **brand + keyword principale**
+- Formato: `Brand — Keyword Principale`
+- Esempio: `Cantieri AI — Software Gestione Cantieri Edili`
 
-**Robots.txt consigliato:**
-```
-User-agent: *
-Allow: /
+### Meta Description
+- Massimo **155 caratteri**
+- Deve contenere: keyword principale + call to action
+- Deve invogliare al click (non solo descrivere)
+- Esempio: `Cantieri AI: software per gestione cantieri edili. Rapportini digitali, SAL, documenti, dashboard in tempo reale. Prova gratis.`
 
-User-agent: facebookexternalhit
-Allow: /
+### Heading Hierarchy
+- **Una sola H1** per pagina, con keyword principale
+- H2 per le sezioni principali
+- H3 per i sottoelementi
+- Non saltare livelli (es. da H1 a H3 senza H2)
+- Le keyword secondarie vanno negli H2/H3
 
-User-agent: LinkedInBot
-Allow: /
+### Contenuto
+- Minimo **800-1000 parole** per pagina (Google premia contenuti approfonditi)
+- Keyword density naturale (2-3% per la keyword principale)
+- Usare sinonimi e varianti (LSI keywords): "gestionale cantiere", "app cantiere edile", "software edilizia"
+- Primo paragrafo deve contenere la keyword principale
+- Testo leggibile: frasi brevi, paragrafi da 2-3 righe
 
-User-agent: Twitterbot
-Allow: /
+### Immagini
+- Attributo `alt` descrittivo su ogni immagine (con keyword se pertinente)
+- Attributi `width` e `height` per evitare layout shift (CLS)
+- `loading="lazy"` su tutte le immagini sotto il fold
+- `loading="eager"` + `fetchpriority="high"` solo sull'immagine hero
+- Formati moderni (WebP/AVIF) quando possibile
+- Comprimere le immagini (target < 200KB per immagine)
 
-Sitemap: https://www.cantieri.ai/sitemap.xml
-```
+### Link Interni
+- Ogni pagina deve linkare almeno 2-3 altre pagine del sito
+- Anchor text descrittivi (non "clicca qui")
+- Le pagine importanti devono ricevere piu' link interni
+- Menu di navigazione con link alle sezioni principali
 
----
-
-### 3. `sitemap.xml` completamente sbagliato
-- Tutti gli URL puntano a `app.cantieri.ai` invece che al sito marketing.
-- Non include le versioni localizzate `/en/` e `/ar/`.
-- Cita una pagina `/login` che non esiste sul sito.
-
-**Sitemap corretta (esempio):**
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>https://www.cantieri.ai/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="it" href="https://www.cantieri.ai/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.cantieri.ai/en/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.cantieri.ai/ar/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.cantieri.ai/"/>
-  </url>
-
-  <url>
-    <loc>https://www.cantieri.ai/en/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.cantieri.ai/ar/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-</urlset>
-```
+### URL
+- Brevi e leggibili: `/contattaci` non `/page?id=123`
+- Keyword nell'URL quando possibile
+- Trattini per separare le parole, mai underscore
+- Tutto minuscolo
 
 ---
 
-### 4. `canonical`, `hreflang` e meta OG sono statici
-Tutte le pagine (IT, EN, AR) ereditano lo stesso `Layout.astro` con canonical fissa a `https://cantieri.ai/`.
+## 2. SEO Tecnica
 
-**Conseguenza:** la versione EN e AR dichiarano come "pagina canonica" quella IT → Google deindicizza EN/AR considerandole duplicati.
+### Crawlability
+- `robots.txt` con `Allow: /` e link alla sitemap
+- Dichiarare esplicitamente i bot principali: Googlebot, Bingbot, AhrefsBot, SemrushBot
+- Nessun `noindex` sulle pagine che devono rankare
+- Nessun link rotto (href="#" o 404) — Google penalizza i dead link
 
-**Soluzione:** passare come props a `Layout.astro`:
-- `canonical`
-- `ogLocale`
-- `title`
-- `description`
-- `lang`
-- `dir`
+### Sitemap XML
+- Deve contenere TUTTE le pagine indicizzabili
+- `lastmod` aggiornata ad ogni modifica del contenuto
+- Inviata tramite Google Search Console e Bing Webmaster Tools
+- Dichiarata nel `robots.txt`
 
-E impostarli diversi in ogni pagina (`src/pages/index.astro`, `src/pages/en/index.astro`, `src/pages/ar/index.astro`). `title` e `description` devono essere tradotti nella lingua della pagina.
+### Canonical
+- Tag `<link rel="canonical">` su ogni pagina
+- Punta all'URL preferito (con o senza trailing slash, con o senza www)
+- Evita contenuti duplicati tra versioni linguistiche
 
----
+### hreflang (siti multilingua)
+- Tag `hreflang` per ogni lingua + `x-default`
+- Presenti sia nell'`<head>` che nella sitemap
+- Bidirezionali: se IT punta a EN, EN deve puntare a IT
 
-### 5. `<html lang>` e `dir` non cambiano per locale
-`Layout.astro` ha default `lang="it"` `dir="ltr"` ma le pagine potrebbero non passare il valore corretto. La pagina AR deve avere `<html lang="ar" dir="rtl">`.
+### HTTPS
+- Tutto il sito su HTTPS
+- Redirect 301 da HTTP a HTTPS
+- Redirect 301 da non-www a www (o viceversa)
+- Nessun contenuto misto (mixed content)
 
-**Azione:** verificare nei 3 file `src/pages/*/index.astro` che vengano passati correttamente `lang` e `dir`.
-
----
-
-## 🟡 Problemi importanti
-
-### 6. JSON-LD: `price: 0` è sbagliato
-```json
-"offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
-```
-Si sta dichiarando a Google che il prodotto è gratuito. Se non lo è, rimuovere `offers` o mettere il prezzo reale.
-
-Mancano inoltre campi utili per le rich results:
-- `publisher`
-- `logo`
-- `aggregateRating` (se disponibile)
-- `sameAs` (link a social profiles)
-
----
-
-### 7. Meta `keywords` inutile
-`<meta name="keywords">` è ignorato da Google da anni. Non fa male ma può essere rimosso.
+### Structured Data (Schema.org)
+- `SoftwareApplication` per prodotti software
+- `Organization` con logo, nome, contatti
+- `alternateName` per varianti del brand (es. "Cantieri", "Cantieri.ai", "Cantieri AI")
+- Validare su https://search.google.com/structured-data/testing-tool
+- Rich snippet: `offers` per mostrare prezzo/prova gratuita nei risultati
 
 ---
 
-### 8. `title` troppo lungo
-```
-Cantieri - Gestione Cantieri, Progetti e Attività Edili | Pianificazione e Tracciamento
-```
-~88 caratteri. Google taglia a ~60.
+## 3. Performance (Core Web Vitals)
 
-**Alternativa (~55 caratteri):**
-> Cantieri — Software per la Gestione dei Cantieri Edili
+Google usa questi 3 parametri come fattore di ranking:
 
----
+### LCP (Largest Contentful Paint) — target < 2.5s
+- Font caricati in modo non-blocking (preload + onload)
+- Immagine hero ottimizzata e con `fetchpriority="high"`
+- Nessun CSS/JS render-blocking nel `<head>`
+- CDN per servire gli asset
 
-### 9. `h1` unico per pagina
-Verificare che `hero.title` sia effettivamente l'unico `<h1>` della pagina (presente in `src/components/Hero.astro:38`). Nessun'altra sezione deve usare `<h1>`.
+### FID / INP (Interaction to Next Paint) — target < 200ms
+- JavaScript minimo e differito
+- Nessun long task nel main thread
+- Event handler leggeri
 
----
+### CLS (Cumulative Layout Shift) — target < 0.1
+- `width` e `height` su tutte le immagini
+- Font con `font-display: swap` (Google Fonts lo fa gia')
+- Nessun contenuto iniettato dinamicamente sopra il fold
 
-### 10. Alt text immagini
-`<img src="/homepage/dashboard.png" alt="Cantieri Dashboard" />` in `Hero.astro:61` è troppo generico.
-
-**Meglio:**
-> `"Dashboard di Cantieri: panoramica progetti, attività e tempi di lavoro"`
-
-Da rivedere alt text di tutte le immagini del sito.
-
----
-
-### 11. Ottimizzazione font / LCP
-Il font Inter è caricato con `display=swap` (ok). Per migliorare LCP si può fare preload del file woff2:
-```html
-<link rel="preload" as="font" type="font/woff2" crossorigin href="..." />
-```
+### Strumenti di verifica
+- PageSpeed Insights: https://pagespeed.web.dev/
+- Lighthouse (Chrome DevTools > Lighthouse)
+- Web Vitals extension per Chrome
 
 ---
 
-### 12. Nessun tracking / analytics installato
-Il sito non ha GA4, GTM, Meta Pixel, LinkedIn Insight Tag né altri tracker.
+## 4. Keyword Strategy per Cantieri AI
 
-**Necessari per SEM:**
-- **Google Analytics 4** + **Google Tag Manager** → misurare traffico, sorgenti, conversioni.
-- **Google Ads conversion tracking** → se si pianificano campagne Google Ads.
-- **Meta Pixel** / **LinkedIn Insight Tag** → per retargeting e campagne social.
+### Dove posizionare le keyword
+| Posizione | Importanza | Note |
+|---|---|---|
+| Title tag | Altissima | Keyword all'inizio |
+| H1 | Altissima | Una sola H1 con keyword principale |
+| URL | Alta | Breve e con keyword |
+| Meta description | Media | Non influisce direttamente sul ranking ma sul CTR |
+| Primo paragrafo | Alta | Entro le prime 100 parole |
+| H2/H3 | Media | Keyword secondarie e varianti |
+| Alt immagini | Media | Solo se pertinente, non forzare |
+| Contenuto body | Media | Naturale, non keyword stuffing |
 
-Installarli **prima** del lancio in modo da iniziare a raccogliere dati fin dal giorno 1.
-
----
-
-### 13. Verifica file `manifest.json`
-`Layout.astro:73` referenzia `/favicon/site.webmanifest`. Verificare che il file esista in `public/favicon/`, altrimenti errore 404 in console.
-
----
-
-## 🟢 Cose che vanno bene
-
-- ✅ `hreflang` alternate dichiarate (vanno solo corrette sul dominio).
-- ✅ OG image 1200×630 presente e corretta.
-- ✅ Favicon completo (SVG + ICO + apple-touch).
-- ✅ JSON-LD `SoftwareApplication` presente.
-- ✅ Struttura a 3 locale coerente (IT, EN, AR).
-- ✅ `lang` e `dir` previsti come props nel layout.
-- ✅ Tailwind v4 → CSS ottimizzato e leggero.
-- ✅ Astro static → HTML pre-renderizzato, ottimo per SEO.
-
----
-
-## 📊 SEM — raccomandazioni strategiche
-
-### Keyword research
-Prima di pagare Google Ads, fare ricerca keyword su strumenti tipo **Google Keyword Planner**, **Ahrefs** o **SEMrush**. Cluster di partenza:
-
-- *cantieri ai*
-- *gestionale cantieri*
-- *software cantieri edili*
-- *app rapportini cantiere*
-- *gestione progetti edilizia*
-- *software edilizia cloud*
-- *piattaforma gestione cantieri*
-- *rapportini digitali edilizia*
-
-### Landing dedicate per campagna
-Per Google Ads **non** mandare tutti al sito principale. Creare landing tematiche:
-- `/rapportini-cantiere`
-- `/gestione-cantieri`
-- `/software-edilizia`
-
-Ciascuna con **un solo CTA chiaro** e messaggio focalizzato su una singola keyword. Il sito principale ha troppe sezioni e CTA per convertire bene da traffico Ads.
-
-### Strumenti da registrare
-- **Google Search Console** → verifica dominio + submit sitemap.
-- **Bing Webmaster Tools** → stesso.
-- **Google Business Profile** → per SEO locale (se l'azienda è italiana).
-
-### Performance / Core Web Vitals
-Prima del lancio, passare il sito su:
-- **PageSpeed Insights** (https://pagespeed.web.dev/)
-- **Lighthouse** (Chrome DevTools)
-- **Google Rich Results Test** (per validare JSON-LD)
-
-Obiettivo: tutti i Core Web Vitals in verde (LCP < 2.5s, CLS < 0.1, INP < 200ms).
+### Mappa keyword per Cantieri AI
+| Keyword | Tipo | Difficolta | Stato |
+|---|---|---|---|
+| cantieri ai | Brand | Bassa | Da raggiungere #1 |
+| cantieri.ai | Brand | Bassa | #2 attuale |
+| cantieri | Brand generico | Impossibile | Non competere |
+| software gestione cantieri edili | Principale | Media | Targetizzata in H1 e title |
+| app gestione cantiere | Principale | Media | Nel subtitle hero |
+| rapportini digitali cantiere | Long-tail | Bassa | Nel title e description |
+| SAL digitale cantiere | Long-tail | Bassa | Nel title e description |
+| gestionale cantiere cloud | Long-tail | Bassa | Nel subtitle hero |
+| software rapportini cantiere | Long-tail | Bassa | Da targetizzare con blog |
+| gestione documenti cantiere | Long-tail | Bassa | Presente in Technology |
+| gestione multi-azienda cantiere | Long-tail (USP) | Molto bassa | Nel subtitle hero |
+| cantiere digitale | Trend | Media | Da targetizzare con blog |
+| software cantiere edile | Generica | Alta | Servono backlink |
+| gestionale edilizia | Generica | Alta | Servono backlink + contenuti |
 
 ---
 
-## 📋 Checklist pre-deploy
+## 5. Off-Page SEO
 
-### Blocker (obbligatori)
-- [x] Scegliere dominio canonico (con/senza `www`) + redirect 301 dell'altro — canonico `www.cantieri.ai`, redirect 301 via `public/.htaccess`
-- [x] Aggiornare canonical/hreflang/OG su dominio corretto in `Layout.astro`
-- [x] Rendere `title`, `description`, `canonical`, `lang`, `dir` dinamici per locale — Layout accetta props `canonical`/`ogLocale`/`title`/`description`/`lang`/`dir`, passati da ogni pagina (IT/EN/AR)
-- [x] Riscrivere `public/sitemap.xml` con gli URL reali del sito marketing
-- [x] Aggiornare `public/robots.txt` con sitemap corretta e rimuovere Disallow dell'app
-- [x] Rivedere il JSON-LD (prezzo reale, publisher, logo) — rimosso `offers` (prezzo fittizio), aggiunto `publisher` con `logo`
+### Backlink
+- La cosa piu' importante per il ranking dopo i contenuti
+- **Qualita' > Quantita'**: 1 link da un sito autorevole di edilizia vale piu' di 100 link da directory spam
+- Strategie per ottenere backlink:
+  - Registrarsi su directory software italiane (Capterra, GetApp, G2)
+  - Guest post su blog di edilizia/tech
+  - Comunicati stampa su testate di settore
+  - Partnership con associazioni di categoria (ANCE, Confartigianato)
+  - Creare contenuti utili che altri linkano (guide, infografiche, tool gratuiti)
 
-### Raccomandati
-- [x] Accorciare il `title` tag (< 60 caratteri) — aggiornato IT/EN/AR (~55 char)
-- [x] Alt text descrittivi su tutte le immagini — aggiornati `Hero`, `AppPreview`, `Technology` (dashboard, mobile, operatore)
-- [ ] Installare GA4 + GTM
-- [ ] Installare Meta Pixel e/o LinkedIn Insight Tag (se previsti)
-- [x] Verificare presenza di `public/favicon/site.webmanifest` — file presente e valido; migliorate icone con `"purpose": "any maskable"` per maggior compatibilità
-- [x] Testare con Google Rich Results Test — JSON-LD `SoftwareApplication` valido. Warning non critici: `offers` e `aggregateRating` mancanti (campi opzionali, da aggiungere in futuro quando ci saranno prezzo e recensioni reali)
-- [x] Testare con Lighthouse / PageSpeed Insights — eseguito, piano di ottimizzazione in `pageSpeed.md` (Perf: 84 desktop / 65 mobile; SEO: 100/100)
-- [x] Registrare sito su Google Search Console + submit sitemap — meta tag verificato, proprietà confermata (2026-04-12). Submit sitemap e richiesta indicizzazione da fare in console.
+### Google Business Profile
+- Crea un profilo Google Business se hai una sede fisica
+- Aiuta per le ricerche locali e da' autorita' al brand
+
+### Social Signal
+- Condividere i contenuti sui social (LinkedIn il piu' importante per B2B)
+- Non influisce direttamente sul ranking ma aumenta visibilita' e backlink
+
+---
+
+## 6. Contenuti (la leva piu' potente)
+
+### Blog
+- **Fondamentale** per rankare sulle long-tail keyword
+- Pubblica almeno 2-4 articoli al mese
+- Ogni articolo targetta una keyword long-tail specifica
+- Minimo 1000-1500 parole per articolo
+- Struttura: H1 (titolo con keyword) > Intro > H2 sezioni > Conclusione con CTA
+
+### Idee articoli per Cantieri AI
+1. "Come gestire i rapportini di cantiere in digitale" → keyword: rapportini digitali cantiere
+2. "SAL digitale: guida completa per imprese edili" → keyword: SAL digitale
+3. "Software gestione cantieri: come scegliere quello giusto" → keyword: software gestione cantieri
+4. "Gestione documentale cantiere: addio alla carta" → keyword: gestione documenti cantiere
+5. "Come ridurre i costi di cantiere con un gestionale cloud" → keyword: gestionale cantiere cloud
+6. "Compliance edilizia italiana: CIG, CUP e fatturazione elettronica" → keyword: compliance edilizia
+7. "App cantiere: le funzionalita' essenziali per un capocantiere" → keyword: app cantiere
+8. "Gestione multi-azienda in cantiere: come collaborare senza caos" → keyword: gestione multi-azienda cantiere
+9. "Template rapportini cantiere: scarica i modelli gratuiti" → keyword: template rapportini cantiere
+10. "Dashboard cantiere: monitorare avanzamento lavori in tempo reale" → keyword: dashboard cantiere
+
+### Landing Page dedicate (per SEO e campagne Ads)
+- `/software-gestione-cantieri` → keyword principale
+- `/rapportini-digitali` → long-tail alta conversione
+- `/gestionale-cantiere-cloud` → long-tail cloud
+- Ogni landing ha title, description, H1 e contenuto focalizzato su una keyword
+
+---
+
+## 7. Monitoraggio
+
+### Strumenti gratuiti
+| Strumento | Cosa monitora |
+|---|---|
+| Google Search Console | Impressioni, click, posizione, errori indicizzazione |
+| Bing Webmaster Tools | Come Search Console per Bing |
+| Google Analytics 4 | Traffico, comportamento utenti, conversioni |
+| PageSpeed Insights | Performance e Core Web Vitals |
+| Ahrefs Webmaster Tools | Backlink, keyword (gratuito per il proprio sito) |
+| Ubersuggest | Audit SEO, keyword, competitor (3 ricerche/giorno gratis) |
+
+### Cosa controllare ogni settimana
+- Impressioni e click in Search Console (stanno salendo?)
+- Posizione media per le keyword target
+- Nuove keyword per cui il sito appare
+- Errori di indicizzazione (pagine escluse, errori 404)
+- Core Web Vitals (nessun peggioramento?)
+
+### KPI da tracciare
+| KPI | Target 3 mesi | Target 6 mesi |
+|---|---|---|
+| Impressioni/settimana | 100+ | 500+ |
+| Click/settimana | 10+ | 50+ |
+| Posizione "cantieri ai" | Top 3 | #1 |
+| Posizione "software gestione cantieri" | Top 20 | Top 10 |
+| Backlink totali | 5+ | 20+ |
+| Pagine indicizzate | 10+ | 30+ (con blog) |
+
+---
+
+## 8. Errori da evitare
+
+- **Keyword stuffing**: ripetere la keyword in modo innaturale — Google penalizza
+- **Contenuto duplicato**: stessa pagina da URL diversi senza canonical
+- **Link rotti**: href="#" o pagine 404 — controllare regolarmente
+- **Contenuto troppo scarso**: pagine con meno di 300 parole rankano male
+- **Title/description duplicati**: ogni pagina deve avere title e description unici
+- **Ignorare il mobile**: Google usa mobile-first indexing
+- **Cambiare URL senza redirect**: se rinomini una pagina, redirect 301 dal vecchio URL
+- **Comprare backlink**: Google penalizza i link artificiali
+- **Ignorare Search Console**: e' la fonte di verita', controllala ogni settimana
+
+---
+
+## 9. Stato attuale Cantieri AI (2026-04-21)
+
+### Fatto
+- [x] Title tag ottimizzati (< 60 char) su tutte le 6 pagine
+- [x] Meta description ottimizzate (< 155 char) su tutte le 6 pagine
+- [x] H1 con keyword principale ("Il software per la gestione dei cantieri edili")
+- [x] Schema.org con alternateName ["Cantieri", "Cantieri.ai", "Cantieri AI"]
+- [x] Schema.org con keywords, offers, applicationSubCategory
+- [x] robots.txt con Allow esplicito per Googlebot, Bingbot, AhrefsBot, SemrushBot
+- [x] Sitemap aggiornata (lastmod 2026-04-21) con hreflang
+- [x] Canonical corretti su tutte le pagine
+- [x] hreflang it/en/ar + x-default su tutte le pagine
+- [x] Google Fonts non-blocking (preload + onload)
+- [x] Immagini con lazy loading sotto il fold
+- [x] Google Search Console verificata + sitemap inviata
+- [x] Indicizzazione richiesta su Google
+
+### Da fare
 - [ ] Registrare sito su Bing Webmaster Tools
-
-### Nice to have
-- [x] Preload font Inter per migliorare LCP — aggiunto `<link rel="preload" as="style">` in `Layout.astro`
-- [x] Rimuovere `<meta name="keywords">` (inutile) — rimosso da `Layout.astro`
-- [x] Aggiungere `publisher`, `logo`, `sameAs` al JSON-LD — `publisher`+`logo` fatti, `sameAs` da aggiungere quando ci saranno i social profile
-- [ ] Creare landing dedicate per campagne SEM
-
----
-
-## 🔴 Risultati analisi Neil Patel SEO Analyzer (2026-04-12)
-
-Report: https://neilpatel.com/seo-analyzer/
-
-### 14. Title tag non contiene keyword popolari (priorità alta)
-Il title attuale ("Cantieri — Software per la Gestione dei Cantieri Edili", 56 char) non include le keyword più usate nella pagina: "funzionalità", "soluzioni", "tempo reale".
-
-**Azione:**
-- [ ] Ottimizzare il title tag includendo keyword ad alto volume (es. "gestione cantieri", "software edilizia")
-- [ ] Assicurarsi che il title sia diverso e ottimizzato per ogni locale (IT/EN/AR)
-
-### 15. Meta description troppo lunga (priorità media)
-Lunghezza attuale: 169 caratteri. Google taglia a ~155-160.
-
-> "Cantieri: la piattaforma per la gestione dei cantieri edili. Pianificazione avanzata, tracciamento materiali, reportistica in tempo reale e collaborazione multi-azienda."
-
-**Azione:**
-- [ ] Accorciare la meta description a ≤ 155 caratteri mantenendo le keyword principali ("gestione cantieri", "tempo reale")
-
-### 16. Keyword pollution dal language switcher (priorità media)
-Il selettore lingua (IT/EN/AR/Accedi) viene letto dai crawler come contenuto della pagina. Le keyword "soluzioni en", "en ar", "en ar accedi" appaiono nella keyword density, inquinando il profilo SEO.
-
-**Azione:**
-- [ ] Escludere il language switcher dall'indicizzazione (es. `aria-hidden` o `data-nosnippet` sul nav del selettore lingua)
-
-### 17. Word count troppo basso (priorità alta)
-Solo 370 parole nella pagina (escludendo anchor text). Google favorisce contenuti più ricchi per query competitive come "gestione cantieri".
-
-**Azione:**
-- [x] Espanso il copy in tutte le sezioni principali (Hero, AppPreview, Technology, FeatureManagement, Solutions, FinalCTA, Footer) per IT/EN/AR. Aggiunto dettagli concreti, benefici specifici e keyword rilevanti. Stima ~650-800 parole visibili.
-- [ ] Per superare le 1000 parole, valutare l'aggiunta di nuove sezioni (FAQ, testimonial, case study)
-
-### 18. Backlink profile debole (priorità alta — 3-6 mesi)
-Nessun backlink rilevante. Serve una strategia di link building.
-
-**Azione (non codice):**
-- [ ] Registrarsi su directory di settore (edilizia, SaaS italiani)
-- [ ] Guest post su blog di settore
-- [ ] Partnership con associazioni edili
-- [ ] Creare contenuti linkabili (blog, guide, case study)
-
-### 19. Social media authority assente (priorità media)
-0 share su Facebook, 0 pin su Pinterest. Nessuna presenza social.
-
-**Azione (non codice):**
-- [ ] Creare profili social (LinkedIn, Facebook, Instagram)
-- [ ] Aggiungere link social al footer del sito + `sameAs` nel JSON-LD
-- [ ] Pianificare contenuti social regolari
-
-### 20. 18 link duplicati nella pagina (priorità bassa)
-Probabilmente link ripetuti tra navbar e footer (stesse voci di menu).
-
-**Azione:**
-- [ ] Verificare e ridurre link duplicati (diversificare anchor text tra nav e footer, o rimuovere link ridondanti dal footer)
+- [ ] Installare Google Analytics 4
+- [ ] Risolvere problema Ahrefs "Return code not 200" (controllare firewall hosting/CDN)
+- [ ] Creare profili social (LinkedIn, Facebook) + aggiungere sameAs nel JSON-LD
+- [ ] Creare Google Business Profile
+- [ ] Ottenere primi backlink (directory Capterra/GetApp, guest post)
+- [ ] Aggiungere sezione blog al sito
+- [ ] Scrivere primi 3-5 articoli blog targetizzando keyword long-tail
+- [ ] Creare landing page dedicate per keyword principali
+- [ ] Aggiungere FAQ section alla homepage (rich snippet potenziali)
+- [ ] Portare il word count della homepage sopra 1000 parole
