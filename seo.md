@@ -250,7 +250,31 @@ Google usa questi 3 parametri come fattore di ranking:
 
 ---
 
-## 9. Stato attuale Cantieri AI (2026-04-21)
+## 9. Procedura post-deploy (ogni volta che modifichi contenuto)
+
+1. **Aggiornare `lastmod` nella sitemap** (`public/sitemap.xml`)
+   - Cambia la data `<lastmod>` solo sulle pagine che hai effettivamente modificato
+   - Formato: `YYYY-MM-DD` (es. `2026-04-23`)
+   - Non aggiornare pagine non toccate — Google potrebbe ignorare il segnale se abusi di lastmod
+
+2. **Build e deploy**
+   - `npm run build` → verifica che tutto compili
+   - Deploya su hosting
+
+3. **Richiedere reindicizzazione su Google Search Console**
+   - Vai su [Google Search Console](https://search.google.com/search-console)
+   - "Controllo URL" → incolla l'URL della pagina modificata (es. `https://www.cantieri.ai/`)
+   - Clicca "Richiedi indicizzazione"
+   - Ripeti per ogni pagina modificata (es. `/en/`, `/ar/`)
+   - Google reindicizza di solito entro 1-2 giorni con la richiesta manuale, vs settimane senza
+
+4. **Verificare dopo 2-3 giorni**
+   - Torna su Search Console → "Controllo URL" → controlla che la data di ultima scansione sia aggiornata
+   - Controlla "Copertura" per eventuali errori di indicizzazione
+
+---
+
+## 10. Stato attuale Cantieri AI (2026-04-23)
 
 ### Fatto
 - [x] Title tag ottimizzati (< 60 char) su tutte le 6 pagine
@@ -259,7 +283,7 @@ Google usa questi 3 parametri come fattore di ranking:
 - [x] Schema.org con alternateName ["Cantieri", "Cantieri.ai", "Cantieri AI"]
 - [x] Schema.org con keywords, offers, applicationSubCategory
 - [x] robots.txt con Allow esplicito per Googlebot, Bingbot, AhrefsBot, SemrushBot
-- [x] Sitemap aggiornata (lastmod 2026-04-21) con hreflang
+- [x] Sitemap aggiornata (lastmod 2026-04-23) con hreflang
 - [x] Canonical corretti su tutte le pagine
 - [x] hreflang it/en/ar + x-default su tutte le pagine
 - [x] Google Fonts non-blocking (preload + onload)
