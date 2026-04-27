@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: owner/cantieri_sito
+  branch: main
+
+local_backend: true
+
+media_folder: public/images/blog
+public_folder: /images/blog
+
+collections:
+  - name: blog
+    label: Blog
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Descrizione", name: "description", widget: "text", required: false }
+      - { label: "Data", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - label: "Categoria"
+        name: "categoria"
+        widget: "select"
+        options:
+          - { label: "Innovazione", value: "innovazione" }
+          - { label: "Normative", value: "normative" }
+          - { label: "Gestione Cantiere", value: "gestione" }
+          - { label: "Tecnologia", value: "tecnologia" }
+          - { label: "Sicurezza", value: "sicurezza" }
+      - { label: "Immagine", name: "image", widget: "image", required: false }
+      - { label: "Autore", name: "author", widget: "string", default: "Cantieri AI", required: false }
+      - { label: "Contenuto", name: "body", widget: "markdown" }

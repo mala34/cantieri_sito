@@ -1,0 +1,67 @@
+---
+interface Props {
+  categories: Record<string, string>;
+}
+
+const { categories } = Astro.props;
+---
+
+<nav class="flex flex-wrap gap-2 mb-8" aria-label="Filtri categoria" data-category-filter>
+  <button
+    type="button"
+    data-filter=""
+    class="inline-block px-4 py-1.5 text-sm font-semibold rounded-full border transition-colors bg-primary-500 text-white border-primary-500"
+  >
+    Tutti
+  </button>
+  {Object.entries(categories).map(([slug, label]) => (
+    <button
+      type="button"
+      data-filter={slug}
+      class="inline-block px-4 py-1.5 text-sm font-semibold rounded-full border transition-colors bg-white text-slate-600 border-slate-200 hover:border-primary-500 hover:text-primary-600"
+    >
+      {label}
+    </button>
+  ))}
+</nav>
+
+<script>
+  const nav = document.querySelector("[data-category-filter]");
+  const buttons = nav?.querySelectorAll("button[data-filter]");
+  const cards = document.querySelectorAll("[data-post-card]");
+
+  const baseClass = "inline-block px-4 py-1.5 text-sm font-semibold rounded-full border transition-colors";
+  const activeClass = `${baseClass} bg-primary-500 text-white border-primary-500`;
+  const inactiveClass = `${baseClass} bg-white text-slate-600 border-slate-200 hover:border-primary-500 hover:text-primary-600`;
+
+  function activateFilter(filter: string) {
+    buttons?.forEach((b) => {
+      b.className = inactiveClass;
+    });
+    const activeBtn = nav?.querySelector(`button[data-filter="${filter}"]`);
+    if (activeBtn) {
+      activeBtn.className = activeClass;
+    }
+
+    cards.forEach((card) => {
+      const el = card as HTMLElement;
+      const cat = el.dataset.categoria;
+      const matchesCat = !filter || cat === filter;
+      const hiddenBySearch = el.dataset.hiddenBySearch === "true";
+      el.dataset.hiddenByCategory = matchesCat ? "false" : "true";
+      el.style.display = matchesCat && !hiddenBySearch ? "" : "none";
+    });
+  }
+
+  buttons?.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = (btn as HTMLElement).dataset.filter ?? "";
+      activateFilter(filter);
+    });
+  });
+
+  const urlCat = new URLSearchParams(window.location.search).get("cat");
+  if (urlCat) {
+    activateFilter(urlCat);
+  }
+</script>
