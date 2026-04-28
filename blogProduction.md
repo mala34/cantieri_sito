@@ -11,7 +11,7 @@ Astro genera file HTML statici. Quando Sveltia CMS crea un nuovo post (commit su
 ## Fase 1: Configurare Sveltia CMS per produzione
 
 ### 1.1 Aggiornare il backend nel config.yml
-- [ ] Cambiare `repo: owner/cantieri_sito` con il nome reale del repo GitHub (es. `tuouser/cantieri_sito`)
+- [x] Repo configurato: `mala34/cantieri_sito`
 - [ ] Verificare che `branch` sia quello corretto (main o develop)
 
 ### 1.2 Sveltia CMS (configurato)

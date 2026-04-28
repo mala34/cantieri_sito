@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: owner/cantieri_sito
+  repo: mala34/cantieri_sito
   branch: main
 
 
