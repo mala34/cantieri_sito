@@ -12,17 +12,17 @@ Astro genera file HTML statici. Quando Sveltia CMS crea un nuovo post (commit su
 
 ### 1.1 Aggiornare il backend nel config.yml
 - [x] Repo configurato: `mala34/cantieri_sito`
-- [ ] Verificare che `branch` sia quello corretto (main o develop)
+- [x] Branch: `main`
 
 ### 1.2 Sveltia CMS (configurato)
 - [x] Script tag in `public/admin/index.html` usa `@sveltia/cms`
 - [x] Admin servito come file statico da `public/admin/`
-- [x] Redirect da `/admin/` a `/admin/index.html` via `src/pages/admin.astro`
+- [x] Script Sveltia scaricato in locale (`public/admin/sveltia-cms.js`) per evitare blocco CSP
+- [x] CSP aggiornata in `.htaccess` per permettere `connect-src` a `api.github.com` e `raw.githubusercontent.com`
 
 ### 1.3 Autenticazione GitHub per produzione
-Sveltia CMS supporta login GitHub diretto, ma serve un OAuth gateway:
-- [ ] **Opzione A (consigliata):** Registrare una GitHub OAuth App (Settings > Developer settings > OAuth Apps) e deployare il proxy gratuito `netlify-cms-github-oauth-provider` su Render/Railway
-- [ ] **Opzione B:** Usare Netlify come OAuth gateway gratuito (crei un sito Netlify collegato al repo solo per OAuth, il sito resta su Aruba)
+- [x] Login tramite GitHub Personal Access Token (fine-grained, repo-scoped)
+- [x] Testato e funzionante su `https://www.cantieri.ai/admin/index.html`
 
 ### 1.4 Uso in localhost (sviluppo) — funzionante
 - [x] Aprire `/admin/index.html` su **Chrome o Edge** (richiede File System Access API)
@@ -85,7 +85,7 @@ jobs:
 ### 2.3 Testare il deploy
 - [x] Primo deploy automatico completato con successo
 - [x] File arrivano su Aruba nella cartella corretta
-- [ ] Verificare che il sito e raggiungibile e funziona dopo deploy automatico
+- [x] Sito raggiungibile e funzionante dopo deploy automatico
 
 ---
 
@@ -93,17 +93,17 @@ jobs:
 
 ### 3.1 Frontmatter completo per ogni post
 Ogni post `.md` deve avere:
-- [ ] `title` — max 60 caratteri, keyword principale all'inizio
-- [ ] `description` — max 155 caratteri, compelling, con keyword
-- [ ] `date` — formato YYYY-MM-DD
-- [ ] `categoria` — una delle categorie definite in config.yml
-- [ ] `image` — immagine di copertina (usata per og:image)
-- [ ] `author` — nome autore
+- [x] `title` — tutti entro 60 caratteri con keyword
+- [x] `description` — tutti entro 155 caratteri
+- [x] `date` — formato YYYY-MM-DD
+- [x] `categoria` — presente su tutti
+- [x] `image` — presente su tutti
+- [x] `author` — presente su tutti (Cantieri AI)
 
 ### 3.2 Immagini blog
-- [ ] Creare la cartella `public/images/blog/` se non esiste
-- [ ] Ogni post deve avere un'immagine reale (non placeholder) — idealmente 1200x630 per social sharing
-- [ ] Verificare che le immagini referenziate nel frontmatter esistano effettivamente
+- [x] Cartella `public/images/blog/` presente con 3 immagini
+- [x] Tutte le immagini sono 1200x630 (ideali per social sharing)
+- [x] Tutte le immagini referenziate nel frontmatter esistono
 
 ### 3.3 Meta tags nel layout blog
 - [x] `[slug].astro` passa `title`, `description` e `image` al Layout
@@ -116,20 +116,22 @@ Ogni post `.md` deve avere:
 
 ### 3.4 Structured Data (JSON-LD)
 - [x] Schema `BlogPosting` con `headline`, `datePublished`, `author`, `image`, `description`, `publisher`
-- [ ] Testare con Google Rich Results Test
+- [x] Testato con Google Rich Results Test — 2 elementi validi, 0 errori
 
 ### 3.5 Sitemap
-- [x] Sitemap dinamica che include i post automaticamente (gia fatto)
-- [ ] Verificare che i post compaiono nella sitemap generata
-- [ ] Pingare Google Search Console dopo il deploy
+- [x] Sitemap dinamica che include i post automaticamente
+- [x] 3 post presenti nella sitemap con URL e date corretti
+- [x] `robots.txt` punta a `https://www.cantieri.ai/sitemap.xml`
+- [ ] Inviare sitemap su Google Search Console
+- [ ] Richiedere indicizzazione dei 3 post su Google Search Console
 
 ### 3.6 Internal linking
-- [ ] I post devono linkarsi tra loro dove rilevante (gia fatto parzialmente)
-- [ ] Ogni post deve linkare alla homepage o alla pagina prodotto
+- [x] I post si linkano tra loro (digitalizzazione → rapportini, digitalizzazione → sicurezza)
+- [x] I post linkano alla homepage (`https://www.cantieri.ai/`)
 
 ### 3.7 URL structure
-- [ ] Verificare che gli URL siano puliti: `/blog/nome-post/`
-- [ ] Niente date nell'URL, niente underscore — solo slug leggibili
+- [x] URL puliti: `/blog/nome-post/`
+- [x] Niente date nell'URL, niente underscore — solo slug leggibili
 
 ---
 
