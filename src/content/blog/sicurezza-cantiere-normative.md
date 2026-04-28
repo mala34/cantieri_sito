@@ -1,6 +1,6 @@
 ---
 title: 'Sicurezza in cantiere: le normative da conoscere nel 2026'
-description: 'Guida completa alle normative sulla sicurezza nei cantieri edili italiani. Obblighi, documenti e best practice per essere sempre in regola.'
+description: Guida completa alle normative sulla sicurezza nei cantieri edili italiani. Obblighi, documenti e best practice per essere sempre in regola.
 date: 2026-04-15
 categoria: normative
 image: /images/blog/sicurezza-cantiere.jpg
