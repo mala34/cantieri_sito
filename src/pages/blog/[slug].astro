@@ -24,6 +24,10 @@ const SITE_URL = "https://www.cantieri.ai";
   description={post.data.description ?? post.data.title}
   canonical={`${SITE_URL}/blog/${post.id}/`}
   ogLocale="it_IT"
+  ogType="article"
+  ogImage={post.data.image ? `${SITE_URL}${post.data.image}` : undefined}
+  articlePublishedTime={post.data.date.toISOString()}
+  articleAuthor={post.data.author ?? "Cantieri AI"}
   extraStructuredData={{
     "@context": "https://schema.org",
     "@type": "BlogPosting",

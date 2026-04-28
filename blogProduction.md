@@ -41,13 +41,13 @@ Quando un nuovo post viene committato (da CMS o manualmente), la GitHub Action:
 
 ### 2.1 Creare i secrets su GitHub
 Nel repo: Settings > Secrets and variables > Actions, aggiungere:
-- [ ] `FTP_SERVER` — hostname FTP di Aruba (es. `ftp.tuodominio.it`)
-- [ ] `FTP_USERNAME` — utente FTP
-- [ ] `FTP_PASSWORD` — password FTP
-- [ ] `FTP_REMOTE_DIR` — cartella remota (es. `/htdocs/` o `/public_html/`)
+- [x] `FTP_SERVER` — configurato
+- [x] `FTP_USERNAME` — configurato
+- [x] `FTP_PASSWORD` — configurato
+- [x] `FTP_REMOTE_DIR` — configurato (`/`)
 
 ### 2.2 Creare il file della GitHub Action
-- [ ] Creare `.github/workflows/deploy.yml` con contenuto:
+- [x] Creato `.github/workflows/deploy.yml`:
 
 ```yaml
 name: Build & Deploy to Aruba
@@ -83,9 +83,9 @@ jobs:
 ```
 
 ### 2.3 Testare il deploy
-- [ ] Fare un push su `main` e verificare che la Action parte
-- [ ] Verificare che i file arrivano su Aruba nella cartella corretta
-- [ ] Verificare che il sito e raggiungibile e funziona
+- [x] Primo deploy automatico completato con successo
+- [x] File arrivano su Aruba nella cartella corretta
+- [ ] Verificare che il sito e raggiungibile e funziona dopo deploy automatico
 
 ---
 
@@ -106,15 +106,16 @@ Ogni post `.md` deve avere:
 - [ ] Verificare che le immagini referenziate nel frontmatter esistano effettivamente
 
 ### 3.3 Meta tags nel layout blog
-- [ ] Verificare che `[slug].astro` passa `title`, `description` e `image` al Layout
-- [ ] Verificare che il Layout genera `og:title`, `og:description`, `og:image` per i post
-- [ ] Aggiungere `article:published_time` nei meta per i post
-- [ ] Aggiungere `article:author` nei meta
-- [ ] Canonical URL per ogni post (es. `https://www.cantieri.ai/blog/slug/`)
+- [x] `[slug].astro` passa `title`, `description` e `image` al Layout
+- [x] Layout genera `og:title`, `og:description`, `og:image` specifici per ogni post
+- [x] `og:type` impostato a `article` per i post (non `website`)
+- [x] `article:published_time` aggiunto nei meta
+- [x] `article:author` aggiunto nei meta
+- [x] Canonical URL per ogni post (`https://www.cantieri.ai/blog/slug/`)
+- [x] Twitter Card con immagine del post
 
 ### 3.4 Structured Data (JSON-LD)
-- [ ] Aggiungere schema `Article` o `BlogPosting` in ogni post:
-  - `headline`, `datePublished`, `author`, `image`, `description`, `publisher`
+- [x] Schema `BlogPosting` con `headline`, `datePublished`, `author`, `image`, `description`, `publisher`
 - [ ] Testare con Google Rich Results Test
 
 ### 3.5 Sitemap

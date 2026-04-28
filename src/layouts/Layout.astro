@@ -10,6 +10,10 @@ interface Props {
   ogLocale?: string;
   alternates?: { it: string; en: string; ar: string };
   extraStructuredData?: Record<string, unknown>;
+  ogType?: string;
+  ogImage?: string;
+  articlePublishedTime?: string;
+  articleAuthor?: string;
 }
 
 const SITE_URL = 'https://www.cantieri.ai';
@@ -23,6 +27,10 @@ const {
   ogLocale = 'it_IT',
   alternates,
   extraStructuredData,
+  ogType = 'website',
+  ogImage,
+  articlePublishedTime,
+  articleAuthor,
 } = Astro.props;
 
 // Fallback: se non passati, puntano alla homepage (comportamento originale)
@@ -62,12 +70,12 @@ const alternateLocales: Record<string, string> = {
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content="Cantieri AI" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={`${SITE_URL}/images/og_image.jpg`} />
+    <meta property="og:image" content={ogImage ?? `${SITE_URL}/images/og_image.jpg`} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={ogImageAlt[lang] ?? ogImageAlt.it} />
@@ -76,11 +84,14 @@ const alternateLocales: Record<string, string> = {
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="ar_SA" />
 
+    {articlePublishedTime && <meta property="article:published_time" content={articlePublishedTime} />}
+    {articleAuthor && <meta property="article:author" content={articleAuthor} />}
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${SITE_URL}/images/og_image.jpg`} />
+    <meta name="twitter:image" content={ogImage ?? `${SITE_URL}/images/og_image.jpg`} />
     <meta name="twitter:image:alt" content={ogImageAlt[lang] ?? ogImageAlt.it} />
 
     <!-- hreflang -->
