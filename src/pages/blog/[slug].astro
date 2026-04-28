@@ -1,0 +1,93 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import { getCollection, render } from "astro:content";
+import { formatDate } from "../../lib/posts";
+import { getCategoriaLabel } from "../../lib/categories";
+
+const lang = "it";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const SITE_URL = "https://www.cantieri.ai";
+---
+
+<Layout
+  lang={lang}
+  title={`${post.data.title} — Cantieri AI Blog`}
+  description={post.data.description ?? post.data.title}
+  canonical={`${SITE_URL}/blog/${post.id}/`}
+  ogLocale="it_IT"
+  extraStructuredData={{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.data.title,
+    "description": post.data.description,
+    "datePublished": post.data.date.toISOString(),
+    "author": {
+      "@type": "Organization",
+      "name": post.data.author ?? "Cantieri AI",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cantieri AI",
+      "url": SITE_URL,
+      "logo": { "@type": "ImageObject", "url": `${SITE_URL}/images/logo.png` },
+    },
+    "image": post.data.image ? `${SITE_URL}${post.data.image}` : `${SITE_URL}/images/og_image.jpg`,
+    "mainEntityOfPage": `${SITE_URL}/blog/${post.id}/`,
+  }}
+>
+  <Navbar lang={lang} />
+  <main class="min-h-screen bg-slate-50">
+    <article class="mx-auto max-w-3xl px-4 pt-28 pb-16 sm:px-6">
+      <a href="/blog/" class="inline-flex items-center gap-1 text-sm font-semibold text-primary-500 hover:text-primary-600 transition-colors mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+          <path fill-rule="evenodd" d="M9.78 4.22a.75.75 0 0 1 0 1.06L7.06 8l2.72 2.72a.75.75 0 1 1-1.06 1.06L5.47 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+        </svg>
+        Torna al blog
+      </a>
+
+      <header class="mb-8">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-primary-50 text-primary-700">
+            {getCategoriaLabel(post.data.categoria)}
+          </span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-800">
+          {post.data.title}
+        </h1>
+        <div class="flex items-center gap-3 mt-4 text-sm text-slate-400">
+          <time datetime={post.data.date.toISOString()}>
+            {formatDate(post.data.date)}
+          </time>
+          {post.data.author && (
+            <>
+              <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+              <span>{post.data.author}</span>
+            </>
+          )}
+        </div>
+      </header>
+
+      {post.data.image && (
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          class="w-full rounded-2xl mb-10"
+        />
+      )}
+
+      <div class="prose prose-slate max-w-none prose-headings:tracking-tight prose-headings:text-slate-800 prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline prose-strong:text-slate-700">
+        <Content />
+      </div>
+    </article>
+  </main>
+  <Footer lang={lang} />
+</Layout>

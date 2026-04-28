@@ -184,6 +184,9 @@ const translations = {
     'contact.error_desc': 'Non siamo riusciti ad inviare il messaggio. Riprova o scrivici direttamente a',
     'contact.phone_count': 'di 10 caratteri max.',
 
+    // Blog
+    'nav.blog': 'Blog',
+
     // Footer
     'footer.rights': 'Tutti i diritti riservati.',
     'footer.description': 'Cantieri AI — La piattaforma digitale per la gestione completa dei cantieri edili. Pianificazione, documentazione, reportistica e collaborazione in un\'unica soluzione cloud.',
@@ -362,6 +365,9 @@ const translations = {
     'contact.error_desc': 'We couldn\'t send the message. Please try again or write to us directly at',
     'contact.phone_count': 'of 10 characters max.',
 
+    // Blog
+    'nav.blog': 'Blog',
+
     // Footer
     'footer.rights': 'All rights reserved.',
     'footer.description': 'Cantieri AI — The digital platform for complete construction site management. Planning, documentation, reporting and collaboration in one cloud solution.',
@@ -539,6 +545,9 @@ const translations = {
     'contact.error_title': 'حدث خطأ.',
     'contact.error_desc': 'لم نتمكن من إرسال الرسالة. حاول مرة أخرى أو راسلنا مباشرة على',
     'contact.phone_count': 'من 10 أحرف كحد أقصى.',
+
+    // Blog
+    'nav.blog': 'المدونة',
 
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة.',
