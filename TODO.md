@@ -63,11 +63,9 @@ Se raccogli email (newsletter) o usi analytics:
 - [ ] Canonical URLs
 
 ### 9. Sitemap automatica
-**File:** `public/sitemap.xml`
-Attualmente statico.
-- [ ] Installare `@astrojs/sitemap`
-- [ ] Configurare in `astro.config.mjs`
-- [ ] Rigenerare automaticamente al build
+**File:** `src/pages/sitemap.xml.ts`
+- [x] Sitemap dinamica generata a ogni build (include blog automaticamente)
+- [x] Rimosso vecchio `public/sitemap.xml` statico
 
 ### 10. Robots.txt
 **File:** `public/robots.txt`
@@ -128,9 +126,10 @@ Attualmente statico.
 - [ ] Descrizione card 3 `FeatureManagement` era un placeholder iniziale — ora sistemata ma ricontrollare
 - [ ] Verificare tutte le label CTA (Hero, Pricing, ecc.)
 
-### 19. Infrastruttura deploy
-- [ ] Scegliere hosting (Vercel, Netlify, Cloudflare Pages, self-hosted)
-- [ ] Configurare dominio e DNS
+### 19. Infrastruttura deploy (Aruba)
+- [x] Hosting: Aruba
+- [x] Dominio e DNS configurati
+- [ ] **GitHub Action per deploy automatico via FTP** — Quando Sveltia CMS crea un commit, la Action fa `npm run build` e carica `dist/` su Aruba via FTP. Senza questo, ogni nuovo post richiede build manuale + upload.
 - [ ] HTTPS / certificato SSL
 - [ ] Redirect `www` ↔ non-www
 - [ ] Redirect HTTP → HTTPS

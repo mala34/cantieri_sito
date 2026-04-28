@@ -3,7 +3,6 @@ backend:
   repo: owner/cantieri_sito
   branch: main
 
-local_backend: true
 
 media_folder: public/images/blog
 public_folder: /images/blog
