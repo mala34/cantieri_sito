@@ -3,7 +3,7 @@ title: 'Digitalizzazione dei cantieri: trend e vantaggi nel 2026'
 description: Scopri come la digitalizzazione sta rivoluzionando la gestione dei cantieri edili italiani, riducendo costi e aumentando l efficienza operativa.
 date: 2026-04-20
 categoria: innovazione
-image: /images/blog/digitalizzazione-cantieri.jpg
+image: /images/blog/Digitalizzazione dei cantieri.jpeg
 author: Cantieri AI
 ---
 
