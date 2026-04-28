@@ -85,5 +85,5 @@ ErrorDocument 404 /404.html
   Header set Cross-Origin-Resource-Policy "same-site"
 
   # Content Security Policy — allows Google Fonts + inline styles (Tailwind)
-  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://app.cantieri.ai"
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://app.cantieri.ai"
 </IfModule>
