@@ -9,7 +9,7 @@ interface Props {
   canonical?: string;
   ogLocale?: string;
   alternates?: { it: string; en: string; ar: string };
-  extraStructuredData?: Record<string, unknown>;
+  extraStructuredData?: Record<string, unknown> | Record<string, unknown>[];
   ogType?: string;
   ogImage?: string;
   articlePublishedTime?: string;
@@ -100,6 +100,9 @@ const alternateLocales: Record<string, string> = {
     <link rel="alternate" hreflang="ar" href={hreflangs.ar} />
     <link rel="alternate" hreflang="x-default" href={hreflangs.it} />
 
+    <!-- Sitemap -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
     <!-- Preconnect & Fonts (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -126,7 +129,22 @@ const alternateLocales: Record<string, string> = {
     <!-- Web App Manifest -->
     <link rel="manifest" href="/favicon/site.webmanifest" />
 
-    <!-- Structured Data -->
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Cantieri AI",
+      "alternateName": ["Cantieri", "Cantieri.ai"],
+      "url": SITE_URL,
+      "inLanguage": ["it", "en", "ar"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${SITE_URL}/blog/?q={search_term_string}`,
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+
+    <!-- Structured Data: SoftwareApplication -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
@@ -138,6 +156,10 @@ const alternateLocales: Record<string, string> = {
       "operatingSystem": "Web",
       "url": SITE_URL,
       "image": `${SITE_URL}/images/logo.png`,
+      "sameAs": [
+        "https://www.instagram.com/cantieri.ai/"
+      ],
+      "featureList": "Rapportini digitali, SAL digitale, Gestione sicurezza cantiere, Dashboard in tempo reale, Collaborazione multi-azienda, Tracciamento materiali, Report PDF automatici, Gestione documenti cloud, Assegnazione task, Funzionamento offline",
       "keywords": "software gestione cantieri, gestionale cantiere edile, rapportini digitali cantiere, app cantiere, SAL digitale, software edilizia cloud",
       "offers": {
         "@type": "Offer",
@@ -153,11 +175,18 @@ const alternateLocales: Record<string, string> = {
         "logo": {
           "@type": "ImageObject",
           "url": `${SITE_URL}/images/logo.png`
-        }
+        },
+        "sameAs": [
+          "https://www.instagram.com/cantieri.ai/"
+        ]
       }
     })} />
     {extraStructuredData && (
-      <script type="application/ld+json" set:html={JSON.stringify(extraStructuredData)} />
+      Array.isArray(extraStructuredData)
+        ? extraStructuredData.map(sd => (
+            <script type="application/ld+json" set:html={JSON.stringify(sd)} />
+          ))
+        : <script type="application/ld+json" set:html={JSON.stringify(extraStructuredData)} />
     )}
   </head>
   <body class="min-h-screen bg-slate-50 antialiased">

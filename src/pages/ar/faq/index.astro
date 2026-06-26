@@ -1,0 +1,96 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar.astro';
+import Footer from '../../../components/Footer.astro';
+import { t } from '../../../i18n';
+
+const lang = 'ar';
+
+const faqs = [
+  { q: t(lang, 'faq.q1'), a: t(lang, 'faq.a1') },
+  { q: t(lang, 'faq.q2'), a: t(lang, 'faq.a2') },
+  { q: t(lang, 'faq.q3'), a: t(lang, 'faq.a3') },
+  { q: t(lang, 'faq.q4'), a: t(lang, 'faq.a4') },
+  { q: t(lang, 'faq.q5'), a: t(lang, 'faq.a5') },
+  { q: t(lang, 'faq.q6'), a: t(lang, 'faq.a6') },
+  { q: t(lang, 'faq.q7'), a: t(lang, 'faq.a7') },
+  { q: t(lang, 'faq.q8'), a: t(lang, 'faq.a8') },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': faqs.map(f => ({
+    '@type': 'Question',
+    'name': f.q,
+    'acceptedAnswer': {
+      '@type': 'Answer',
+      'text': f.a,
+    },
+  })),
+};
+---
+
+<Layout
+  lang={lang}
+  dir="rtl"
+  title="الأسئلة الشائعة — Cantieri AI | برنامج إدارة مواقع البناء"
+  description="الأسئلة الشائعة حول Cantieri AI: التقارير اليومية الرقمية، سلامة الموقع، التعاون متعدد الشركات، الأسعار والعمل بدون اتصال. اعثر على جميع الإجابات."
+  canonical="https://www.cantieri.ai/ar/faq/"
+  ogLocale="ar_AR"
+  alternates={{
+    it: 'https://www.cantieri.ai/faq/',
+    en: 'https://www.cantieri.ai/en/faq/',
+    ar: 'https://www.cantieri.ai/ar/faq/',
+  }}
+  extraStructuredData={faqSchema}
+>
+  <Navbar lang={lang} />
+  <main class="pt-24 pb-16 sm:pt-32 sm:pb-24">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-12 sm:mb-16">
+        <h1 class="text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">
+          {t(lang, 'faq.title')}
+        </h1>
+        <p class="mt-4 text-lg font-medium text-slate-600 sm:text-xl/8">
+          {t(lang, 'faq.subtitle')}
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {faqs.map((faq) => (
+          <details class="group bg-white rounded-2xl border border-slate-100 overflow-hidden">
+            <summary class="flex items-center justify-between cursor-pointer p-6 sm:p-8 text-right">
+              <h2 class="text-lg sm:text-xl font-bold text-slate-900 pl-4">{faq.q}</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-[#F28F16] flex-shrink-0 transition-transform group-open:rotate-45">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+            </summary>
+            <div class="px-6 sm:px-8 pb-6 sm:pb-8">
+              <p class="text-slate-600 font-medium text-sm sm:text-base leading-relaxed">{faq.a}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <div class="mt-16 text-center p-8 sm:p-10 bg-white rounded-3xl border border-slate-100">
+        <h2 class="text-2xl font-black text-slate-900 tracking-tight mb-3">
+          {t(lang, 'faq.cta_title')}
+        </h2>
+        <p class="text-slate-500 font-medium text-sm mb-6">
+          {t(lang, 'faq.cta_text')}
+        </p>
+        <a
+          href="/ar/contact/"
+          data-gtm="faq_cta_contattaci"
+          class="inline-block px-8 py-4 bg-[#F28F16] text-white text-xs font-black uppercase tracking-[0.15em] rounded-2xl shadow-lg shadow-orange-500/20 hover:scale-105 transition-transform"
+        >
+          {t(lang, 'faq.cta_button')}
+        </a>
+      </div>
+
+    </div>
+  </main>
+  <Footer lang={lang} />
+</Layout>

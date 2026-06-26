@@ -1,0 +1,44 @@
+# Cantieri AI
+
+> Cantieri AI (cantieri.ai) is a cloud-based digital platform for construction site management. It helps construction companies, site directors, surveyors and engineers manage daily reports, documents, safety compliance and work progress from a single app.
+
+## Key Features
+
+- Digital daily reports (rapportini digitali) replacing paper-based workflows
+- Construction site safety management with checklists, PPE tracking and incident reporting
+- Multi-company collaboration on the same construction site
+- Real-time dashboards for costs, materials, hours worked and work progress
+- SAL (Stato Avanzamento Lavori) digital tracking
+- Document management and cloud storage
+- Task assignment with instant notifications
+- Automatic daily and weekly PDF reports
+- Offline mode with automatic sync
+
+## Target Users
+
+- Construction companies (imprese edili)
+- Site directors (direttori lavori)
+- Surveyors (geometri)
+- Engineers (ingegneri)
+- Foremen (caposquadra)
+
+## Pricing
+
+Free trial available. Flexible plans based on number of sites and users. Contact info@cantieri.ai for a personalized quote.
+
+## Links
+
+- Website: https://www.cantieri.ai/
+- App: https://app.cantieri.ai/
+- Blog: https://www.cantieri.ai/blog/
+- FAQ: https://www.cantieri.ai/faq/
+- Contact: https://www.cantieri.ai/contattaci/
+- Instagram: https://www.instagram.com/cantieri.ai/
+
+## Company
+
+- Name: Cantieri AI
+- Address: Piazza Sergio Finocchi, 3 — 41017 Spilamberto (MO), Italy
+- Email: info@cantieri.ai
+- Phone: +39 348 040 7500
+- VAT: 03447571203

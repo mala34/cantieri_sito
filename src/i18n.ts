@@ -187,6 +187,31 @@ const translations = {
     // Blog
     'nav.blog': 'Blog',
 
+    // FAQ
+    'nav.faq': 'FAQ',
+    'footer.faq': 'FAQ',
+    'faq.title': 'Domande Frequenti',
+    'faq.subtitle': 'Tutto quello che devi sapere su Cantieri AI, il software per la gestione dei cantieri edili.',
+    'faq.q1': 'Cos\'è Cantieri AI e a chi è rivolto?',
+    'faq.a1': 'Cantieri AI è una piattaforma digitale cloud per la gestione completa dei cantieri edili. È rivolta a imprese edili, direttori lavori, geometri, ingegneri e chiunque abbia bisogno di gestire rapportini, documenti, sicurezza e avanzamento lavori da un\'unica app.',
+    'faq.q2': 'Come funzionano i rapportini digitali?',
+    'faq.a2': 'I rapportini digitali sostituiscono la compilazione cartacea. Ogni operaio o caposquadra può compilare il rapportino direttamente dall\'app, inserendo ore lavorate, materiali utilizzati, attività svolte e foto. I dati vengono salvati in cloud e sono immediatamente disponibili per il direttore lavori.',
+    'faq.q3': 'Cantieri AI è adatto a piccole imprese o solo a grandi aziende?',
+    'faq.a3': 'Cantieri AI è progettato per imprese di qualsiasi dimensione. Che tu gestisca un singolo cantiere o decine di cantieri contemporaneamente, la piattaforma si adatta alle tue esigenze con piani flessibili.',
+    'faq.q4': 'Posso gestire la sicurezza del cantiere con Cantieri AI?',
+    'faq.a4': 'Sì. Cantieri AI include funzionalità per la gestione della sicurezza: checklist di controllo, documentazione DPI, segnalazione incidenti, scadenze formative e verifica conformità normativa. Tutto tracciato e archiviato digitalmente.',
+    'faq.q5': 'Come funziona la collaborazione multi-azienda?',
+    'faq.a5': 'Cantieri AI permette a più aziende di collaborare sullo stesso cantiere. Ogni impresa accede con il proprio account, vede solo i dati di propria competenza e può condividere documenti, rapportini e aggiornamenti in tempo reale con il committente o il direttore lavori.',
+    'faq.q6': 'Quanto costa Cantieri AI?',
+    'faq.a6': 'Cantieri AI offre diversi piani tariffari in base al numero di cantieri e utenti. È disponibile una prova gratuita per valutare la piattaforma. Contattaci per ricevere un preventivo personalizzato.',
+    'faq.q7': 'Cantieri AI funziona offline?',
+    'faq.a7': 'L\'app è progettata per funzionare anche in condizioni di connettività limitata. I dati vengono sincronizzati automaticamente quando la connessione è disponibile, così puoi lavorare anche nei cantieri più remoti.',
+    'faq.q8': 'Come posso iniziare a usare Cantieri AI?',
+    'faq.a8': 'Puoi registrarti gratuitamente su app.cantieri.ai oppure contattarci per una demo personalizzata. Il nostro team ti guiderà nella configurazione iniziale e nell\'importazione dei tuoi cantieri.',
+    'faq.cta_title': 'Hai altre domande?',
+    'faq.cta_text': 'Siamo qui per aiutarti. Scrivici e ti risponderemo al più presto.',
+    'faq.cta_button': 'Contattaci',
+
     // Footer
     'footer.rights': 'Tutti i diritti riservati.',
     'footer.description': 'Cantieri AI — La piattaforma digitale per la gestione completa dei cantieri edili. Pianificazione, documentazione, reportistica e collaborazione in un\'unica soluzione cloud.',
@@ -368,6 +393,31 @@ const translations = {
     // Blog
     'nav.blog': 'Blog',
 
+    // FAQ
+    'nav.faq': 'FAQ',
+    'footer.faq': 'FAQ',
+    'faq.title': 'Frequently Asked Questions',
+    'faq.subtitle': 'Everything you need to know about Cantieri AI, the construction site management software.',
+    'faq.q1': 'What is Cantieri AI and who is it for?',
+    'faq.a1': 'Cantieri AI is a cloud-based digital platform for complete construction site management. It is designed for construction companies, site directors, surveyors, engineers and anyone who needs to manage daily reports, documents, safety and work progress from a single app.',
+    'faq.q2': 'How do digital daily reports work?',
+    'faq.a2': 'Digital daily reports replace paper-based reporting. Each worker or foreman can fill out the report directly from the app, entering hours worked, materials used, activities performed and photos. Data is saved in the cloud and immediately available to the site director.',
+    'faq.q3': 'Is Cantieri AI suitable for small businesses or only large companies?',
+    'faq.a3': 'Cantieri AI is designed for businesses of any size. Whether you manage a single site or dozens simultaneously, the platform adapts to your needs with flexible plans.',
+    'faq.q4': 'Can I manage construction site safety with Cantieri AI?',
+    'faq.a4': 'Yes. Cantieri AI includes safety management features: control checklists, PPE documentation, incident reporting, training deadlines and regulatory compliance verification. Everything tracked and digitally archived.',
+    'faq.q5': 'How does multi-company collaboration work?',
+    'faq.a5': 'Cantieri AI allows multiple companies to collaborate on the same site. Each company accesses with its own account, sees only its relevant data and can share documents, reports and real-time updates with the client or site director.',
+    'faq.q6': 'How much does Cantieri AI cost?',
+    'faq.a6': 'Cantieri AI offers different pricing plans based on the number of sites and users. A free trial is available to evaluate the platform. Contact us for a personalized quote.',
+    'faq.q7': 'Does Cantieri AI work offline?',
+    'faq.a7': 'The app is designed to work even with limited connectivity. Data is automatically synchronized when a connection is available, so you can work even on the most remote construction sites.',
+    'faq.q8': 'How can I start using Cantieri AI?',
+    'faq.a8': 'You can sign up for free at app.cantieri.ai or contact us for a personalized demo. Our team will guide you through the initial setup and importing your construction sites.',
+    'faq.cta_title': 'Didn\'t find the answer you were looking for?',
+    'faq.cta_text': 'Contact us and our team will respond within 24 hours.',
+    'faq.cta_button': 'Contact Us',
+
     // Footer
     'footer.rights': 'All rights reserved.',
     'footer.description': 'Cantieri AI — The digital platform for complete construction site management. Planning, documentation, reporting and collaboration in one cloud solution.',
@@ -548,6 +598,31 @@ const translations = {
 
     // Blog
     'nav.blog': 'المدونة',
+
+    // FAQ
+    'nav.faq': 'الأسئلة الشائعة',
+    'footer.faq': 'الأسئلة الشائعة',
+    'faq.title': 'الأسئلة الشائعة',
+    'faq.subtitle': 'كل ما تحتاج معرفته عن Cantieri AI، برنامج إدارة مواقع البناء.',
+    'faq.q1': 'ما هو Cantieri AI ولمن هو مخصص؟',
+    'faq.a1': 'Cantieri AI هو منصة رقمية سحابية لإدارة مواقع البناء بشكل كامل. مصمم لشركات البناء ومديري المواقع والمهندسين وأي شخص يحتاج إلى إدارة التقارير اليومية والمستندات والسلامة وتقدم العمل من تطبيق واحد.',
+    'faq.q2': 'كيف تعمل التقارير اليومية الرقمية؟',
+    'faq.a2': 'التقارير اليومية الرقمية تحل محل التقارير الورقية. يمكن لكل عامل أو رئيس فريق ملء التقرير مباشرة من التطبيق، بإدخال ساعات العمل والمواد المستخدمة والأنشطة المنجزة والصور. يتم حفظ البيانات في السحابة وتكون متاحة فوراً لمدير الموقع.',
+    'faq.q3': 'هل Cantieri AI مناسب للشركات الصغيرة أم فقط للشركات الكبيرة؟',
+    'faq.a3': 'تم تصميم Cantieri AI للشركات من جميع الأحجام. سواء كنت تدير موقعاً واحداً أو عشرات المواقع في وقت واحد، تتكيف المنصة مع احتياجاتك بخطط مرنة.',
+    'faq.q4': 'هل يمكنني إدارة سلامة موقع البناء باستخدام Cantieri AI؟',
+    'faq.a4': 'نعم. يتضمن Cantieri AI ميزات إدارة السلامة: قوائم التحقق، توثيق معدات الحماية الشخصية، الإبلاغ عن الحوادث، مواعيد التدريب والتحقق من الامتثال التنظيمي. كل شيء يتم تتبعه وأرشفته رقمياً.',
+    'faq.q5': 'كيف يعمل التعاون متعدد الشركات؟',
+    'faq.a5': 'يتيح Cantieri AI لعدة شركات التعاون في نفس الموقع. تصل كل شركة بحسابها الخاص، وترى فقط البيانات ذات الصلة بها ويمكنها مشاركة المستندات والتقارير والتحديثات في الوقت الفعلي مع العميل أو مدير الموقع.',
+    'faq.q6': 'كم يكلف Cantieri AI؟',
+    'faq.a6': 'يقدم Cantieri AI خطط تسعير مختلفة بناءً على عدد المواقع والمستخدمين. تتوفر نسخة تجريبية مجانية لتقييم المنصة. اتصل بنا للحصول على عرض أسعار مخصص.',
+    'faq.q7': 'هل يعمل Cantieri AI بدون اتصال بالإنترنت؟',
+    'faq.a7': 'تم تصميم التطبيق للعمل حتى مع اتصال محدود. تتم مزامنة البيانات تلقائياً عند توفر الاتصال، حتى تتمكن من العمل حتى في أبعد مواقع البناء.',
+    'faq.q8': 'كيف يمكنني البدء في استخدام Cantieri AI؟',
+    'faq.a8': 'يمكنك التسجيل مجاناً على app.cantieri.ai أو الاتصال بنا للحصول على عرض توضيحي مخصص. سيرشدك فريقنا خلال الإعداد الأولي واستيراد مواقع البناء الخاصة بك.',
+    'faq.cta_title': 'لم تجد الإجابة التي تبحث عنها؟',
+    'faq.cta_text': 'اتصل بنا وسيرد فريقنا خلال 24 ساعة.',
+    'faq.cta_button': 'اتصل بنا',
 
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة.',

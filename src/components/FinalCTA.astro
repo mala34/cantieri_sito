@@ -8,7 +8,7 @@ interface Props {
 const { lang } = Astro.props;
 ---
 
-<section class="py-16 sm:py-20 bg-white">
+<section id="cta" class="py-16 sm:py-20 bg-white">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="relative overflow-hidden rounded-2xl sm:rounded-[40px] bg-primary-500 px-4 py-12 sm:px-16 sm:py-20 shadow-[30px_30px_60px_rgba(0,0,0,0.15),-30px_-30px_60px_rgba(0,0,0,0.15)]">
       <div class="mx-auto max-w-2xl text-center">
@@ -26,7 +26,7 @@ const { lang } = Astro.props;
             {t(lang, 'finalCta.button_primary')}
           </a>
           <a
-            href="#"
+            href={lang === 'it' ? '/contattaci/' : lang === 'en' ? '/en/contact/' : '/ar/contact/'}
             class="w-full sm:w-auto sm:min-w-[180px] rounded-md border-2 border-white/60 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors text-center"
           >
             {t(lang, 'finalCta.button_secondary')}
