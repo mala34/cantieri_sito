@@ -173,7 +173,7 @@ const lang = 'en';
       _subject: 'New contact from Cantieri AI', _captcha: 'false', _template: 'table',
     };
     try {
-      const response = await fetch('https://formsubmit.co/ajax/info@cantieri.ai', {
+      const response = await fetch('/send-mail.php', {
         method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify(data),
       });
