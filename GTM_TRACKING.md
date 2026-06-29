@@ -52,6 +52,7 @@ Tutti portano fuori da `www.cantieri.ai`.
 | Footer | Instagram | `https://www.instagram.com/cantieri.ai/` | `cta_footer_instagram` |
 | Footer | Telefono | `tel:+393480407500` | `cta_footer_telefono` |
 | Footer | Email | `mailto:info@cantieri.ai` | `cta_footer_email` |
+| Contattaci (errore) | Email fallback | `mailto:info@cantieri.ai` | `cta_contatto_email_errore` |
 
 ### Form (conversioni) — prefisso `form_`
 
@@ -75,9 +76,11 @@ Tutti portano fuori da `www.cantieri.ai`.
 | Navbar mobile | Blog | `nav_blog_mobile` |
 | Navbar mobile | FAQ | `nav_faq_mobile` |
 | Navbar mobile | Contattaci | `nav_contattaci_mobile` |
+| Navbar | Logo (homepage) | `nav_logo` |
 | Hero | Scopri le funzionalita | `nav_scopri_funzionalita` |
 | FinalCTA | Contattaci (secondario) | `nav_finale_contattaci` |
 | BottomCTA | Contattaci | `nav_bottom_contattaci` |
+| Blog [slug] | Torna al blog | `nav_blog_torna` |
 | FAQ | Contattaci (CTA) | `faq_cta_contattaci` |
 
 ### Footer interno — prefisso `footer_`
@@ -89,6 +92,7 @@ Tutti portano fuori da `www.cantieri.ai`.
 | Blog | `footer_blog` |
 | FAQ | `footer_faq` |
 | Contattaci | `footer_contattaci` |
+| Logo (homepage) | `nav_footer_logo` |
 
 ---
 
