@@ -17,19 +17,19 @@ const { lang } = Astro.props;
       </a>
 
       <div class="hidden lg:flex items-center gap-5 xl:gap-7">
-        <a href={`${localePath(lang)}#features`} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
+        <a href={`${localePath(lang)}#features`} data-gtm="nav_funzionalita" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
           {t(lang, 'nav.features')}
         </a>
-        <a href={`${localePath(lang)}#solutions`} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
+        <a href={`${localePath(lang)}#solutions`} data-gtm="nav_soluzioni" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
           {t(lang, 'nav.solutions')}
         </a>
-        <a href={'/blog/'} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
+        <a href={'/blog/'} data-gtm="nav_blog" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
           {t(lang, 'nav.blog')}
         </a>
-        <a href={lang === 'it' ? '/faq/' : `/${lang}/faq/`} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
+        <a href={lang === 'it' ? '/faq/' : `/${lang}/faq/`} data-gtm="nav_faq" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
           {t(lang, 'nav.faq')}
         </a>
-        <a href={lang === 'it' ? '/contattaci/' : lang === 'en' ? '/en/contact/' : '/ar/contact/'} class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
+        <a href={lang === 'it' ? '/contattaci/' : lang === 'en' ? '/en/contact/' : '/ar/contact/'} data-gtm="nav_contattaci" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors whitespace-nowrap">
           {t(lang, 'nav.contact')}
         </a>
         <div class="relative">
@@ -52,6 +52,7 @@ const { lang } = Astro.props;
         </div>
         <a
           href="https://app.cantieri.ai/login"
+          data-gtm="cta_nav_accedi"
           class="rounded-md bg-primary-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-600 transition-colors whitespace-nowrap"
         >
           {t(lang, 'nav.login')}
@@ -70,19 +71,19 @@ const { lang } = Astro.props;
   <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200/60 bg-white/95 backdrop-blur-md">
     <div class="px-6 py-4 space-y-3">
-      <a href={`${localePath(lang)}#features`} class="block text-sm font-medium text-slate-600">
+      <a href={`${localePath(lang)}#features`} data-gtm="nav_funzionalita_mobile" class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.features')}
       </a>
-      <a href={`${localePath(lang)}#solutions`} class="block text-sm font-medium text-slate-600">
+      <a href={`${localePath(lang)}#solutions`} data-gtm="nav_soluzioni_mobile" class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.solutions')}
       </a>
-      <a href={'/blog/'} class="block text-sm font-medium text-slate-600">
+      <a href={'/blog/'} data-gtm="nav_blog_mobile" class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.blog')}
       </a>
-      <a href={lang === 'it' ? '/faq/' : `/${lang}/faq/`} class="block text-sm font-medium text-slate-600">
+      <a href={lang === 'it' ? '/faq/' : `/${lang}/faq/`} data-gtm="nav_faq_mobile" class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.faq')}
       </a>
-      <a href={lang === 'it' ? '/contattaci/' : lang === 'en' ? '/en/contact/' : '/ar/contact/'} class="block text-sm font-medium text-slate-600">
+      <a href={lang === 'it' ? '/contattaci/' : lang === 'en' ? '/en/contact/' : '/ar/contact/'} data-gtm="nav_contattaci_mobile" class="block text-sm font-medium text-slate-600">
         {t(lang, 'nav.contact')}
       </a>
       <div class="relative inline-block">
@@ -105,6 +106,7 @@ const { lang } = Astro.props;
       </div>
       <a
         href="https://app.cantieri.ai/login"
+        data-gtm="cta_nav_accedi_mobile"
         class="block rounded-md bg-primary-500 px-4 py-2 text-sm font-semibold text-white text-center"
       >
         {t(lang, 'nav.login')}

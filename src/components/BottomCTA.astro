@@ -22,12 +22,14 @@ const contactHref = localePath(lang, 'contattaci');
         <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={contactHref}
+            data-gtm="nav_bottom_contattaci"
             class="rounded-md bg-primary-500 px-8 py-3 text-sm font-semibold text-white shadow-[0_2px_8px_rgba(32,48,68,0.08)] hover:bg-primary-600 transition-colors"
           >
             {t(lang, 'cta.bottom_button')}
           </a>
           <a
             href={`mailto:info@cantieri.ai`}
+            data-gtm="cta_bottom_email"
             class="text-sm font-medium text-slate-400 hover:text-primary-300 transition-colors"
           >
             {t(lang, 'cta.contact_or')}info@cantieri.ai

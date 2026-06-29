@@ -28,7 +28,7 @@ const { lang } = Astro.props;
         <div class="mb-8">
           <div class="inline-flex flex-wrap gap-x-1 rounded-full px-2 py-1 text-sm/6 sm:px-3 text-slate-600 ring-1 ring-slate-900/10 hover:ring-slate-900/20 transition-all">
             {t(lang, 'hero.badge')}{' '}
-            <a href="https://app.cantieri.ai/login" class="font-semibold text-primary-600 hover:text-primary-700 transition-colors">
+            <a href="https://app.cantieri.ai/login" data-gtm="cta_hero_vai_al_login" class="font-semibold text-primary-600 hover:text-primary-700 transition-colors">
               {t(lang, 'hero.badge_link')} <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -42,11 +42,12 @@ const { lang } = Astro.props;
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:mt-10 sm:gap-x-6">
           <a
             href="https://app.cantieri.ai/login"
+            data-gtm="cta_inizia_ora"
             class="w-full sm:w-auto sm:min-w-[180px] rounded-md bg-primary-500 px-6 py-3 text-sm font-semibold text-white shadow-[0_2px_8px_rgba(32,48,68,0.08)] hover:bg-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 transition-colors text-center"
           >
             {t(lang, 'hero.cta_login')}
           </a>
-          <a href="#features" class="w-full sm:w-auto sm:min-w-[180px] px-6 py-3 text-sm font-semibold text-slate-900 hover:text-primary-600 hover:border-primary-200 transition-colors text-center">
+          <a href="#features" data-gtm="nav_scopri_funzionalita" class="w-full sm:w-auto sm:min-w-[180px] px-6 py-3 text-sm font-semibold text-slate-900 hover:text-primary-600 hover:border-primary-200 transition-colors text-center">
             {t(lang, 'hero.cta_features')} <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
