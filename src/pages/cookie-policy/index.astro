@@ -1,0 +1,178 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = 'https://www.cantieri.ai';
+---
+
+<Layout
+  title="Cookie Policy | Cantieri AI"
+  description="Cookie Policy di Cantieri AI. Scopri quali cookie utilizziamo, come li gestiamo e come puoi controllare le tue preferenze."
+  canonical={`${siteUrl}/cookie-policy/`}
+>
+  <Navbar lang="it" />
+
+  <main class="bg-white">
+    <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Cookie Policy</h1>
+      <p class="mt-4 text-sm text-slate-500">Ultimo aggiornamento: 30 giugno 2026</p>
+
+      <div class="mt-10 space-y-10 text-base leading-7 text-slate-600">
+
+        <!-- 1. Cosa sono i cookie -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">1. Cosa sono i cookie</h2>
+          <p class="mt-3">
+            I cookie sono piccoli file di testo che vengono memorizzati sul tuo dispositivo (computer, tablet o smartphone) quando visiti un sito web. Servono a far funzionare il sito in modo efficiente e a fornire informazioni ai proprietari del sito per migliorare l'esperienza di navigazione.
+          </p>
+        </section>
+
+        <!-- 2. Titolare -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">2. Titolare del trattamento</h2>
+          <p class="mt-3">
+            Il titolare del trattamento dei dati raccolti tramite i cookie è:
+          </p>
+          <p class="mt-4 font-semibold text-slate-800">Dati di contatto:</p>
+          <ul class="mt-2 list-disc pl-6 space-y-1">
+            <li><strong>Ragione sociale:</strong> Cantieri AI</li>
+            <li><strong>Sede legale:</strong> Piazza Sergio Finocchi, 3 — 41017 Spilamberto (MO), Italia</li>
+            <li><strong>Email:</strong> <a href="mailto:info@cantieri.ai" class="text-primary-500 hover:underline">info@cantieri.ai</a></li>
+          </ul>
+        </section>
+
+        <!-- 3. Tipi di cookie -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">3. Tipi di cookie utilizzati</h2>
+
+          <h3 class="mt-6 text-lg font-semibold text-slate-800">3.1 Cookie tecnici (necessari)</h3>
+          <p class="mt-2">
+            Sono essenziali per il corretto funzionamento del sito. Non richiedono il consenso dell'utente e non possono essere disattivati.
+          </p>
+          <div class="mt-4 overflow-x-auto">
+            <table class="min-w-full text-sm">
+              <thead>
+                <tr class="border-b border-slate-200 text-left">
+                  <th class="py-2 pr-4 font-semibold text-slate-900">Nome</th>
+                  <th class="py-2 pr-4 font-semibold text-slate-900">Fornitore</th>
+                  <th class="py-2 pr-4 font-semibold text-slate-900">Scopo</th>
+                  <th class="py-2 font-semibold text-slate-900">Durata</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr>
+                  <td class="py-2 pr-4 font-mono text-xs">cc_cookie</td>
+                  <td class="py-2 pr-4">cantieri.ai</td>
+                  <td class="py-2 pr-4">Memorizza le preferenze cookie dell'utente</td>
+                  <td class="py-2">182 giorni</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="mt-8 text-lg font-semibold text-slate-800">3.2 Cookie analitici (previo consenso)</h3>
+          <p class="mt-2">
+            Ci permettono di raccogliere dati in forma aggregata e anonima sulle modalità di utilizzo del sito, al fine di migliorarne le prestazioni e l'esperienza utente. Vengono attivati solo dopo il consenso esplicito dell'utente.
+          </p>
+          <div class="mt-4 overflow-x-auto">
+            <table class="min-w-full text-sm">
+              <thead>
+                <tr class="border-b border-slate-200 text-left">
+                  <th class="py-2 pr-4 font-semibold text-slate-900">Nome</th>
+                  <th class="py-2 pr-4 font-semibold text-slate-900">Fornitore</th>
+                  <th class="py-2 pr-4 font-semibold text-slate-900">Scopo</th>
+                  <th class="py-2 font-semibold text-slate-900">Durata</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr>
+                  <td class="py-2 pr-4 font-mono text-xs">_ga</td>
+                  <td class="py-2 pr-4">Google Analytics</td>
+                  <td class="py-2 pr-4">Distingue gli utenti unici assegnando un ID generato casualmente</td>
+                  <td class="py-2">2 anni</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-mono text-xs">_ga_*</td>
+                  <td class="py-2 pr-4">Google Analytics</td>
+                  <td class="py-2 pr-4">Mantiene lo stato della sessione</td>
+                  <td class="py-2">2 anni</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-mono text-xs">_gid</td>
+                  <td class="py-2 pr-4">Google Analytics</td>
+                  <td class="py-2 pr-4">Distingue gli utenti unici</td>
+                  <td class="py-2">24 ore</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4">
+            Per maggiori informazioni su Google Analytics: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:underline">Privacy Policy di Google</a>.
+          </p>
+        </section>
+
+        <!-- 4. Google Consent Mode v2 -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">4. Google Consent Mode v2</h2>
+          <p class="mt-3">
+            Il sito implementa <strong>Google Consent Mode v2</strong>, una tecnologia che garantisce il rispetto delle tue preferenze in materia di cookie. Per impostazione predefinita, tutti i segnali di consenso sono impostati su "negato" (<code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-mono">denied</code>). Solo dopo che l'utente accetta i cookie analitici, lo stato viene aggiornato a "concesso" (<code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-mono">granted</code>).
+          </p>
+          <p class="mt-3">I segnali gestiti sono:</p>
+          <ul class="mt-3 list-disc pl-6 space-y-1">
+            <li><code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-mono">analytics_storage</code> — archiviazione a fini analitici</li>
+            <li><code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-mono">ad_storage</code> — archiviazione pubblicitaria</li>
+            <li><code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-mono">ad_user_data</code> — dati utente a fini pubblicitari</li>
+            <li><code class="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-mono">ad_personalization</code> — personalizzazione annunci</li>
+          </ul>
+        </section>
+
+        <!-- 5. Come gestire i cookie -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">5. Come gestire i cookie</h2>
+          <h3 class="mt-4 text-lg font-semibold text-slate-800">Tramite il nostro banner</h3>
+          <p class="mt-2">
+            Alla prima visita del sito, un banner ti consente di accettare tutti i cookie, rifiutarli (accettando solo quelli necessari) o personalizzare le tue preferenze. Puoi modificare le tue scelte in qualsiasi momento cliccando su "Gestisci preferenze" nel banner o nel footer del sito.
+          </p>
+          <h3 class="mt-6 text-lg font-semibold text-slate-800">Tramite il browser</h3>
+          <p class="mt-2">
+            Puoi anche gestire i cookie tramite le impostazioni del tuo browser. Ogni browser offre modalità diverse per limitare o eliminare i cookie. Tieni presente che disabilitare i cookie tecnici potrebbe compromettere il funzionamento del sito.
+          </p>
+        </section>
+
+        <!-- 6. Diritti -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">6. I tuoi diritti</h2>
+          <p class="mt-3">
+            In relazione ai dati raccolti tramite i cookie, puoi esercitare i diritti previsti dal GDPR (accesso, rettifica, cancellazione, limitazione, opposizione, portabilità) scrivendo a <a href="mailto:info@cantieri.ai" class="text-primary-500 hover:underline">info@cantieri.ai</a>.
+          </p>
+          <p class="mt-3">
+            Per maggiori informazioni sul trattamento dei dati personali, consulta la nostra <a href="/privacy-policy/" class="text-primary-500 hover:underline">Informativa sulla Privacy</a>.
+          </p>
+        </section>
+
+        <!-- 7. Modifiche -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">7. Modifiche alla Cookie Policy</h2>
+          <p class="mt-3">
+            Cantieri AI si riserva il diritto di aggiornare la presente Cookie Policy in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina con l'indicazione della data di ultimo aggiornamento.
+          </p>
+        </section>
+
+        <!-- 8. Contatti -->
+        <section>
+          <h2 class="text-xl font-semibold text-slate-900">8. Contatti</h2>
+          <p class="mt-3">
+            Per qualsiasi domanda relativa alla presente Cookie Policy, contattaci a:
+          </p>
+          <ul class="mt-3 list-disc pl-6 space-y-1">
+            <li><strong>Email:</strong> <a href="mailto:info@cantieri.ai" class="text-primary-500 hover:underline">info@cantieri.ai</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <Footer lang="it" />
+</Layout>

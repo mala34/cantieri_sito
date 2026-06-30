@@ -1,0 +1,230 @@
+/* ==============================================
+   Cookie Consent — Cantieri AI Theme
+   ============================================== */
+
+/* ---- Consent Modal (banner) ---- */
+#cc-main .cm {
+  font-family: 'Inter', sans-serif;
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  max-width: 420px;
+}
+
+#cc-main .cm__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+  font-size: 1.25rem;
+}
+
+#cc-main .cm__desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #475569;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Primary button — Accetta tutti */
+#cc-main .cm__btn[data-role="all"] {
+  font-family: 'Inter', sans-serif;
+  background: #F28F16;
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  box-shadow: 0 10px 25px -5px rgba(242, 143, 22, 0.3);
+  transition: transform 0.2s ease;
+}
+
+#cc-main .cm__btn[data-role="all"]:hover {
+  background: #e07d0a;
+  transform: scale(1.03);
+}
+
+/* Secondary button — Solo necessari */
+#cc-main .cm__btn[data-role="necessary"] {
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  font-weight: 900;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#cc-main .cm__btn[data-role="necessary"]:hover {
+  background: #f1f5f9;
+  transform: scale(1.03);
+}
+
+/* Tertiary link — Gestisci preferenze */
+#cc-main .cm__btn[data-role="show"] {
+  font-family: 'Inter', sans-serif;
+  color: #F28F16;
+  font-weight: 700;
+  font-size: 0.75rem;
+  background: transparent;
+  border: none;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+#cc-main .cm__btn[data-role="show"]:hover {
+  color: #e07d0a;
+  text-decoration: underline;
+}
+
+/* Footer links */
+#cc-main .cm__footer {
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 0.75rem 1.25rem;
+  margin-top: 0;
+}
+
+#cc-main .cm__footer a {
+  font-family: 'Inter', sans-serif;
+  color: #475569;
+  font-weight: 900;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#cc-main .cm__footer a:hover {
+  color: #F28F16;
+}
+
+/* ---- Preferences Modal ---- */
+#cc-main .pm {
+  font-family: 'Inter', sans-serif;
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+#cc-main .pm__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+  font-size: 1.25rem;
+}
+
+#cc-main .pm__section-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: #0f172a;
+  font-size: 0.875rem;
+}
+
+#cc-main .pm__section-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #475569;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+#cc-main .pm__section-desc a {
+  color: #F28F16;
+  font-weight: 700;
+}
+
+#cc-main .pm__section-desc a:hover {
+  text-decoration: underline;
+}
+
+/* Preferences modal — primary button */
+#cc-main .pm__btn[data-role="all"] {
+  font-family: 'Inter', sans-serif;
+  background: #F28F16;
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  box-shadow: 0 10px 25px -5px rgba(242, 143, 22, 0.3);
+  transition: transform 0.2s ease;
+}
+
+#cc-main .pm__btn[data-role="all"]:hover {
+  background: #e07d0a;
+  transform: scale(1.03);
+}
+
+/* Preferences modal — secondary buttons */
+#cc-main .pm__btn[data-role="necessary"],
+#cc-main .pm__btn[data-role="save"] {
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  font-weight: 900;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#cc-main .pm__btn[data-role="necessary"]:hover,
+#cc-main .pm__btn[data-role="save"]:hover {
+  background: #f1f5f9;
+  transform: scale(1.03);
+}
+
+/* Close button */
+#cc-main .pm__close-btn {
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+#cc-main .pm__close-btn:hover {
+  color: #F28F16;
+}
+
+/* Toggle switch */
+#cc-main .pm__toggle .toggle__icon--on {
+  background: #F28F16;
+}
+
+#cc-main .section__toggle input:checked + .toggle__icon {
+  background: #F28F16;
+}
+
+#cc-main .section__toggle input:checked:disabled + .toggle__icon {
+  background: #F28F16;
+  opacity: 0.6;
+}
+
+/* Section dividers */
+#cc-main .pm__section {
+  border-color: #f1f5f9;
+}
+
+/* Overlay */
+#cc-main .pm__overlay {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(4px);
+}

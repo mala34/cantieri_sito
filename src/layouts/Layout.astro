@@ -56,6 +56,19 @@ const alternateLocales: Record<string, string> = {
 <!doctype html>
 <html lang={lang} dir={dir}>
   <head>
+    <!-- Google Consent Mode v2 — default deny BEFORE GTM loads -->
+    <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+    });
+    </script>
+
     <!-- Google Tag Manager -->
     <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -202,5 +215,8 @@ const alternateLocales: Record<string, string> = {
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6VMNCPX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <slot />
+    <script>
+      import '../scripts/cookieconsent-config';
+    </script>
   </body>
 </html>
